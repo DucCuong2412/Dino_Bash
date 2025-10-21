@@ -251,7 +251,7 @@ public class tk2dClippedSprite : tk2dBaseSprite
 		else if (base.CurrentSprite.physicsEngine == tk2dSpriteDefinition.PhysicsEngine.Physics2D && boxCollider2D != null)
 		{
 			boxCollider2D.size = 2f * boundsExtents;
-			boxCollider2D.center = boundsCenter;
+			boxCollider2D.offset = boundsCenter;
 		}
 	}
 
@@ -262,9 +262,9 @@ public class tk2dClippedSprite : tk2dBaseSprite
 
 	protected override void UpdateMaterial()
 	{
-		if (base.renderer.sharedMaterial != collectionInst.spriteDefinitions[base.spriteId].materialInst)
+		if (base.GetComponent<Renderer>().sharedMaterial != collectionInst.spriteDefinitions[base.spriteId].materialInst)
 		{
-			base.renderer.material = collectionInst.spriteDefinitions[base.spriteId].materialInst;
+			base.GetComponent<Renderer>().material = collectionInst.spriteDefinitions[base.spriteId].materialInst;
 		}
 	}
 

@@ -111,7 +111,7 @@ public class Wallet : MonoBase
 	{
 		TakeCoins(Coins);
 		TakeDiamonds(Diamonds);
-		App.Instance.paymentManager.Reset();
+		//App.Instance.paymentManager.Reset();
 	}
 
 	public static void GiveCoins(int amount)

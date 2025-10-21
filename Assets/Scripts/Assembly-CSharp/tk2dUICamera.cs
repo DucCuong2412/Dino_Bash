@@ -27,7 +27,7 @@ public class tk2dUICamera : MonoBehaviour
 	{
 		get
 		{
-			return (int)raycastLayerMask & base.camera.cullingMask;
+			return (int)raycastLayerMask & base.GetComponent<Camera>().cullingMask;
 		}
 	}
 
@@ -35,7 +35,7 @@ public class tk2dUICamera : MonoBehaviour
 	{
 		get
 		{
-			return base.camera;
+			return base.GetComponent<Camera>();
 		}
 	}
 
@@ -46,12 +46,12 @@ public class tk2dUICamera : MonoBehaviour
 
 	private void OnEnable()
 	{
-		if (base.camera == null)
+		if (base.GetComponent<Camera>() == null)
 		{
 			Debug.LogError("tk2dUICamera should only be attached to a camera.");
 			base.enabled = false;
 		}
-		else if (!base.camera.orthographic && raycastType == tk2dRaycastType.Physics2D)
+		else if (!base.GetComponent<Camera>().orthographic && raycastType == tk2dRaycastType.Physics2D)
 		{
 			Debug.LogError("tk2dUICamera - Physics2D raycast only works with orthographic cameras.");
 			base.enabled = false;

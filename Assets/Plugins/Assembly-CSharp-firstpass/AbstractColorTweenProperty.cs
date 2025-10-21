@@ -31,11 +31,11 @@ public abstract class AbstractColorTweenProperty : AbstractTweenProperty
 		}
 		else if (owner.target is GameObject)
 		{
-			_target = ((GameObject)owner.target).renderer.material;
+			_target = ((GameObject)owner.target).GetComponent<Renderer>().material;
 		}
 		else if (owner.target is Transform)
 		{
-			_target = ((Transform)owner.target).renderer.material;
+			_target = ((Transform)owner.target).GetComponent<Renderer>().material;
 		}
 		else if (owner.target is Renderer)
 		{

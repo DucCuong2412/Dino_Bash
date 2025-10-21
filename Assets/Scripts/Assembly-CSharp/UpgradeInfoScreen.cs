@@ -77,7 +77,7 @@ public abstract class UpgradeInfoScreen<T> : BaseScreen
 
 	protected void Start()
 	{
-		infoContainer = InfoContainer.Load(base.transform.FindChild("MiddleCenter/infoContainer_position"));
+		infoContainer = InfoContainer.Load(base.transform.Find("MiddleCenter/infoContainer_position"));
 		upgradeButton = FindChildComponent<tk2dUIItem>("MiddleCenter/btn_upgrade_group/normal/btn_upgrade");
 		closeButton = FindChildComponent<StandardButton>("MiddleCenter/btn_close");
 		closeButton.clickSound = Sounds.main_close_popup;
@@ -89,7 +89,7 @@ public abstract class UpgradeInfoScreen<T> : BaseScreen
 		FX_onBuy = FindChildComponent<ParticleSystem>("MiddleCenter/FX_Stars");
 		FX_onBuy.gameObject.SetActive(false);
 		FX_Upgrade = FindChildComponent<ParticleSystem>("MiddleCenter/FX_Stars/upgrade");
-		FX_Upgrade.renderer.enabled = false;
+		FX_Upgrade.GetComponent<Renderer>().enabled = false;
 		label_upgrade_duration = FindChildComponent<LocalizedText>("MiddleCenter/label_upgrade_duration");
 		label_upgrade_duration.gameObject.SetActive(false);
 		locked_until_reached_level_label = FindChildComponent<tk2dTextMesh>("MiddleCenter/btn_upgrade_group/locked_panel/label_level");

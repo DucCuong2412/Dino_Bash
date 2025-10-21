@@ -61,7 +61,7 @@ public class ShootButton : StandardButton
 		shotType = pShotType;
 		hud = ScreenManager.GetScreen<HudScreen>();
 		dummyTarget = new GameObject("target_" + shotType).transform;
-		crosshair = base.transform.FindChild("crosshair").GetComponent<Animator>();
+		crosshair = base.transform.Find("crosshair").GetComponent<Animator>();
 		crosshair.transform.parent = dummyTarget;
 		crosshair.transform.localPosition = new Vector3(-64f, 64f, 0f);
 		SpriteTools.SetSortingLayerID(crosshair, 30);
@@ -69,10 +69,10 @@ public class ShootButton : StandardButton
 		base.uiItem.OnClick += HandleOnClick;
 		base.uiItem.OnUp += HandleOnUp;
 		base.uiItem.OnRelease += HandleOnRelease;
-		cooldownTransform = base.transform.FindChild("sprite/cooldown");
+		cooldownTransform = base.transform.Find("sprite/cooldown");
 		cooldownTransform.localScale = new Vector3(1f, 0f, 1f);
 		string text = "shotbuy_" + shotType.ToString().ToLower();
-		base.sprite = base.transform.FindChild("sprite").GetComponent<SpriteRenderer>();
+		base.sprite = base.transform.Find("sprite").GetComponent<SpriteRenderer>();
 		Sprite sprite = SpriteRessources.GetSprite(text);
 		if (sprite != null)
 		{
@@ -161,7 +161,7 @@ public class ShootButton : StandardButton
 		if (!(localPosition.magnitude < 128f))
 		{
 			Vector3 position = new Vector3(base.uiItem.Touch.position.x, base.uiItem.Touch.position.y);
-			Vector3 vector = GameCamera.Instance.camera.ScreenToWorldPoint(position);
+			Vector3 vector = GameCamera.Instance.GetComponent<Camera>().ScreenToWorldPoint(position);
 			vector.z = 0f;
 			if (handleTutorial(vector))
 			{

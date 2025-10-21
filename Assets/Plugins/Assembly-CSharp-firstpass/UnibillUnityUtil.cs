@@ -5,7 +5,7 @@ using System.Threading;
 using Uniject;
 using UnityEngine;
 
-public class UnibillUnityUtil : MonoBehaviour, IUtil
+public class UnibillUnityUtil : MonoBehaviour//, IUtil
 {
 	private static List<Action> callbacks = new List<Action>();
 
@@ -14,13 +14,13 @@ public class UnibillUnityUtil : MonoBehaviour, IUtil
 	private static List<RuntimePlatform> PCControlledPlatforms = new List<RuntimePlatform>
 	{
 		RuntimePlatform.LinuxPlayer,
-		RuntimePlatform.OSXDashboardPlayer,
+		//RuntimePlatform.OSXDashboardPlayer,
 		RuntimePlatform.OSXEditor,
 		RuntimePlatform.OSXPlayer,
-		RuntimePlatform.OSXWebPlayer,
+		//RuntimePlatform.OSXWebPlayer,
 		RuntimePlatform.WindowsEditor,
 		RuntimePlatform.WindowsPlayer,
-		RuntimePlatform.WindowsWebPlayer
+		//RuntimePlatform.WindowsWebPlayer
 	};
 
 	public DateTime currentTime
@@ -87,15 +87,15 @@ public class UnibillUnityUtil : MonoBehaviour, IUtil
 		}
 	}
 
-	object IUtil.InitiateCoroutine(IEnumerator start)
-	{
-		return StartCoroutine(start);
-	}
+	//object IUtil.InitiateCoroutine(IEnumerator start)
+	//{
+	//	return StartCoroutine(start);
+	//}
 
-	void IUtil.InitiateCoroutine(IEnumerator start, int delay)
-	{
-		delayedCoroutine(start, delay);
-	}
+	//void IUtil.InitiateCoroutine(IEnumerator start, int delay)
+	//{
+	//	delayedCoroutine(start, delay);
+	//}
 
 	public T[] getAnyComponentsOfType<T>() where T : class
 	{

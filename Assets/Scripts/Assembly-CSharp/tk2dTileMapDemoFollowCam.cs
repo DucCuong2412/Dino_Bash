@@ -25,9 +25,9 @@ public class tk2dTileMapDemoFollowCam : MonoBehaviour
 		Vector3 position2 = Vector3.MoveTowards(position, target.position, followSpeed * Time.deltaTime);
 		position2.z = position.z;
 		base.transform.position = position2;
-		if (target.rigidbody != null && cam != null)
+		if (target.GetComponent<Rigidbody>() != null && cam != null)
 		{
-			float magnitude = target.rigidbody.velocity.magnitude;
+			float magnitude = target.GetComponent<Rigidbody>().velocity.magnitude;
 			float t = Mathf.Clamp01((magnitude - minZoomSpeed) / (maxZoomSpeed - minZoomSpeed));
 			float num = Mathf.Lerp(1f, maxZoomFactor, t);
 			cam.ZoomFactor = Mathf.MoveTowards(cam.ZoomFactor, num, 0.2f * Time.deltaTime);

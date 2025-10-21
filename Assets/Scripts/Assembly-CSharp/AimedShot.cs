@@ -85,7 +85,7 @@ public class AimedShot : AbstractShot
 	private void Awake()
 	{
 		shotCollider = GetComponentInChildren<CapsuleCollider>();
-		counterScale = base.transform.FindChild("counterScale");
+		counterScale = base.transform.Find("counterScale");
 		if (crosshair == null)
 		{
 			crosshair = Object.Instantiate(crosshair_prefab) as Animator;

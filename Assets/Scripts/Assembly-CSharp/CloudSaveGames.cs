@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Xml.Serialization;
 using ICSharpCode.SharpZipLib.Zip;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 
@@ -70,7 +70,7 @@ public class CloudSaveGames : MonoBehaviour
 
 	private static readonly string CLOUD_HOST = "https://gameservices.dinobash.com";
 
-	private Var<string> var_cloud_host = Var.Define("Cloud Host", CLOUD_HOST);
+	private string var_cloud_host = CLOUD_HOST;
 
 	public void setUserProfile(FacebookManager.Profile profile)
 	{
@@ -135,7 +135,7 @@ public class CloudSaveGames : MonoBehaviour
 
 	private IEnumerator FetchSaveGame(Action<CloudSaveGame> onDone, FacebookManager.Profile profile)
 	{
-		string url = var_cloud_host.Value + "/savegames/" + profile.id + "/?" + sign(profile.id);
+		string url = var_cloud_host + "/savegames/" + profile.id + "/?" + sign(profile.id);
 		WWW www = new WWW(url);
 		yield return www;
 		if (www.responseHeaders["CONTENT-TYPE"] != "application/zip")
@@ -223,7 +223,7 @@ public class CloudSaveGames : MonoBehaviour
 
 	private IEnumerator FetchSaveGameProgress(Action<CloudSaveGameProgress> onDone, FacebookManager.Profile profile)
 	{
-		WWW www = new WWW(var_cloud_host.Value + "/savegames/" + profile.id + "/progress/?" + sign(profile.id));
+		WWW www = new WWW(var_cloud_host + "/savegames/" + profile.id + "/progress/?" + sign(profile.id));
 		yield return www;
 		if (!string.IsNullOrEmpty(www.error))
 		{
@@ -293,7 +293,7 @@ public class CloudSaveGames : MonoBehaviour
 	{
 		WWWForm form = new WWWForm();
 		form.AddBinaryData("file", bytes);
-		WWW www = new WWW(var_cloud_host.Value + "/savegames/" + facebook_id + "/?" + sign(facebook_id), form);
+		WWW www = new WWW(var_cloud_host + "/savegames/" + facebook_id + "/?" + sign(facebook_id), form);
 		yield return www;
 		int server_side_ts = 0;
 		if (string.IsNullOrEmpty(www.error) && int.TryParse(www.text, out server_side_ts))

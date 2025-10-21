@@ -131,10 +131,10 @@ public static class ScreenManager
 	public static void Initialize()
 	{
 		GameObject gameObject = UnityEngine.Object.Instantiate(Resources.Load("GUI/UICamera", typeof(GameObject))) as GameObject;
-		gameObject.camera.farClipPlane = 24064f;
+		gameObject.GetComponent<Camera>().farClipPlane = 24064f;
 		gameObject.name = "UI_Camera";
 		UnityEngine.Object.DontDestroyOnLoad(gameObject);
-		Camera = gameObject.camera;
+		Camera = gameObject.GetComponent<Camera>();
 	}
 
 	public static T LoadAndPush<T>(string prefabName = null, BaseScreen after_this_screen = null) where T : BaseScreen

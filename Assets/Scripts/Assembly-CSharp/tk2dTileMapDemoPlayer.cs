@@ -44,7 +44,7 @@ public class tk2dTileMapDemoPlayer : MonoBehaviour
 		textMesh.transform.parent = null;
 		textMeshLabel.text = "instructions";
 		textMeshLabel.Commit();
-		if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXWebPlayer || Application.platform == RuntimePlatform.OSXDashboardPlayer)
+		if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WebGLPlayer || Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer )
 		{
 			textMesh.text = "LEFT ARROW / RIGHT ARROW";
 		}
@@ -104,15 +104,15 @@ public class tk2dTileMapDemoPlayer : MonoBehaviour
 		if (AllowAddForce && moveX != 0f)
 		{
 			forceWait = addForceLimit;
-			if (base.rigidbody != null)
+			if (base.GetComponent<Rigidbody>() != null)
 			{
-				base.rigidbody.AddForce(new Vector3(moveX * amount, amount, 0f) * Time.deltaTime, ForceMode.Impulse);
-				base.rigidbody.AddTorque(new Vector3(0f, 0f, (0f - moveX) * torque) * Time.deltaTime, ForceMode.Impulse);
+				base.GetComponent<Rigidbody>().AddForce(new Vector3(moveX * amount, amount, 0f) * Time.deltaTime, ForceMode.Impulse);
+				base.GetComponent<Rigidbody>().AddTorque(new Vector3(0f, 0f, (0f - moveX) * torque) * Time.deltaTime, ForceMode.Impulse);
 			}
-			else if (base.rigidbody2D != null)
+			else if (base.GetComponent<Rigidbody2D>() != null)
 			{
-				base.rigidbody2D.AddForce(new Vector2(moveX * amount, amount) * Time.deltaTime * 50f);
-				base.rigidbody2D.AddTorque((0f - moveX) * torque * Time.deltaTime * 20f);
+				base.GetComponent<Rigidbody2D>().AddForce(new Vector2(moveX * amount, amount) * Time.deltaTime * 50f);
+				base.GetComponent<Rigidbody2D>().AddTorque((0f - moveX) * torque * Time.deltaTime * 20f);
 			}
 			moveX = 0f;
 		}

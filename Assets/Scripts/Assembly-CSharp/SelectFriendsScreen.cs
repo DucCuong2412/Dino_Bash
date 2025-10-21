@@ -38,8 +38,8 @@ public class SelectFriendsScreen : BaseScreen
 		icon_heart = base.transform.Search("icon_heart").GetComponent<SpriteRenderer>();
 		icon_friendgate = base.transform.Search("icon_friendgate").GetComponent<SpriteRenderer>();
 		icon_connecting = base.transform.Search("icon_connecting").GetComponent<SpriteRenderer>();
-		scrollView = base.transform.FindChild("MiddleCenter/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
-		entryDefinition = scrollView.transform.FindChild("Content/Friend_Entry_Definition").gameObject;
+		scrollView = base.transform.Find("MiddleCenter/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+		entryDefinition = scrollView.transform.Find("Content/Friend_Entry_Definition").gameObject;
 		entryDefinition.SetActive(false);
 		base.transform.localPosition += base.left;
 		FriendPannel select_all = FindChildComponent<FriendPannel>("MiddleCenter/select_all");

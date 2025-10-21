@@ -78,24 +78,24 @@ public class UpgradeScreen : BaseScreen
 			closeButton = base.transform.Search("btn_close").GetComponent<StandardButton>();
 			closeButton.uiItem.OnClick += OnCloseClick;
 			closeButton.clickSound = Sounds.main_close_popup;
-			dinoScrollView = base.transform.FindChild("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
-			shotScrollView = base.transform.FindChild("MiddleCenter/Shots/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
-			upgradeScrollView = base.transform.FindChild("MiddleCenter/Upgrades/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
-			dinoTabTitle = base.transform.FindChild("MiddleCenter/Dinos/Tab_Root/Tab").GetComponent<tk2dUIItem>();
+			dinoScrollView = base.transform.Find("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+			shotScrollView = base.transform.Find("MiddleCenter/Shots/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+			upgradeScrollView = base.transform.Find("MiddleCenter/Upgrades/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+			dinoTabTitle = base.transform.Find("MiddleCenter/Dinos/Tab_Root/Tab").GetComponent<tk2dUIItem>();
 			dinoTabTitle.OnClickUIItem += OnTabClick;
 			tabButtonToTab.Add(dinoTabTitle, Tab.dinos);
 			tab_titles.Add(dinoTabTitle);
-			shotTabTitle = base.transform.FindChild("MiddleCenter/Shots/Tab_Root/Tab").GetComponent<tk2dUIItem>();
+			shotTabTitle = base.transform.Find("MiddleCenter/Shots/Tab_Root/Tab").GetComponent<tk2dUIItem>();
 			shotTabTitle.OnClickUIItem += OnTabClick;
 			tabButtonToTab.Add(shotTabTitle, Tab.shots);
 			tab_titles.Add(shotTabTitle);
-			upgradeTabTitle = base.transform.FindChild("MiddleCenter/Upgrades/Tab_Root/Tab").GetComponent<tk2dUIItem>();
+			upgradeTabTitle = base.transform.Find("MiddleCenter/Upgrades/Tab_Root/Tab").GetComponent<tk2dUIItem>();
 			upgradeTabTitle.OnClickUIItem += OnTabClick;
 			tabButtonToTab.Add(upgradeTabTitle, Tab.special);
 			tab_titles.Add(upgradeTabTitle);
 			tabYStartPosition = dinoTabTitle.transform.localPosition.y;
-			tabTitleLabelColor = dinoTabTitle.transform.FindChild("title").GetComponent<tk2dTextMesh>().color;
-			entryDefinition = base.transform.FindChild("MiddleCenter/UpgradeListEntryWidget").GetComponent<UpgradeScreenListEntry>();
+			tabTitleLabelColor = dinoTabTitle.transform.Find("title").GetComponent<tk2dTextMesh>().color;
+			entryDefinition = base.transform.Find("MiddleCenter/UpgradeListEntryWidget").GetComponent<UpgradeScreenListEntry>();
 			SetupDinoEntries();
 			SetupShotEntries();
 			SetupUpgradeEntries();
@@ -127,7 +127,7 @@ public class UpgradeScreen : BaseScreen
 
 	private void SetupDinoEntries()
 	{
-		Transform parent = dinoScrollView.transform.FindChild("Content");
+		Transform parent = dinoScrollView.transform.Find("Content");
 		ArrayList arrayList = new ArrayList(Konfiguration.getDinos());
 		arrayList.Insert(3, UnitType.TRex_Jr);
 		arrayList.Insert(6, UnitType.Rocky);
@@ -148,7 +148,7 @@ public class UpgradeScreen : BaseScreen
 
 	private void SetupShotEntries()
 	{
-		Transform parent = shotScrollView.transform.FindChild("Content");
+		Transform parent = shotScrollView.transform.Find("Content");
 		ArrayList arrayList = new ArrayList(Konfiguration.getShots());
 		arrayList.Insert(2, UnitType.AdditionalShotSlot);
 		arrayList.Insert(4, UnitType.FastShotCooldown);
@@ -170,7 +170,7 @@ public class UpgradeScreen : BaseScreen
 
 	private void SetupUpgradeEntries()
 	{
-		Transform parent = upgradeScrollView.transform.FindChild("Content");
+		Transform parent = upgradeScrollView.transform.Find("Content");
 		ArrayList arrayList = new ArrayList(Konfiguration.getUpgrades());
 		arrayList.Insert(2, UnitType.Stone);
 		arrayList.Insert(3, UnitType.CoinDoubler);
@@ -276,9 +276,9 @@ public class UpgradeScreen : BaseScreen
 		tk2dUIItem tk2dUIItem2 = tab_titles[(int)tab];
 		float duration = 0.15f;
 		Color color = new Color(0.7f, 0.7f, 0.7f, 1f);
-		tk2dTextMesh component = tk2dUIItem2.transform.FindChild("title").GetComponent<tk2dTextMesh>();
+		tk2dTextMesh component = tk2dUIItem2.transform.Find("title").GetComponent<tk2dTextMesh>();
 		SpriteRenderer component2 = tk2dUIItem2.GetComponent<SpriteRenderer>();
-		tk2dBaseSprite component3 = tk2dUIItem2.transform.FindChild("bg").GetComponent<tk2dBaseSprite>();
+		tk2dBaseSprite component3 = tk2dUIItem2.transform.Find("bg").GetComponent<tk2dBaseSprite>();
 		Transform transform = tk2dUIItem2.transform.Search("FX_UpgradeTabBling(Clone)");
 		transform.gameObject.SetActive(!Player.UserHasSeenUpgradeTabs[(int)tab]);
 		if (active)
@@ -398,7 +398,7 @@ public class UpgradeScreen : BaseScreen
 		string text = "label_new";
 		count = Mathf.Clamp(count, 0, 9);
 		tk2dUIItem tk2dUIItem2 = tab_titles[(int)tab];
-		tk2dTextMesh label = tk2dUIItem2.transform.FindChild(text).GetComponent<tk2dTextMesh>();
+		tk2dTextMesh label = tk2dUIItem2.transform.Find(text).GetComponent<tk2dTextMesh>();
 		try
 		{
 			if (count == 0)

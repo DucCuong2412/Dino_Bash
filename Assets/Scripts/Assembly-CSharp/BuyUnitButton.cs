@@ -53,7 +53,7 @@ public class BuyUnitButton : StandardButton
 		cost_label.text = cost.ToString();
 		if (Konfiguration.isConsumable(unit))
 		{
-			Transform transform = base.transform.FindChild("dinobuy_panel");
+			Transform transform = base.transform.Find("dinobuy_panel");
 			GoTweenConfig goTweenConfig = new GoTweenConfig();
 			goTweenConfig.scale(1.5f);
 			goTweenConfig.localRotation(new Vector3(0f, 0f, -15f));
@@ -64,7 +64,7 @@ public class BuyUnitButton : StandardButton
 			cosumable_buy_hint.autoRemoveOnComplete = false;
 			cosumable_buy_hint.pause();
 			icon_plus = FindChildComponent<tk2dTextMesh>("dinobuy_panel/icon_plus");
-			icon_plus.renderer.enabled = false;
+			icon_plus.GetComponent<Renderer>().enabled = false;
 			cost_label.transform.parent = transform;
 			cost_label.text = Player.getConsumableCount(unit).ToString();
 			Player.OnConsumableRefill += HandleOnConsumableRefill;
@@ -72,10 +72,10 @@ public class BuyUnitButton : StandardButton
 		}
 		else
 		{
-			apple_icon = base.transform.FindChild("dinobuy_panel/icon_apple").GetComponent<SpriteRenderer>();
-			max_label = base.transform.FindChild("dinobuy_panel/label_max").GetComponent<tk2dTextMesh>();
-			max_label.renderer.enabled = false;
-			Transform apple_cost_panel = base.transform.FindChild("apple_cost");
+			apple_icon = base.transform.Find("dinobuy_panel/icon_apple").GetComponent<SpriteRenderer>();
+			max_label = base.transform.Find("dinobuy_panel/label_max").GetComponent<tk2dTextMesh>();
+			max_label.GetComponent<Renderer>().enabled = false;
+			Transform apple_cost_panel = base.transform.Find("apple_cost");
 			apple_cost_label = FindChildComponent<tk2dTextMesh>("apple_cost/label");
 			SpriteRenderer target = FindChildComponent<SpriteRenderer>("apple_cost/icon_apple");
 			GoTweenConfig config = new GoTweenConfig().colorProp("color", Colors.Invisible);
@@ -104,7 +104,7 @@ public class BuyUnitButton : StandardButton
 			_disabled = _normal;
 			sprite.sprite = _normal;
 		}
-		loaderSprite = base.transform.FindChild("cooldown");
+		loaderSprite = base.transform.Find("cooldown");
 		loaderSprite.localScale = new Vector3(1f, 0f, 1f);
 		clickSound = Sounds.None;
 		isInitalized = true;
@@ -164,8 +164,8 @@ public class BuyUnitButton : StandardButton
 	{
 		int consumableCount = Player.getConsumableCount(Unit);
 		bool flag = consumableCount == 0;
-		cost_label.renderer.enabled = !flag;
-		icon_plus.renderer.enabled = flag;
+		cost_label.GetComponent<Renderer>().enabled = !flag;
+		icon_plus.GetComponent<Renderer>().enabled = flag;
 		if (consumableCount == 0)
 		{
 			cosumable_buy_hint.restart();
@@ -208,9 +208,9 @@ public class BuyUnitButton : StandardButton
 
 	private void SetLabelActive(bool state)
 	{
-		cost_label.renderer.enabled = state;
+		cost_label.GetComponent<Renderer>().enabled = state;
 		apple_icon.enabled = state;
-		max_label.renderer.enabled = !state;
+		max_label.GetComponent<Renderer>().enabled = !state;
 	}
 
 	private void Spawn()

@@ -81,7 +81,7 @@ public class MonoBase : MonoBehaviour
 
 	protected T FindChildComponent<T>(string path) where T : Component
 	{
-		Transform transform = this.transform.FindChild(path);
+		Transform transform = this.transform.Find(path);
 		if (transform != null)
 		{
 			return transform.GetComponent<T>();

@@ -52,10 +52,10 @@ public class RainTrigger : GenericCombatBehaviour<BaseEntity>
 		yield return new WaitForSeconds(2f);
 		while (true)
 		{
-			base.collider.enabled = true;
+			base.GetComponent<Collider>().enabled = true;
 			animator.CrossFade("rain", 0.1f, 0);
 			List<BaseEntity> neanders = EntityFactory.GetEntities(false);
-			neanders.FindAll((BaseEntity neander) => neander.transform.position.x > base.collider.bounds.center.x - base.collider.bounds.extents.x && neander.transform.position.x < base.collider.bounds.center.x + base.collider.bounds.extents.x).ForEach(delegate(BaseEntity neander)
+			neanders.FindAll((BaseEntity neander) => neander.transform.position.x > base.GetComponent<Collider>().bounds.center.x - base.GetComponent<Collider>().bounds.extents.x && neander.transform.position.x < base.GetComponent<Collider>().bounds.center.x + base.GetComponent<Collider>().bounds.extents.x).ForEach(delegate(BaseEntity neander)
 			{
 				Collider component = neander.GetComponent<Collider>();
 				if (component != null)
@@ -64,7 +64,7 @@ public class RainTrigger : GenericCombatBehaviour<BaseEntity>
 				}
 			});
 			yield return new WaitForSeconds(getRainTime());
-			base.collider.enabled = false;
+			base.GetComponent<Collider>().enabled = false;
 			animator.CrossFade("idle", 0.1f, 0);
 			yield return new WaitForSeconds(getIdleTime());
 		}

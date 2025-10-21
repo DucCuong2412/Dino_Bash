@@ -117,7 +117,7 @@ namespace tk2dRuntime.TileMap
 			if (num6 > 0)
 			{
 				chunk.mesh.subMeshCount = num6;
-				chunk.gameObject.renderer.materials = list5.ToArray();
+				chunk.gameObject.GetComponent<Renderer>().materials = list5.ToArray();
 				int num7 = 0;
 				List<int>[] array3 = array;
 				foreach (List<int> list7 in array3)
@@ -179,7 +179,7 @@ namespace tk2dRuntime.TileMap
 							BuildForChunk(tileMap, chunk, chunk2, useColor, skipPrefabs, baseX, baseY);
 							if (chunk.gameObject != null && useSortingLayers)
 							{
-								Renderer renderer = chunk.gameObject.renderer;
+								Renderer renderer = chunk.gameObject.GetComponent<Renderer>();
 								if (renderer != null)
 								{
 									renderer.sortingLayerName = layerInfo.sortingLayerName;

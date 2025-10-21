@@ -111,7 +111,7 @@ public class tk2dCamera : MonoBehaviour
 		{
 			if (_unityCamera == null)
 			{
-				_unityCamera = base.camera;
+				_unityCamera = base.GetComponent<Camera>();
 				if (_unityCamera == null)
 				{
 					Debug.LogError("A unity camera must be attached to the tk2dCamera script");
@@ -280,7 +280,7 @@ public class tk2dCamera : MonoBehaviour
 		}
 		else
 		{
-			base.camera.enabled = false;
+			base.GetComponent<Camera>().enabled = false;
 		}
 		if (!viewportClippingEnabled)
 		{
@@ -497,7 +497,7 @@ public class tk2dCamera : MonoBehaviour
 			}
 		}
 		float num17 = 1f / ZoomFactor;
-		bool flag2 = Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.WindowsEditor;
+		bool flag2 = Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WebGLPlayer || Application.platform == RuntimePlatform.WindowsEditor;
 		float num18 = ((!halfTexelOffset || !flag2) ? 0f : 0.5f);
 		float num19 = settings.cameraSettings.orthographicSize;
 		switch (settings.cameraSettings.orthographicType)
@@ -547,11 +547,11 @@ public class tk2dCamera : MonoBehaviour
 			{
 				tk2dCameraResolutionOverride2.Upgrade(version);
 			}
-			Camera camera = base.camera;
+			Camera camera = base.GetComponent<Camera>();
 			if (camera != null)
 			{
 				cameraSettings.rect = camera.rect;
-				if (!camera.isOrthoGraphic)
+				if (!camera.orthographic)
 				{
 					cameraSettings.projection = tk2dCameraSettings.ProjectionType.Perspective;
 					cameraSettings.fieldOfView = camera.fieldOfView * ZoomFactor;

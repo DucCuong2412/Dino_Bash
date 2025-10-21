@@ -41,7 +41,7 @@ public class RateAppScreen : BaseScreen
 		base.gameObject.SetActive(true);
 		ShowFrom(base.right, delegate
 		{
-			base.transform.FindChild("MiddleCenter/stars").GetComponent<Animator>().Play("rate app_stars in");
+			base.transform.Find("MiddleCenter/stars").GetComponent<Animator>().Play("rate app_stars in");
 		});
 	}
 

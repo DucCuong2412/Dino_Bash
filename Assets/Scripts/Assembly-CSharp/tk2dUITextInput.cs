@@ -200,7 +200,7 @@ public class tk2dUITextInput : MonoBehaviour
 		}
 		inputLabel.text = modifiedText;
 		inputLabel.Commit();
-		while (inputLabel.renderer.bounds.extents.x * 2f > fieldLength)
+		while (inputLabel.GetComponent<Renderer>().bounds.extents.x * 2f > fieldLength)
 		{
 			modifiedText = modifiedText.Substring(1, modifiedText.Length - 1);
 			inputLabel.text = modifiedText;
@@ -343,7 +343,7 @@ public class tk2dUITextInput : MonoBehaviour
 			tk2dFontChar tk2dFontChar2 = ((!inputLabel.font.useDictionary) ? inputLabel.font.chars[32] : inputLabel.font.charDict[32]);
 			num2 += tk2dFontChar2.advance * inputLabel.scale.x / 2f;
 		}
-		cursor.transform.localPosition = new Vector3(inputLabel.transform.localPosition.x + (inputLabel.renderer.bounds.extents.x + num2) * num, cursor.transform.localPosition.y, cursor.transform.localPosition.z);
+		cursor.transform.localPosition = new Vector3(inputLabel.transform.localPosition.x + (inputLabel.GetComponent<Renderer>().bounds.extents.x + num2) * num, cursor.transform.localPosition.y, cursor.transform.localPosition.z);
 	}
 
 	private void ShowDisplayText()

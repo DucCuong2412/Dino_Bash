@@ -47,7 +47,7 @@ public class UpgradeInfoShotScreen : UpgradeInfoScreen<ShotType>
 		description.Key = item.ToString() + ".description";
 		itemPortrait = Object.Instantiate(Resources.Load<Transform>("GUI/Unlocks/Shot_" + item)) as Transform;
 		label_upgrade.Key = ((!isUnlock()) ? "upgrade" : "Buy");
-		FX_Upgrade.renderer.enabled = !isUnlock();
+		FX_Upgrade.GetComponent<Renderer>().enabled = !isUnlock();
 		infoContainer.Set(item, base.SortingLayerID, !isUnlock(), false, true);
 		upgradeButton.transform.parent.parent.LocalPosX((!isSpecialOffer) ? upgrade_button_offset : 0f);
 		stats_bg.gameObject.SetActive(!isSpecialOffer);

@@ -1,35 +1,31 @@
-using System.Collections.Generic;
-using LeanplumSDK;
+﻿using System.Collections.Generic;
 
 public class ShotDataVar
 {
-	private Var<List<object>> damageLevels;
+    private List<int> damageLevels; // Đổi thành List<int>
+    private List<float> cooldownLevels; // Đổi thành List<float>
+    private List<int> costLevels; // Đổi thành List<int>
+    private float stunDuration;
+    private List<string> level_requirements; // Đổi thành List<string>
 
-	private Var<List<object>> cooldownLevels;
+    public ShotDataVar(ShotData data)
+    {
+        // Giả sử ShotData có các thuộc tính: damageLevels (int[]), cooldownLevels (float[]), 
+        // costLevels (int[]), level_requirements (string[])
+        damageLevels = new List<int>(data.damageLevels); // Chuyển int[] thành List<int>
+        cooldownLevels = new List<float>(data.cooldownLevels); // Chuyển float[] thành List<float>
+        costLevels = new List<int>(data.costLevels); // Chuyển int[] thành List<int>
+        stunDuration = data.stunDuration; // Giữ nguyên
+        level_requirements = new List<string>(data.level_requirements); // Chuyển string[] thành List<string>
+    }
 
-	private Var<List<object>> costLevels;
-
-	private Var<float> stunDuration;
-
-	private Var<List<object>> level_requirements;
-
-	public ShotDataVar(ShotData data)
-	{
-		string text = string.Format("balancing.shot.{0}.", data.type);
-		damageLevels = Var.Define(text + "damageLevels", LeanplumHelper.toList<object>(data.damageLevels));
-		cooldownLevels = Var.Define(text + "cooldownLevels", LeanplumHelper.toList<object>(data.cooldownLevels));
-		costLevels = Var.Define(text + "costLevels", LeanplumHelper.toList<object>(data.costLevels));
-		stunDuration = Var.Define(text + "stunDuration", data.stunDuration);
-		level_requirements = Var.Define(text + "level_requirements", LeanplumHelper.toList<object>(data.level_requirements));
-	}
-
-	public ShotData apply(ShotData data)
-	{
-		data.damageLevels = LeanplumHelper.toIntArray(damageLevels);
-		data.cooldownLevels = LeanplumHelper.toFloatArray(cooldownLevels);
-		data.costLevels = LeanplumHelper.toIntArray(costLevels);
-		data.stunDuration = stunDuration.Value;
-		data.level_requirements = LeanplumHelper.toStringArray(level_requirements);
-		return data;
-	}
+    public ShotData apply(ShotData data)
+    {
+        data.damageLevels = damageLevels.ToArray(); // Chuyển List<int> thành int[]
+        data.cooldownLevels = cooldownLevels.ToArray(); // Chuyển List<float> thành float[]
+        data.costLevels = costLevels.ToArray(); // Chuyển List<int> thành int[]
+        data.stunDuration = stunDuration; // Giữ nguyên
+        data.level_requirements = level_requirements.ToArray(); // Chuyển List<string> thành string[]
+        return data;
+    }
 }

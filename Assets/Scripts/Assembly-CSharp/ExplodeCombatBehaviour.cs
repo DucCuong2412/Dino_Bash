@@ -22,7 +22,7 @@ public class ExplodeCombatBehaviour : GenericCombatBehaviour<BaseEntity>
 		{
 			Attack(x);
 		});
-		base.collider.enabled = false;
+		base.GetComponent<Collider>().enabled = false;
 		foreach (Transform item in base.transform)
 		{
 			if (item.tag == "EntityGraphics")

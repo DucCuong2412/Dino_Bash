@@ -23,16 +23,17 @@ public struct tk2dUITouch
 		deltaTime = _deltaTime;
 	}
 
-	public tk2dUITouch(Touch touch)
-	{
-		phase = touch.phase;
-		fingerId = touch.fingerId;
-		position = touch.position;
-		deltaPosition = deltaPosition;
-		deltaTime = deltaTime;
-	}
+    public tk2dUITouch(Touch touch)
+    {
+        phase = touch.phase;
+        fingerId = touch.fingerId;
+        position = touch.position;
+        deltaPosition = touch.deltaPosition;
+        deltaTime = touch.deltaTime;
+    }
 
-	public override string ToString()
+
+    public override string ToString()
 	{
 		return string.Concat(phase.ToString(), ",", fingerId, ",", position, ",", deltaPosition, ",", deltaTime);
 	}

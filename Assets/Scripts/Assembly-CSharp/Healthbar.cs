@@ -28,7 +28,7 @@ public class Healthbar : MonoBase
 		if (!isInit)
 		{
 			unit = base.transform.parent.gameObject.GetComponent<BaseEntity>();
-			base.transform.position = new Vector3(0f, unit.collider.bounds.extents.y + 200f, 0f);
+			base.transform.position = new Vector3(0f, unit.GetComponent<Collider>().bounds.extents.y + 200f, 0f);
 			bar_bg = GetComponentInChildren<tk2dSlicedSprite>();
 			bar = GetComponentInChildren<tk2dClippedSprite>();
 			if (global_max_health == -1)
@@ -112,8 +112,8 @@ public class Healthbar : MonoBase
 	{
 		if (!isVisible)
 		{
-			bar_bg.renderer.enabled = true;
-			bar.renderer.enabled = true;
+			bar_bg.GetComponent<Renderer>().enabled = true;
+			bar.GetComponent<Renderer>().enabled = true;
 			isVisible = true;
 		}
 	}
@@ -124,11 +124,11 @@ public class Healthbar : MonoBase
 		{
 			if (bar_bg != null)
 			{
-				bar_bg.renderer.enabled = false;
+				bar_bg.GetComponent<Renderer>().enabled = false;
 			}
 			if (bar != null)
 			{
-				bar.renderer.enabled = false;
+				bar.GetComponent<Renderer>().enabled = false;
 			}
 			isVisible = false;
 		}

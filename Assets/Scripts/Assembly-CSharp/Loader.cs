@@ -81,7 +81,7 @@ public class Loader : MonoBase
 			SpriteTools.SetSortingLayerID(this, 47);
 			animator.enabled = true;
 			instance = this;
-			base.collider.enabled = false;
+			base.GetComponent<Collider>().enabled = false;
 			base.gameObject.SetActive(false);
 		}
 	}
@@ -129,7 +129,7 @@ public class Loader : MonoBase
 			label_loading.Key = text;
 		}
 		isVisible = true;
-		base.collider.enabled = true;
+		base.GetComponent<Collider>().enabled = true;
 		animator.Play("in");
 		AudioPlayer.PlayGuiSFX(Sounds.main_loader_in, 0f);
 	}
@@ -168,7 +168,7 @@ public class Loader : MonoBase
 
 	private void Hide()
 	{
-		base.collider.enabled = false;
+		base.GetComponent<Collider>().enabled = false;
 		animator.Play("out", 0);
 		isVisible = false;
 		WaitThenRealtime(1f, delegate

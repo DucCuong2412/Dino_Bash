@@ -1,10 +1,10 @@
-using Unibill.Impl;
+//using Unibill.Impl;
 using UnityEngine;
 
 [AddComponentMenu("")]
 public class GooglePlayCallbackMonoBehaviour : MonoBehaviour
 {
-	private GooglePlayBillingService callback;
+	//private GooglePlayBillingService callback;
 
 	public void Awake()
 	{
@@ -12,43 +12,43 @@ public class GooglePlayCallbackMonoBehaviour : MonoBehaviour
 		Object.DontDestroyOnLoad(this);
 	}
 
-	public void Initialise(GooglePlayBillingService callback)
-	{
-		this.callback = callback;
-	}
+	////public void Initialise(GooglePlayBillingService callback)
+	////{
+	////	this.callback = callback;
+	////}
 
-	public void onProductListReceived(string json)
-	{
-		callback.onProductListReceived(json);
-	}
+	//public void onProductListReceived(string json)
+	//{
+	//	callback.onProductListReceived(json);
+	//}
 
-	public void onBillingNotSupported()
-	{
-		callback.onBillingNotSupported();
-	}
+	//public void onBillingNotSupported()
+	//{
+	//	callback.onBillingNotSupported();
+	//}
 
-	public void onPurchaseSucceeded(string productId)
-	{
-		callback.onPurchaseSucceeded(productId);
-	}
+	//public void onPurchaseSucceeded(string productId)
+	//{
+	//	callback.onPurchaseSucceeded(productId);
+	//}
 
-	public void onPurchaseRefunded(string productId)
-	{
-		callback.onPurchaseRefunded(productId);
-	}
+	//public void onPurchaseRefunded(string productId)
+	//{
+	//	callback.onPurchaseRefunded(productId);
+	//}
 
-	public void onPurchaseFailed(string productId)
-	{
-		callback.onPurchaseFailed(productId);
-	}
+	//public void onPurchaseFailed(string productId)
+	//{
+	//	callback.onPurchaseFailed(productId);
+	//}
 
-	public void onTransactionsRestored(string successString)
-	{
-		callback.onTransactionsRestored(successString);
-	}
+	//public void onTransactionsRestored(string successString)
+	//{
+	//	callback.onTransactionsRestored(successString);
+	//}
 
-	public void onInvalidPublicKey(string publicKey)
-	{
-		callback.onInvalidPublicKey(publicKey);
-	}
+	//public void onInvalidPublicKey(string publicKey)
+	//{
+	//	callback.onInvalidPublicKey(publicKey);
+	//}
 }

@@ -159,7 +159,7 @@ public class UpgradeInfoDinoScreen : UpgradeInfoScreen<UnitType>
 		SetAnimation();
 		setInfoContainer();
 		setTexts();
-		FX_Upgrade.renderer.enabled = !isUnlock() && !Konfiguration.isConsumable(item);
+		FX_Upgrade.GetComponent<Renderer>().enabled = !isUnlock() && !Konfiguration.isConsumable(item);
 		upgradeButton.transform.parent.parent.LocalPosX((!isSpecialOffer) ? upgrade_button_offset : 0f);
 		stats_bg.gameObject.SetActive(!isSpecialOffer);
 		if (isUpgrading())

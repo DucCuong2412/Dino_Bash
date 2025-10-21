@@ -1,17 +1,17 @@
 using System;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 
 public class ShopPromotions : MonoBehaviour
 {
-	private Var<bool> var_use_quantity_promotion;
+	private bool var_use_quantity_promotion;
 
-	private Var<bool> var_use_price_promotion;
+	private bool var_use_price_promotion;
 
-	private Var<string> var_promotion_id;
+	private string var_promotion_id;
 
-	private Var<int> var_promotion_duration;
+	private int var_promotion_duration;
 
 	public static bool is_price_promotion
 	{
@@ -82,7 +82,7 @@ public class ShopPromotions : MonoBehaviour
 		//Discarded unreachable code: IL_001f, IL_0045
 		try
 		{
-			return DateTime.UtcNow.AddHours(var_promotion_duration.Value);
+			return DateTime.UtcNow.AddHours(var_promotion_duration);
 		}
 		catch (Exception ex)
 		{
@@ -94,10 +94,11 @@ public class ShopPromotions : MonoBehaviour
 	private void Start()
 	{
 		App.OnStateChange += HandleOnStateChange;
-		var_promotion_id = Var.Define("store.promotion.id", "default");
-		var_use_quantity_promotion = Var.Define("store.promotion.use_quantity_promotion", false);
-		var_use_price_promotion = Var.Define("store.promotion.use_price_promotion", false);
-		var_promotion_duration = Var.Define("store.promotion.duration_in_hours", 0);
+		var_promotion_id = "default";
+
+        var_use_quantity_promotion = false;
+		var_use_price_promotion = false;
+		var_promotion_duration = 0;
 	}
 
 	private void HandleOnStateChange(App.States state)
@@ -108,14 +109,14 @@ public class ShopPromotions : MonoBehaviour
 		}
 		try
 		{
-			if (promotion_id != var_promotion_id.Value)
+			if (promotion_id != var_promotion_id)
 			{
-				promotion_id = var_promotion_id.Value;
+				promotion_id = var_promotion_id;
 				if (promotion_id != "default")
 				{
 					promotion_end_date = get_end_date();
-					Player.Instance.PlayerData.price_promo = var_use_price_promotion.Value;
-					Player.Instance.PlayerData.quantity_promo = var_use_quantity_promotion.Value;
+					Player.Instance.PlayerData.price_promo = var_use_price_promotion;
+					Player.Instance.PlayerData.quantity_promo = var_use_quantity_promotion;
 				}
 				else
 				{

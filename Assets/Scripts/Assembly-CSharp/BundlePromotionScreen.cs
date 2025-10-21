@@ -28,12 +28,12 @@ public class BundlePromotionScreen : BaseScreen
 		{
 			if (ShopItems.bundle_entry != null)
 			{
-				ShopItems.Pack packById = ShopItems.getPackById(ShopItems.bundle_entry.Value);
+				ShopItems.Pack packById = ShopItems.getPackById(ShopItems.bundle_entry);
 				if (packById != null)
 				{
 					return packById;
 				}
-				Debug.LogError("bundle_promotion: Item setup is faulty: " + ShopItems.bundle_entry.Value);
+				Debug.LogError("bundle_promotion: Item setup is faulty: " + ShopItems.bundle_entry);
 			}
 			else
 			{
@@ -49,7 +49,7 @@ public class BundlePromotionScreen : BaseScreen
 		App.Instance.paymentManager.onPurchaseAborted += handlePurchaseAborted;
 		App.Instance.paymentManager.onPurchaseFailed += handleonPurchaseFailed;
 		is_buying = true;
-		App.Instance.paymentManager.PurchasePack(pack);
+		//App.Instance.paymentManager.PurchasePack(pack);
 	}
 
 	private void handleonPurchaseFailed()
@@ -129,7 +129,7 @@ public class BundlePromotionScreen : BaseScreen
 		component.clickSound = Sounds.main_close_popup;
 		label_timer = base.transform.Search("label_timer").GetComponent<tk2dTextMesh>();
 		label_title = base.transform.Search("title_label").GetComponent<tk2dTextMesh>();
-		loader = base.transform.FindChild("MiddleCenter/loader");
+		loader = base.transform.Find("MiddleCenter/loader");
 		SetLoaderTween();
 		loader.gameObject.SetActive(false);
 		tk2dTextMesh component2 = base.transform.Search("label_percent_off").GetComponent<tk2dTextMesh>();
@@ -243,7 +243,7 @@ public class BundlePromotionScreen : BaseScreen
 
 	public static string getTitle()
 	{
-		if (ShopItems.bundle_entry.Value.Contains("starter"))
+		if (ShopItems.bundle_entry.Contains("starter"))
 		{
 			return "bundle_promotion_title_starter".Localize();
 		}

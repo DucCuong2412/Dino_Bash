@@ -110,7 +110,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour, ISpriteCollectionForceBuil
 		{
 			if (_cachedRenderer == null)
 			{
-				_cachedRenderer = base.renderer;
+				_cachedRenderer = base.GetComponent<Renderer>();
 			}
 			return _cachedRenderer;
 		}
@@ -273,7 +273,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour, ISpriteCollectionForceBuil
 		}
 		else if ((bool)Camera.main)
 		{
-			if (Camera.main.isOrthoGraphic)
+			if (Camera.main.orthographic)
 			{
 				num = Camera.main.orthographicSize;
 			}
@@ -488,7 +488,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour, ISpriteCollectionForceBuil
 				{
 					boxCollider2D.enabled = true;
 				}
-				boxCollider2D.center = new Vector2(tk2dSpriteDefinition2.colliderVertices[0].x * _scale.x, tk2dSpriteDefinition2.colliderVertices[0].y * _scale.y);
+				boxCollider2D.offset = new Vector2(tk2dSpriteDefinition2.colliderVertices[0].x * _scale.x, tk2dSpriteDefinition2.colliderVertices[0].y * _scale.y);
 				boxCollider2D.size = new Vector2(Mathf.Abs(2f * tk2dSpriteDefinition2.colliderVertices[1].x * _scale.x), Mathf.Abs(2f * tk2dSpriteDefinition2.colliderVertices[1].y * _scale.y));
 			}
 			else if (tk2dSpriteDefinition2.colliderType == tk2dSpriteDefinition.ColliderType.Mesh)
@@ -622,7 +622,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour, ISpriteCollectionForceBuil
 		}
 		if (tk2dSpriteDefinition2.physicsEngine == tk2dSpriteDefinition.PhysicsEngine.Physics3D)
 		{
-			if (base.collider != null)
+			if (base.GetComponent<Collider>() != null)
 			{
 				boxCollider = GetComponent<BoxCollider>();
 				meshCollider = GetComponent<MeshCollider>();
@@ -655,10 +655,10 @@ public abstract class tk2dBaseSprite : MonoBehaviour, ISpriteCollectionForceBuil
 				meshColliderMesh.triangles = ((!(num >= 0f)) ? tk2dSpriteDefinition2.colliderIndicesBack : tk2dSpriteDefinition2.colliderIndicesFwd);
 				meshCollider.sharedMesh = meshColliderMesh;
 				meshCollider.convex = tk2dSpriteDefinition2.colliderConvex;
-				meshCollider.smoothSphereCollisions = tk2dSpriteDefinition2.colliderSmoothSphereCollisions;
-				if ((bool)base.rigidbody)
+				//meshCollider.smoothSphereCollisions = tk2dSpriteDefinition2.colliderSmoothSphereCollisions;
+				if ((bool)base.GetComponent<Rigidbody>())
 				{
-					base.rigidbody.centerOfMass = Vector3.zero;
+					base.GetComponent<Rigidbody>().centerOfMass = Vector3.zero;
 				}
 			}
 			else if (tk2dSpriteDefinition2.colliderType != tk2dSpriteDefinition.ColliderType.None && Application.isPlaying)

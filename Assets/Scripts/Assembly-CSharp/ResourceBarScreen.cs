@@ -171,7 +171,7 @@ public class ResourceBarScreen : BaseScreen
 	{
 		hearts = new List<Animator>();
 		Transform transform = base.transform.Search("heart_definition");
-		Vector3 vector = new Vector3(transform.FindChild("heart_full").renderer.bounds.size.x * 1.05f, 0f, 0f);
+		Vector3 vector = new Vector3(transform.Find("heart_full").GetComponent<Renderer>().bounds.size.x * 1.05f, 0f, 0f);
 		for (int i = 0; i < 5; i++)
 		{
 			GameObject gameObject = UnityEngine.Object.Instantiate(transform.gameObject, transform.position + i * vector, Quaternion.identity) as GameObject;
@@ -221,7 +221,7 @@ public class ResourceBarScreen : BaseScreen
 
 	private void SetHeartFullSortingOrder(Animator heart, int order)
 	{
-		heart.transform.FindChild("heart_full").GetComponent<SpriteRenderer>().sortingOrder = order;
+		heart.transform.Find("heart_full").GetComponent<SpriteRenderer>().sortingOrder = order;
 	}
 
 	public void RemoveHeart()

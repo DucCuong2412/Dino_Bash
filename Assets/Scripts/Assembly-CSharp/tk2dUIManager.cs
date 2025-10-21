@@ -221,7 +221,7 @@ public class tk2dUIManager : MonoBehaviour
 				sortedCameras.Add(tk2dUICamera2);
 			}
 		}
-		sortedCameras.Sort((tk2dUICamera a, tk2dUICamera b) => b.camera.depth.CompareTo(a.camera.depth));
+		sortedCameras.Sort((tk2dUICamera a, tk2dUICamera b) => b.GetComponent<Camera>().depth.CompareTo(a.GetComponent<Camera>().depth));
 	}
 
 	private void Awake()

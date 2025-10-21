@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Facebook;
+//using Facebook;
 using UnityEngine;
 
 public class EditorFacebookAccessToken : MonoBehaviour
@@ -17,22 +17,22 @@ public class EditorFacebookAccessToken : MonoBehaviour
 
 	private GUIStyle greyButton;
 
-	private IEnumerator Start()
-	{
-		if (!(fbSkin != null))
-		{
-			string downloadUrl = IntegratedPluginCanvasLocation.FbSkinUrl;
-			WWW www = new WWW(downloadUrl);
-			yield return www;
-			if (www.error != null)
-			{
-				FbDebug.Error("Could not find the Facebook Skin: " + www.error);
-				yield break;
-			}
-			fbSkin = www.assetBundle.mainAsset as GUISkin;
-			www.assetBundle.Unload(false);
-		}
-	}
+	//private IEnumerator Start()
+	//{
+	//	if (!(fbSkin != null))
+	//	{
+	//		//string downloadUrl = IntegratedPluginCanvasLocation.FbSkinUrl;
+	//		//WWW www = new WWW(downloadUrl);
+	//		//yield return www;
+	//		//if (www.error != null)
+	//		//{
+	//		//	//FbDebug.Error("Could not find the Facebook Skin: " + www.error);
+	//		//	yield break;
+	//		//}
+	//		//fbSkin = www.assetBundle.mainAsset as GUISkin;
+	//		//www.assetBundle.Unload(false);
+	//	}
+	//}
 
 	private void OnGUI()
 	{
@@ -72,13 +72,13 @@ public class EditorFacebookAccessToken : MonoBehaviour
 		Rect rect = GUILayoutUtility.GetRect(content, GUI.skin.button);
 		if (GUI.Button(rect, content))
 		{
-			EditorFacebook component = FBComponentFactory.GetComponent<EditorFacebook>();
-			component.AccessToken = accessToken;
+			//EditorFacebook component = FBComponentFactory.GetComponent<EditorFacebook>();
+			//component.AccessToken = accessToken;
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["batch"] = "[{\"method\":\"GET\", \"relative_url\":\"me?fields=id\"},{\"method\":\"GET\", \"relative_url\":\"app?fields=id\"}]";
 			dictionary["method"] = "POST";
 			dictionary["access_token"] = accessToken;
-			FB.API("/", HttpMethod.GET, component.MockLoginCallback, dictionary);
+			//FB.API("/", HttpMethod.GET, component.MockLoginCallback, dictionary);
 			isLoggingIn = true;
 		}
 		GUI.enabled = true;
@@ -86,7 +86,7 @@ public class EditorFacebookAccessToken : MonoBehaviour
 		Rect rect2 = GUILayoutUtility.GetRect(content2, greyButton);
 		if (GUI.Button(rect2, content2, greyButton))
 		{
-			FBComponentFactory.GetComponent<EditorFacebook>().MockCancelledLoginCallback();
+			//FBComponentFactory.GetComponent<EditorFacebook>().MockCancelledLoginCallback();
 			Object.Destroy(this);
 		}
 		GUILayout.EndHorizontal();

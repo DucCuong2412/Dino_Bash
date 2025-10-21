@@ -1,6 +1,6 @@
 using System;
 using System.Xml.Serialization;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 
 public class ChapterData
@@ -13,8 +13,8 @@ public class ChapterData
 
 	public readonly string[] levelnames;
 
-	[XmlIgnore]
-	private Var<float> var_shop_amount_multiplier;
+
+	private float var_shop_amount_multiplier;
 
 	public int levelCount
 	{
@@ -26,14 +26,15 @@ public class ChapterData
 
 	public void RegisterVars()
 	{
-		var_shop_amount_multiplier = Var.Define("store.coin_multiplier." + name, shop_amount_multiplier);
-	}
+		var_shop_amount_multiplier = shop_amount_multiplier;
+
+    }
 
 	public void ApplyVars()
 	{
 		try
 		{
-			shop_amount_multiplier = var_shop_amount_multiplier.Value;
+			shop_amount_multiplier = var_shop_amount_multiplier;
 		}
 		catch (Exception ex)
 		{

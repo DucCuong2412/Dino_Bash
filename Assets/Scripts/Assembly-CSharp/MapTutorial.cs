@@ -109,7 +109,7 @@ public class MapTutorial : AbstractTutorialScreen
 	private LevelButton MarkCurrentLevel()
 	{
 		LevelButton levelButton = Array.Find(levels, (LevelButton x) => x.Level_ID == Player.MaxLevelID);
-		arrow.transform.RepositionAndReparent(levelButton.transform.FindChild("top/dino_icon"));
+		arrow.transform.RepositionAndReparent(levelButton.transform.Find("top/dino_icon"));
 		arrow.transform.rotation = Quaternion.identity;
 		SpriteTools.SetSortingLayerID(arrow.transform, base.SortingLayerID);
 		SpriteTools.SetSortingOrder(arrow.transform, 950);
@@ -208,7 +208,7 @@ public class MapTutorial : AbstractTutorialScreen
 		DisableMapScreens();
 		yield return null;
 		ShowDialog("Upgrade your raptor!", true);
-		Transform upgradeButton = map_screen.transform.FindChild("LowerRight/Upgrade_Button");
+		Transform upgradeButton = map_screen.transform.Find("LowerRight/Upgrade_Button");
 		arrow.transform.RepositionAndReparent(upgradeButton.transform);
 		arrow.transform.position += new Vector3(220f, 0f, 0f);
 		yield return new WaitForSeconds(1f);
@@ -239,7 +239,7 @@ public class MapTutorial : AbstractTutorialScreen
 		SpriteTools.OffsetSortingOrder(mask, 19000);
 		mask.transform.LocalPosZ(ressource_bar.transform.localPosition.z);
 		mask.transform.localScale = new Vector3(1f, 1f, 0f);
-		dino_scroll_view = upgrade_screen.transform.FindChild("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+		dino_scroll_view = upgrade_screen.transform.Find("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
 		dino_scroll_view.enabled = false;
 		StandardButton[] upgrade_buttons = dino_scroll_view.GetComponentsInChildren<StandardButton>();
 		Array.ForEach(upgrade_buttons, delegate(StandardButton x)
@@ -247,7 +247,7 @@ public class MapTutorial : AbstractTutorialScreen
 			x.uiItem.enabled = false;
 		});
 		tk2dUIItem raptor_button = Array.Find(upgrade_buttons, (StandardButton x) => x.transform.parent.name == UnitType.Raptor.ToString()).uiItem;
-		bg_panel = raptor_button.transform.parent.FindChild("bg_panel").GetComponent<tk2dUIItem>();
+		bg_panel = raptor_button.transform.parent.Find("bg_panel").GetComponent<tk2dUIItem>();
 		bg_panel.enabled = true;
 		bg_panel.OnClick += Show_UpgradeRaptor;
 		arrow.transform.RepositionAndReparent(raptor_button.transform);
@@ -275,7 +275,7 @@ public class MapTutorial : AbstractTutorialScreen
 	{
 		DisableUiItems(info_screen);
 		yield return new WaitForSeconds(1f);
-		button_upgrade = info_screen.transform.FindChild("MiddleCenter/btn_upgrade_group/normal/btn_upgrade").GetComponent<tk2dUIItem>();
+		button_upgrade = info_screen.transform.Find("MiddleCenter/btn_upgrade_group/normal/btn_upgrade").GetComponent<tk2dUIItem>();
 		button_upgrade.enabled = true;
 		arrow.transform.RepositionAndReparent(button_upgrade.transform);
 		arrow.transform.parent = null;
@@ -323,7 +323,7 @@ public class MapTutorial : AbstractTutorialScreen
 		yield return new WaitForSeconds(1f);
 		if (Konfiguration.GameConfig.Use_upgrade_timers)
 		{
-			close_button = info_screen.transform.FindChild("MiddleCenter/btn_close").GetComponent<tk2dUIItem>();
+			close_button = info_screen.transform.Find("MiddleCenter/btn_close").GetComponent<tk2dUIItem>();
 			close_button.enabled = true;
 			arrow.transform.RepositionAndReparent(close_button.transform);
 			arrow.transform.parent = null;
@@ -344,7 +344,7 @@ public class MapTutorial : AbstractTutorialScreen
 		button_upgrade.enabled = true;
 		DisableUiItems(upgrade_screen);
 		yield return new WaitForSeconds(0.5f);
-		close_button = upgrade_screen.transform.FindChild("MiddleCenter/btn_close").GetComponent<tk2dUIItem>();
+		close_button = upgrade_screen.transform.Find("MiddleCenter/btn_close").GetComponent<tk2dUIItem>();
 		close_button.enabled = true;
 		arrow.transform.RepositionAndReparent(close_button.transform);
 		arrow.transform.parent = null;
@@ -439,7 +439,7 @@ public class MapTutorial : AbstractTutorialScreen
 
 	private IEnumerator UpgradeTutorial_2nd()
 	{
-		dino_scroll_view = upgrade_screen.transform.FindChild("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+		dino_scroll_view = upgrade_screen.transform.Find("MiddleCenter/Dinos/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
 		StandardButton[] upgrade_buttons = dino_scroll_view.GetComponentsInChildren<StandardButton>();
 		tk2dUIItem raptor_button = Array.Find(upgrade_buttons, (StandardButton x) => x.transform.parent.name == UnitType.Raptor.ToString()).uiItem;
 		SpriteTools.SetSortingLayerID(arrow, upgrade_screen.SortingLayerID);

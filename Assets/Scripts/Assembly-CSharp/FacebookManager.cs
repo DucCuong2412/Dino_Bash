@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Facebook;
-using Facebook.MiniJSON;
+//using Facebook;
+//using Facebook.MiniJSON;
 using UnityEngine;
+using UnityEngine.Purchasing.MiniJSON;
 
 public class FacebookManager : ScriptableObject
 {
@@ -136,11 +137,11 @@ public class FacebookManager : ScriptableObject
 			onInitComplete();
 			return;
 		}
-		FB.Init(delegate
-		{
-			isInitialized = true;
-			onInitComplete();
-		}, onHideUnity);
+		//FB.Init(delegate
+		//{
+		//	isInitialized = true;
+		//	onInitComplete();
+		//}, onHideUnity);
 	}
 
 	private void onHideUnity(bool isUnityShown)
@@ -155,44 +156,44 @@ public class FacebookManager : ScriptableObject
 			Debug.Log("User is not logged in via facebook");
 			onDone(false);
 		}
-		FB.API("/me/permissions", HttpMethod.GET, delegate(FBResult permissions_json)
-		{
-			Debug.Log("permissions: " + permissions_json.Text);
-			IDictionary dictionary = Json.Deserialize(permissions_json.Text) as IDictionary;
-			IList list = dictionary["data"] as IList;
-			IDictionary dictionary2;
-			if (list.Count == 1)
-			{
-				dictionary2 = list[0] as IDictionary;
-			}
-			else
-			{
-				dictionary2 = new Dictionary<string, object>();
-				foreach (IDictionary item in list)
-				{
-					if (item["status"] as string == "granted")
-					{
-						dictionary2[item["permission"]] = 1;
-					}
-				}
-			}
-			bool flag = true;
-			foreach (string required_permission in required_permissions)
-			{
-				if (!dictionary2.Contains(required_permission))
-				{
-					flag = false;
-					break;
-				}
-			}
-			if (!flag)
-			{
-				Debug.Log("User has not granted all required permissions");
-				Debug.Log("required_permissions = " + string.Join(", ", required_permissions.ToArray()));
-				Debug.Log("granted_permissions  = " + permissions_json.Text);
-			}
-			onDone(flag);
-		});
+		//FB.API("/me/permissions", HttpMethod.GET, delegate(FBResult permissions_json)
+		//{
+		//	Debug.Log("permissions: " + permissions_json.Text);
+		//	IDictionary dictionary = Json.Deserialize(permissions_json.Text) as IDictionary;
+		//	IList list = dictionary["data"] as IList;
+		//	IDictionary dictionary2;
+		//	if (list.Count == 1)
+		//	{
+		//		dictionary2 = list[0] as IDictionary;
+		//	}
+		//	else
+		//	{
+		//		dictionary2 = new Dictionary<string, object>();
+		//		foreach (IDictionary item in list)
+		//		{
+		//			if (item["status"] as string == "granted")
+		//			{
+		//				dictionary2[item["permission"]] = 1;
+		//			}
+		//		}
+		//	}
+		//	bool flag = true;
+		//	foreach (string required_permission in required_permissions)
+		//	{
+		//		if (!dictionary2.Contains(required_permission))
+		//		{
+		//			flag = false;
+		//			break;
+		//		}
+		//	}
+		//	if (!flag)
+		//	{
+		//		Debug.Log("User has not granted all required permissions");
+		//		Debug.Log("required_permissions = " + string.Join(", ", required_permissions.ToArray()));
+		//		Debug.Log("granted_permissions  = " + permissions_json.Text);
+		//	}
+		//	onDone(flag);
+		//});
 	}
 
 	public void getProfile(Action<Profile> onDone)
@@ -206,18 +207,18 @@ public class FacebookManager : ScriptableObject
 		{
 			if (success)
 			{
-				FB.API("/me", HttpMethod.GET, delegate(FBResult profile_json)
-				{
-					IDictionary dictionary = Json.Deserialize(profile_json.Text) as IDictionary;
-					profile = new Profile();
-					profile.id = dictionary["id"] as string;
-					profile.first_name = dictionary["first_name"] as string;
-					profile.middle_name = dictionary["middle_name"] as string;
-					profile.last_name = dictionary["last_name"] as string;
-					string text = dictionary["email"] as string;
-					profile.email = ((text == null) ? string.Empty : text);
-					onDone(profile);
-				});
+				//FB.API("/me", HttpMethod.GET, delegate(FBResult profile_json)
+				//{
+				//	IDictionary dictionary = Json.Deserialize(profile_json.Text) as IDictionary;
+				//	profile = new Profile();
+				//	profile.id = dictionary["id"] as string;
+				//	profile.first_name = dictionary["first_name"] as string;
+				//	profile.middle_name = dictionary["middle_name"] as string;
+				//	profile.last_name = dictionary["last_name"] as string;
+				//	string text = dictionary["email"] as string;
+				//	profile.email = ((text == null) ? string.Empty : text);
+				//	onDone(profile);
+				//});
 			}
 			else
 			{
@@ -228,7 +229,7 @@ public class FacebookManager : ScriptableObject
 
 	public void Logout()
 	{
-		FB.Logout();
+		//FB.Logout();
 		profile = null;
 		App.Instance.cloudSaveGameManager.setUserProfile(profile);
 	}
@@ -244,35 +245,35 @@ public class FacebookManager : ScriptableObject
 			}
 			else
 			{
-				FB.Login(scope, delegate(FBResult result)
-				{
-					Debug.Log("FB LOGIN RESULT:" + result.Text);
-					if ("true" == (Json.Deserialize(result.Text) as IDictionary)["is_logged_in"].ToString().ToLower())
-					{
-						checkPermissions(delegate(bool has_all_required_permissions)
-						{
-							if (has_all_required_permissions)
-							{
-								getProfile(delegate(Profile profile)
-								{
-									App.Instance.cloudSaveGameManager.setUserProfile(profile);
-									onLoggedIn(has_all_required_permissions && FB.IsLoggedIn);
-									Tracking.FBConnect(profile);
-								});
-							}
-							else
-							{
-								FB.Logout();
-								Login(onLoggedIn);
-							}
-						});
-					}
-					else
-					{
-						Debug.Log("FB: User canceled login");
-						onLoggedIn(false);
-					}
-				});
+				//FB.Login(scope, delegate(FBResult result)
+				//{
+				//	Debug.Log("FB LOGIN RESULT:" + result.Text);
+				//	if ("true" == (Json.Deserialize(result.Text) as IDictionary)["is_logged_in"].ToString().ToLower())
+				//	{
+				//		checkPermissions(delegate(bool has_all_required_permissions)
+				//		{
+				//			if (has_all_required_permissions)
+				//			{
+				//				getProfile(delegate(Profile profile)
+				//				{
+				//					App.Instance.cloudSaveGameManager.setUserProfile(profile);
+				//					onLoggedIn(has_all_required_permissions && FB.IsLoggedIn);
+				//					Tracking.FBConnect(profile);
+				//				});
+				//			}
+				//			else
+				//			{
+				//				FB.Logout();
+				//				Login(onLoggedIn);
+				//			}
+				//		});
+				//	}
+				//	else
+				//	{
+				//		Debug.Log("FB: User canceled login");
+				//		onLoggedIn(false);
+				//	}
+				//});
 			}
 		});
 	}
@@ -327,31 +328,31 @@ public class FacebookManager : ScriptableObject
 		{
 			if (success)
 			{
-				FB.API("/me/invitable_friends/?fields=id,name,first_name,middle_name,last_name", HttpMethod.GET, delegate(FBResult inviteable_friends_json_)
-				{
-					if (string.IsNullOrEmpty(inviteable_friends_json_.Error))
-					{
-						string inviteable_friends_json = inviteable_friends_json_.Text;
-						FB.API("/me/friends/?fields=id,name,first_name,middle_name,last_name", HttpMethod.GET, delegate(FBResult friends_json_)
-						{
-							if (string.IsNullOrEmpty(friends_json_.Error))
-							{
-								string text = friends_json_.Text;
-								parseAndcombineFriends(text, inviteable_friends_json, requestType, onDone);
-							}
-							else
-							{
-								Debug.LogError("/me/friends/: " + friends_json_.Error);
-								onDone(null);
-							}
-						});
-					}
-					else
-					{
-						Debug.LogError("/me/invitable_friends/: " + inviteable_friends_json_.Error);
-						onDone(null);
-					}
-				});
+				//FB.API("/me/invitable_friends/?fields=id,name,first_name,middle_name,last_name", HttpMethod.GET, delegate(FBResult inviteable_friends_json_)
+				//{
+				//	if (string.IsNullOrEmpty(inviteable_friends_json_.Error))
+				//	{
+				//		string inviteable_friends_json = inviteable_friends_json_.Text;
+				//		FB.API("/me/friends/?fields=id,name,first_name,middle_name,last_name", HttpMethod.GET, delegate(FBResult friends_json_)
+				//		{
+				//			if (string.IsNullOrEmpty(friends_json_.Error))
+				//			{
+				//				string text = friends_json_.Text;
+				//				parseAndcombineFriends(text, inviteable_friends_json, requestType, onDone);
+				//			}
+				//			else
+				//			{
+				//				Debug.LogError("/me/friends/: " + friends_json_.Error);
+				//				onDone(null);
+				//			}
+				//		});
+				//	}
+				//	else
+				//	{
+				//		Debug.LogError("/me/invitable_friends/: " + inviteable_friends_json_.Error);
+				//		onDone(null);
+				//	}
+				//});
 			}
 			else
 			{
@@ -424,7 +425,7 @@ public class FacebookManager : ScriptableObject
 				dictionary["message"] = text;
 				dictionary["data"] = appRequestData.toJSON();
 				string data = appRequestData.toJSON();
-				FB.AppRequest(text, array, null, null, null, data, string.Empty);
+				//FB.AppRequest(text, array, null, null, null, data, string.Empty);
 				recordAppRequests(request_type, array);
 				Tracking.FBAppRequest(request_type);
 			}
@@ -441,35 +442,35 @@ public class FacebookManager : ScriptableObject
 		{
 			if (success)
 			{
-				FB.API("/me/apprequests", HttpMethod.GET, delegate(FBResult apprequests_json)
-				{
-					Debug.Log("App Requests: " + apprequests_json.Text);
-					IDictionary dictionary = Json.Deserialize(apprequests_json.Text) as IDictionary;
-					IList list = dictionary["data"] as IList;
-					List<AppRequest> list2 = new List<AppRequest>();
-					foreach (IDictionary item in list)
-					{
-						AppRequest appRequest = default(AppRequest);
-						appRequest.id = item["id"] as string;
-						appRequest.application_name = (item["application"] as IDictionary)["name"] as string;
-						appRequest.application_namespace = (item["application"] as IDictionary)["namespace"] as string;
-						appRequest.application_id = (item["application"] as IDictionary)["id"] as string;
-						appRequest.to_id = (item["to"] as IDictionary)["id"] as string;
-						appRequest.to_name = (item["to"] as IDictionary)["name"] as string;
-						appRequest.message = item["message"] as string;
-						DateTime.TryParse(item["created_time"] as string, out appRequest.created_time);
-						appRequest.data = AppRequestData.fromJSON(item["data"] as string);
-						if (appRequest.data.type == AppRequestType.UNKNOWN)
-						{
-							Debug.LogWarning("FB: discarding App-Request of unknown type:" + appRequest);
-						}
-						else
-						{
-							list2.Add(appRequest);
-						}
-					}
-					onDone(list2);
-				});
+				//FB.API("/me/apprequests", HttpMethod.GET, delegate(FBResult apprequests_json)
+				//{
+				//	Debug.Log("App Requests: " + apprequests_json.Text);
+				//	IDictionary dictionary = Json.Deserialize(apprequests_json.Text) as IDictionary;
+				//	IList list = dictionary["data"] as IList;
+				//	List<AppRequest> list2 = new List<AppRequest>();
+				//	foreach (IDictionary item in list)
+				//	{
+				//		AppRequest appRequest = default(AppRequest);
+				//		appRequest.id = item["id"] as string;
+				//		appRequest.application_name = (item["application"] as IDictionary)["name"] as string;
+				//		appRequest.application_namespace = (item["application"] as IDictionary)["namespace"] as string;
+				//		appRequest.application_id = (item["application"] as IDictionary)["id"] as string;
+				//		appRequest.to_id = (item["to"] as IDictionary)["id"] as string;
+				//		appRequest.to_name = (item["to"] as IDictionary)["name"] as string;
+				//		appRequest.message = item["message"] as string;
+				//		DateTime.TryParse(item["created_time"] as string, out appRequest.created_time);
+				//		appRequest.data = AppRequestData.fromJSON(item["data"] as string);
+				//		if (appRequest.data.type == AppRequestType.UNKNOWN)
+				//		{
+				//			Debug.LogWarning("FB: discarding App-Request of unknown type:" + appRequest);
+				//		}
+				//		else
+				//		{
+				//			list2.Add(appRequest);
+				//		}
+				//	}
+				//	onDone(list2);
+				//});
 			}
 			else
 			{
@@ -484,12 +485,12 @@ public class FacebookManager : ScriptableObject
 		{
 			if (success)
 			{
-				Debug.Log("deleting app request " + app_requests.id);
-				FB.API("/" + app_requests.id, HttpMethod.DELETE, delegate(FBResult result_json)
-				{
-					Debug.Log(result_json.Text);
-					onDone();
-				});
+				//Debug.Log("deleting app request " + app_requests.id);
+				//FB.API("/" + app_requests.id, HttpMethod.DELETE, delegate(FBResult result_json)
+				//{
+				//	Debug.Log(result_json.Text);
+				//	onDone();
+				//});
 			}
 			else
 			{
@@ -515,11 +516,11 @@ public class FacebookManager : ScriptableObject
 				{
 					array[i] = app_requests[i].id;
 				}
-				FB.API("/?ids=" + string.Join(",", array), HttpMethod.DELETE, delegate(FBResult apprequests_json)
-				{
-					Debug.LogWarning(apprequests_json.Text);
-					onDone();
-				});
+				//FB.API("/?ids=" + string.Join(",", array), HttpMethod.DELETE, delegate(FBResult apprequests_json)
+				//{
+				//	Debug.LogWarning(apprequests_json.Text);
+				//	onDone();
+				//});
 			}
 			else
 			{
@@ -532,6 +533,6 @@ public class FacebookManager : ScriptableObject
 	public void OpenInvitePopup()
 	{
 		string title = "FACEBOOK_INVITE_TITLE".Localize();
-		FB.AppRequest("FACEBOOK_INVITE_MESSAGE".Localize(), null, null, null, null, string.Empty, title);
+		//FB.AppRequest("FACEBOOK_INVITE_MESSAGE".Localize(), null, null, null, null, string.Empty, title);
 	}
 }

@@ -18,7 +18,7 @@ public class CollectableUnit : BaseEntity
 	public override void stateDie()
 	{
 		base.stateDie();
-		base.collider.enabled = false;
+		base.GetComponent<UnityEngine.Collider>().enabled = false;
 		base.animator.CrossFade("destroyed", 0.2f);
 	}
 

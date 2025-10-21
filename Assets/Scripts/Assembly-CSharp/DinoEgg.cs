@@ -76,7 +76,7 @@ public class DinoEgg : BaseEntity
 	{
 		base.stateDie();
 		base.animator.SetInteger(healthParameter, 0);
-		base.collider.enabled = false;
+		base.GetComponent<Collider>().enabled = false;
 		Level.Instance.stateLost();
 	}
 

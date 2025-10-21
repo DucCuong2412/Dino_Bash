@@ -33,7 +33,7 @@ public abstract class ShopScreen : BaseScreen
 		App.Instance.paymentManager.onPurchaseAborted += handlePurchaseAborted;
 		App.Instance.paymentManager.onPurchaseFailed += handleonPurchaseFailed;
 		is_buying = true;
-		App.Instance.paymentManager.PurchasePack(pack);
+		//App.Instance.paymentManager.PurchasePack(pack);
 	}
 
 	private void handleonPurchaseFailed()
@@ -117,12 +117,12 @@ public abstract class ShopScreen : BaseScreen
 
 	private void Start()
 	{
-		shopItems.Add(base.transform.FindChild("MiddleCenter/pack_0"));
-		shopItems.Add(base.transform.FindChild("MiddleCenter/pack_1"));
-		shopItems.Add(base.transform.FindChild("MiddleCenter/pack_2"));
-		shopItems.Add(base.transform.FindChild("MiddleCenter/pack_3"));
-		shopItems.Add(base.transform.FindChild("MiddleCenter/pack_4"));
-		loader = base.transform.FindChild("MiddleCenter/loader");
+		shopItems.Add(base.transform.Find("MiddleCenter/pack_0"));
+		shopItems.Add(base.transform.Find("MiddleCenter/pack_1"));
+		shopItems.Add(base.transform.Find("MiddleCenter/pack_2"));
+		shopItems.Add(base.transform.Find("MiddleCenter/pack_3"));
+		shopItems.Add(base.transform.Find("MiddleCenter/pack_4"));
+		loader = base.transform.Find("MiddleCenter/loader");
 		SetLoaderTween();
 		loader.gameObject.SetActive(false);
 		foreach (Transform shopItem in shopItems)
@@ -140,11 +140,11 @@ public abstract class ShopScreen : BaseScreen
 
 	protected virtual void SetupShop()
 	{
-		promotion_timer = base.transform.FindChild("MiddleCenter/offer_end/offer_time_label").GetComponent<tk2dTextMesh>();
+		promotion_timer = base.transform.Find("MiddleCenter/offer_end/offer_time_label").GetComponent<tk2dTextMesh>();
 		promotion_timer.transform.parent.gameObject.SetActive(ShopPromotions.is_sale);
-		Transform transform = base.transform.FindChild("MiddleCenter/special_offer");
+		Transform transform = base.transform.Find("MiddleCenter/special_offer");
 		transform.gameObject.SetActive(!ShopPromotions.is_sale);
-		Transform transform2 = base.transform.FindChild("MiddleCenter/best_price");
+		Transform transform2 = base.transform.Find("MiddleCenter/best_price");
 		transform2.gameObject.SetActive(!ShopPromotions.is_sale);
 	}
 

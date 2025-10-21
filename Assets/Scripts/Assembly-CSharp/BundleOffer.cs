@@ -1,19 +1,19 @@
 using System;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 
 public class BundleOffer : MonoBehaviour
 {
-	private static Var<string> var_bundle_id;
+	private static string var_bundle_id;
 
-	private static Var<int> var_bundle_hours;
+	private static int var_bundle_hours;
 
-	private static Var<int> var_blizzard_amount;
+	private static int var_blizzard_amount;
 
-	private static Var<int> var_megaball_amount;
+	private static int var_megaball_amount;
 
-	private static Var<float> var_percentOff;
+	private static float var_percentOff;
 
 	private DateTime time;
 
@@ -21,15 +21,16 @@ public class BundleOffer : MonoBehaviour
 	{
 		get
 		{
-			return var_blizzard_amount.Value;
-		}
-	}
+            return blizzard_amount;
+
+        }
+    }
 
 	public static int megaball_amount
 	{
 		get
 		{
-			return var_megaball_amount.Value;
+			return var_megaball_amount;
 		}
 	}
 
@@ -37,7 +38,7 @@ public class BundleOffer : MonoBehaviour
 	{
 		get
 		{
-			return var_percentOff.Value;
+			return var_percentOff;
 		}
 	}
 
@@ -120,11 +121,11 @@ public class BundleOffer : MonoBehaviour
 	private void Start()
 	{
 		App.OnStateChange += HandleOnStateChange;
-		var_bundle_id = Var.Define("store.bundle.id", "default");
-		var_bundle_hours = Var.Define("store.bundle.duration_in_hours", 0);
-		var_blizzard_amount = Var.Define("store.bundle.reward_blizzard_amount", 5);
-		var_megaball_amount = Var.Define("store.bundle.reward_megaball_amount", 3);
-		var_percentOff = Var.Define("store.bundle.label_percent_off", 0.8f);
+		var_bundle_id = "default";
+		var_bundle_hours = 0;
+		var_blizzard_amount = 5;
+		var_megaball_amount = 3;
+		var_percentOff = 0.8f;
 		time = DateTime.UtcNow;
 	}
 
@@ -136,25 +137,25 @@ public class BundleOffer : MonoBehaviour
 		}
 		try
 		{
-			if (bundle_id != var_bundle_id.Value)
+			if (bundle_id != var_bundle_id)
 			{
-				bundle_id = var_bundle_id.Value;
+				bundle_id = var_bundle_id;
 				if (bundle_id != "default")
 				{
 					is_offered = true;
-					offer_end = DateTime.UtcNow.AddHours(var_bundle_hours.Value);
+					offer_end = DateTime.UtcNow.AddHours(var_bundle_hours);
 				}
 				else
 				{
 					is_offered = false;
 					offer_end = DateTime.UtcNow;
 				}
-				Debug.Log(string.Format("bundle_promotion: id:{3} offered:{0} ends:{1} item:{2}", is_offered, offer_end, ShopItems.bundle_entry.Value, bundle_id));
+				Debug.Log(string.Format("bundle_promotion: id:{3} offered:{0} ends:{1} item:{2}", is_offered, offer_end, ShopItems.bundle_entry, bundle_id));
 			}
 		}
 		catch (Exception ex)
 		{
-			Debug.LogError("bundle_promotion: had an error - probably due to faulty input: " + ex.Message + ex.StackTrace);
+			Debug.LogError("bundle_promotion: had an error - probably due to faulty input: " + ex + ex);
 			is_offered = false;
 			offer_end = DateTime.UtcNow;
 		}

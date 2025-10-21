@@ -115,7 +115,7 @@ public class AudioPlayer : MonoBase
 		source.maxDistance = 8192f;
 		source.dopplerLevel = 0f;
 		source.rolloffMode = AudioRolloffMode.Custom;
-		source.panLevel = 0.5f;
+		source.spatialBlend = 0.5f;
 	}
 
 	public static void PlayGameSFX(AudioSource source, AudioResources.SFX sfx, bool forcePlay = false)

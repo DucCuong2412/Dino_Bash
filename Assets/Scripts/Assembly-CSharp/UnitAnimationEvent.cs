@@ -38,7 +38,7 @@ public class UnitAnimationEvent : MonoBase
 
 	private void PlayParticleSystem(string path)
 	{
-		Transform transform = base.transform.FindChild(path);
+		Transform transform = base.transform.Find(path);
 		if (transform != null)
 		{
 			ParticleSystem component = transform.GetComponent<ParticleSystem>();

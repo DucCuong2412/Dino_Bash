@@ -91,18 +91,18 @@ public class LevelButton : MonoBehaviour
 			{
 				if (level_id == Player.MaxLevelID - 1 && !Player.HasPlayedMaxLevelID)
 				{
-					Animator component = base.transform.FindChild("top/LevelButtonWin").GetComponent<Animator>();
+					Animator component = base.transform.Find("top/LevelButtonWin").GetComponent<Animator>();
 					component.Play("win in", 0, Random.value);
 				}
 				else
 				{
-					Animator component2 = base.transform.FindChild("top/LevelButtonWin").GetComponent<Animator>();
+					Animator component2 = base.transform.Find("top/LevelButtonWin").GetComponent<Animator>();
 					component2.Play("win loop", 0, Random.value);
 				}
 			}
 			else
 			{
-				Animator component3 = base.transform.FindChild("top/LevelButtonWin").GetComponent<Animator>();
+				Animator component3 = base.transform.Find("top/LevelButtonWin").GetComponent<Animator>();
 				component3.Play("level_button_no_haekchen");
 			}
 		}
@@ -201,7 +201,7 @@ public class LevelButton : MonoBehaviour
 				{
 					special_icon.sprite = lv_tatze;
 				}
-				base.transform.FindChild("top/LevelButtonWin/check").GetComponent<SpriteRenderer>().enabled = false;
+				base.transform.Find("top/LevelButtonWin/check").GetComponent<SpriteRenderer>().enabled = false;
 			}
 			if ((levelData.is_friend_gate || level_id < Player.MaxLevelID) && !levelData.endless_mode)
 			{
@@ -212,12 +212,12 @@ public class LevelButton : MonoBehaviour
 
 	public void Start()
 	{
-		border = base.transform.FindChild("top/border");
-		label = base.transform.FindChild("top/border/label").GetComponent<tk2dTextMesh>();
-		unlock_icon = base.transform.FindChild("top/dino_icon").GetComponent<SpriteRenderer>();
-		selection = base.transform.FindChild("top/selection");
-		special_icon = base.transform.FindChild("top/lv/special_icon").GetComponent<SpriteRenderer>();
-		friend_gate_sprite = base.transform.FindChild("top/friendgate");
+		border = base.transform.Find("top/border");
+		label = base.transform.Find("top/border/label").GetComponent<tk2dTextMesh>();
+		unlock_icon = base.transform.Find("top/dino_icon").GetComponent<SpriteRenderer>();
+		selection = base.transform.Find("top/selection");
+		special_icon = base.transform.Find("top/lv/special_icon").GetComponent<SpriteRenderer>();
+		friend_gate_sprite = base.transform.Find("top/friendgate");
 		button = GetComponentInChildren<StandardButton>();
 		button.clickSound = Sounds.map_waypoint;
 	}

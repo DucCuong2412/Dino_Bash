@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using GooglePlayGames;
+//using GooglePlayGames;
 using UnityEngine;
 using dinobash;
 
@@ -88,7 +88,7 @@ public class SocialGamingManager
 	{
 		if (!_initialized)
 		{
-			PlayGamesPlatform.Activate();
+			//PlayGamesPlatform.Activate();
 			_initialized = true;
 		}
 		if (onDone != null)
@@ -132,10 +132,10 @@ public class SocialGamingManager
 	{
 		if (isAuthenticated)
 		{
-			if ((PlayGamesPlatform)Social.Active != null)
-			{
-				progress /= 100.0;
-			}
+			//if ((PlayGamesPlatform)Social.Active != null)
+			//{
+			//	progress /= 100.0;
+			//}
 			Social.ReportProgress(achievement_id, progress, onDone);
 		}
 		else if (onDone != null)
@@ -270,13 +270,13 @@ public class SocialGamingManager
 		{
 			if (success && App.State == App.States.StartScreen)
 			{
-				if (leaderboard_id == null || leaderboard_id.Length == 0 || (PlayGamesPlatform)Social.Active == null)
+				if (leaderboard_id == null || leaderboard_id.Length == 0 )
 				{
 					Social.ShowLeaderboardUI();
 				}
 				else
 				{
-					((PlayGamesPlatform)Social.Active).ShowLeaderboardUI(leaderboard_id);
+					//((PlayGamesPlatform)Social.Active).ShowLeaderboardUI(leaderboard_id);
 				}
 			}
 			if (onDone != null && App.State == App.States.StartScreen)

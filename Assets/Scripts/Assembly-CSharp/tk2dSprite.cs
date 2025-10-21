@@ -167,9 +167,9 @@ public class tk2dSprite : tk2dBaseSprite
 
 	protected override void UpdateMaterial()
 	{
-		if (base.renderer.sharedMaterial != collectionInst.spriteDefinitions[base.spriteId].materialInst)
+		if (base.GetComponent<Renderer>().sharedMaterial != collectionInst.spriteDefinitions[base.spriteId].materialInst)
 		{
-			base.renderer.material = collectionInst.spriteDefinitions[base.spriteId].materialInst;
+			base.GetComponent<Renderer>().material = collectionInst.spriteDefinitions[base.spriteId].materialInst;
 		}
 	}
 

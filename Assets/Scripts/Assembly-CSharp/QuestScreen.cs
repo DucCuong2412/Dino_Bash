@@ -172,12 +172,12 @@ public class QuestScreen : BaseScreen
 			.onComplete(delegate
 			{
 				Go.to(checkmark, 0.4f, new GoTweenConfig().scale(Vector3.one * 1.5f).setEaseType(GoEaseType.BounceOut));
-				button_done.collider.enabled = true;
+				button_done.GetComponent<Collider>().enabled = true;
 				button_done.uiItem.OnClick += delegate
 				{
 					Tracking.quest_redeemed(quest.id);
 					closebutton.uiItem.enabled = true;
-					button_done.collider.enabled = false;
+					button_done.GetComponent<Collider>().enabled = false;
 					fx.gameObject.SetActive(true);
 					btn_panel_tween.playBackwards();
 					Go.to(quest_panel, 0.3f, new GoTweenConfig().setDelay(0.5f).localPosition(initial_position).scale(Vector3.one)

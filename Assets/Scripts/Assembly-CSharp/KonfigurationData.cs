@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 
@@ -14,12 +14,12 @@ public class KonfigurationData
 	public int Start_Diamonds;
 
 	[XmlIgnore]
-	private Var<List<object>> var_appleCollectRate;
+	private List<object> var_appleCollectRate;
 
 	public float[] AppleCollectRate;
 
 	[XmlIgnore]
-	private Var<List<object>> var_appleUpgradeCost;
+	private List<object> var_appleUpgradeCost;
 
 	public int[] AppleUpgradeCost;
 
@@ -30,17 +30,17 @@ public class KonfigurationData
 	public int appleBoostAmount = 25;
 
 	[XmlIgnore]
-	private Var<int> var_appleBoostAmount;
+	private int var_appleBoostAmount;
 
 	public int consumable_unlock_fill = 3;
 
 	[XmlIgnore]
-	private Var<int> var_consumable_unlock_fill;
+	private int var_consumable_unlock_fill;
 
 	public SerializableDictionary<UnitType, int> ConsumableRefillValues;
 
 	[XmlIgnore]
-	private Dictionary<UnitType, Var<int>> var_ConsumableRefillValues = new Dictionary<UnitType, Var<int>>();
+	private Dictionary<UnitType, int> var_ConsumableRefillValues = new Dictionary<UnitType, int>();
 
 	public int CoinBonusForTappingOnNotification = 5000;
 
@@ -53,217 +53,217 @@ public class KonfigurationData
 	private bool use_skip_intro;
 
 	[XmlIgnore]
-	private Var<bool> var_use_skip_intro;
+	private bool var_use_skip_intro;
 
 	public bool use_dragshot_feature = true;
 
 	[XmlIgnore]
-	private Var<bool> var_use_dragshot_feature;
+	private bool var_use_dragshot_feature;
 
 	public bool use_upgrade_timers = true;
 
 	[XmlIgnore]
-	private Var<bool> var_use_upgrade_timers;
+	private bool var_use_upgrade_timers;
 
 	public bool use_upgrade_locks;
 
 	[XmlIgnore]
-	private Var<bool> var_use_upgrade_locks;
+	private bool var_use_upgrade_locks;
 
 	private bool use_temp_upgrades;
 
 	[XmlIgnore]
-	private Var<bool> var_use_temp_upgrades;
+	private bool var_use_temp_upgrades;
 
 	private bool use_ShotSlot_upsell = true;
 
 	[XmlIgnore]
-	private Var<bool> var_use_ShotSlot_upsell;
+	private bool var_use_ShotSlot_upsell;
 
 	[XmlIgnore]
-	private Var<int> var_maxClientLevel;
+	private int var_maxClientLevel;
 
 	public bool show_update_prompt;
 
 	[XmlIgnore]
-	private Var<bool> var_show_app_update_prompt;
+	private bool var_show_app_update_prompt;
 
 	public bool force_app_update;
 
 	[XmlIgnore]
-	private Var<bool> var_force_app_update;
+	private bool var_force_app_update;
 
 	[XmlIgnore]
 	private int facebook_connect_interval = 3;
 
 	[XmlIgnore]
-	private Var<int> var_facebook_connect_interval;
+	private int var_facebook_connect_interval;
 
 	[XmlIgnore]
 	private int facebook_connect_reward = 1000;
 
 	[XmlIgnore]
-	private Var<int> var_facebook_connect_reward;
+	private int var_facebook_connect_reward;
 
 	public int hours_to_next_quest = 24;
 
 	[XmlIgnore]
-	private Var<int> var_hours_to_next_quest;
+	private int var_hours_to_next_quest;
 
 	public int first_quest_level = 7;
 
 	[XmlIgnore]
-	private Var<int> var_first_quest_level;
+	private int var_first_quest_level;
 
 	public int special_offer_start_level = 16;
 
 	[XmlIgnore]
-	private Var<int> var_special_offer_start_level;
+	private int var_special_offer_start_level;
 
 	public int special_offer_loss_count;
 
 	[XmlIgnore]
-	private Var<int> var_special_offer_loss_count;
+	private int var_special_offer_loss_count;
 
 	public float specialOfferSaveRate = 0.5f;
 
 	[XmlIgnore]
-	private Var<float> var_specialOfferSaveRate;
+	private float var_specialOfferSaveRate;
 
 	public int friendGateDiamondCost;
 
 	[XmlIgnore]
-	private Var<int> var_friendGateDiamondCost;
+	private int var_friendGateDiamondCost;
 
 	public int refillLivesDiamondCost;
 
 	[XmlIgnore]
-	private Var<int> var_refillLivesDiamondCost;
+	private int var_refillLivesDiamondCost;
 
 	public int lifeRefillIntervall = 1800;
 
 	[XmlIgnore]
-	private Var<int> var_lifeRefillIntervall;
+	private int var_lifeRefillIntervall;
 
 	public float neanderRushInterval = 8f;
 
 	[XmlIgnore]
-	private Var<float> var_neanderRushInterval;
+	private float var_neanderRushInterval;
 
 	public int neanderRushUnits = 4;
 
 	[XmlIgnore]
-	private Var<int> var_neanderRushUnits;
+	private int var_neanderRushUnits;
 
 	public float replayFactor = 0.05f;
 
 	[XmlIgnore]
-	private Var<float> var_replayFactor;
+	private float var_replayFactor;
 
 	public float win_loss_influce = 0.05f;
 
 	[XmlIgnore]
-	private Var<float> var_win_loss_influce;
+	private float var_win_loss_influce;
 
 	public int win_loss_maxCount = 6;
 
 	[XmlIgnore]
-	private Var<int> var_win_loss_maxCount;
+	private int var_win_loss_maxCount;
 
 	private int level_grind_spread = 3;
 
 	[XmlIgnore]
-	private Var<int> var_level_grind_spread;
+	private int var_level_grind_spread;
 
 	private float level_grind_factor = 0.3f;
 
 	[XmlIgnore]
-	private Var<float> var_level_grind_factor;
+	private float var_level_grind_factor;
 
 	public float dino_rage_threshold = 0.75f;
 
 	[XmlIgnore]
-	private Var<float> var_dino_rage_threshold;
+	private float var_dino_rage_threshold;
 
 	public int dino_rage_cost = 5;
 
 	[XmlIgnore]
-	private Var<int> var_dino_rage_cost;
+	private int var_dino_rage_cost;
 
 	public int dino_rage_start_level = 18;
 
 	[XmlIgnore]
-	private Var<int> var_dino_rage_start_level;
+	private int var_dino_rage_start_level;
 
 	public float dino_rage_duration = 12f;
 
 	[XmlIgnore]
-	private Var<float> var_dino_rage_duration;
+	private float var_dino_rage_duration;
 
 	public int dino_rage_apples = 50;
 
 	[XmlIgnore]
-	private Var<int> var_dino_rage_apples;
+	private int var_dino_rage_apples;
 
 	public int dino_rage_loose_count = 2;
 
 	[XmlIgnore]
-	private Var<int> var_dino_rage_loose_count;
+	private int var_dino_rage_loose_count;
 
 	public int show_rate_prompt_level = 6;
 
 	[XmlIgnore]
-	private Var<int> var_show_rate_prompt_level;
+	private int var_show_rate_prompt_level;
 
 	public int show_rate_prompt_frequency = 4;
 
 	[XmlIgnore]
-	private Var<int> var_show_rate_prompt_frequency;
+	private int var_show_rate_prompt_frequency;
 
 	public string iOSPre7RateURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=895462868";
 
 	[XmlIgnore]
-	private Var<string> var_iOSPre7RateURL;
+	private string var_iOSPre7RateURL;
 
 	public string iOSPost7RateURL = "itms-apps://itunes.apple.com/app/id895462868";
 
 	[XmlIgnore]
-	private Var<string> var_iOSPost7RateURL;
+	private string var_iOSPost7RateURL;
 
 	public string googlePlayRateURL = "market://details?id=com.pokokostudio.dinobash";
 
 	[XmlIgnore]
-	private Var<string> var_googlePlayRateURL;
+	private string var_googlePlayRateURL;
 
 	[XmlIgnore]
 	private string moregamesURL_iOS = "http://spot.tilting-point.com/dinobash-ios/?idfa=";
 
 	[XmlIgnore]
-	private Var<string> var_moregamesURL_iOS;
+	private string var_moregamesURL_iOS;
 
 	[XmlIgnore]
 	private string moregamesURL_Android = "http://spot.tilting-point.com/dinobash-android/?&andi=";
 
 	[XmlIgnore]
-	private Var<string> var_moregamesURL_Android;
+	private string var_moregamesURL_Android;
 
 	[XmlIgnore]
 	private string verfiy_url_android = "https://gameservices.dinobash.com/iapvalidate/android/";
 
 	[XmlIgnore]
-	private Var<string> var_verfiy_url_android;
+	private string var_verfiy_url_android;
 
 	[XmlIgnore]
 	private string verfiy_url_ios = "https://gameservices.dinobash.com/iapvalidate/ios/";
 
 	[XmlIgnore]
-	private Var<string> var_verfiy_url_ios;
+	private string var_verfiy_url_ios;
 
 	public int AppleBoostAmount
 	{
 		get
 		{
-			return var_appleBoostAmount.Value;
+			return var_appleBoostAmount;
 		}
 	}
 
@@ -271,7 +271,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_use_skip_intro.Value;
+			return var_use_skip_intro;
 		}
 	}
 
@@ -279,7 +279,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_use_dragshot_feature.Value;
+			return var_use_dragshot_feature;
 		}
 	}
 
@@ -287,7 +287,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_use_upgrade_timers.Value;
+			return var_use_upgrade_timers;
 		}
 	}
 
@@ -297,7 +297,7 @@ public class KonfigurationData
 		{
 			if (Use_upgrade_timers)
 			{
-				return var_use_upgrade_locks.Value;
+				return var_use_upgrade_locks;
 			}
 			return false;
 		}
@@ -307,7 +307,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_use_temp_upgrades.Value;
+			return var_use_temp_upgrades;
 		}
 	}
 
@@ -315,7 +315,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_use_ShotSlot_upsell.Value;
+			return var_use_ShotSlot_upsell;
 		}
 	}
 
@@ -323,7 +323,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_maxClientLevel.Value;
+			return var_maxClientLevel;
 		}
 	}
 
@@ -331,7 +331,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_show_app_update_prompt.Value;
+			return var_show_app_update_prompt;
 		}
 	}
 
@@ -339,7 +339,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_force_app_update.Value;
+			return var_force_app_update;
 		}
 	}
 
@@ -347,7 +347,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_facebook_connect_interval.Value;
+			return var_facebook_connect_interval;
 		}
 	}
 
@@ -355,7 +355,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return Mathf.RoundToInt((float)var_facebook_connect_reward.Value * Konfiguration.GetChapterData(Player.MaxLevelID).shop_amount_multiplier);
+			return Mathf.RoundToInt((float)var_facebook_connect_reward * Konfiguration.GetChapterData(Player.MaxLevelID).shop_amount_multiplier);
 		}
 	}
 
@@ -363,7 +363,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_hours_to_next_quest.Value;
+			return var_hours_to_next_quest;
 		}
 	}
 
@@ -371,7 +371,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_first_quest_level.Value;
+			return var_first_quest_level;
 		}
 	}
 
@@ -379,7 +379,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_special_offer_start_level.Value;
+			return var_special_offer_start_level;
 		}
 	}
 
@@ -387,7 +387,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_special_offer_loss_count.Value;
+			return var_special_offer_loss_count;
 		}
 	}
 
@@ -395,7 +395,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_specialOfferSaveRate.Value;
+			return var_specialOfferSaveRate;
 		}
 	}
 
@@ -403,7 +403,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_friendGateDiamondCost.Value;
+			return var_friendGateDiamondCost;
 		}
 	}
 
@@ -411,7 +411,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_refillLivesDiamondCost.Value;
+			return var_refillLivesDiamondCost;
 		}
 	}
 
@@ -419,7 +419,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_lifeRefillIntervall.Value;
+			return var_lifeRefillIntervall;
 		}
 	}
 
@@ -427,7 +427,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_neanderRushInterval.Value;
+			return var_neanderRushInterval;
 		}
 	}
 
@@ -435,7 +435,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_neanderRushUnits.Value;
+			return var_neanderRushUnits;
 		}
 	}
 
@@ -443,7 +443,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_replayFactor.Value;
+			return var_replayFactor;
 		}
 	}
 
@@ -451,7 +451,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_win_loss_influce.Value;
+			return var_win_loss_influce;
 		}
 	}
 
@@ -459,7 +459,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_win_loss_maxCount.Value;
+			return var_win_loss_maxCount;
 		}
 	}
 
@@ -467,7 +467,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_level_grind_spread.Value;
+			return var_level_grind_spread;
 		}
 	}
 
@@ -475,7 +475,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_level_grind_factor.Value;
+			return var_level_grind_factor;
 		}
 	}
 
@@ -483,7 +483,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_threshold.Value;
+			return var_dino_rage_threshold;
 		}
 	}
 
@@ -491,7 +491,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_cost.Value;
+			return var_dino_rage_cost;
 		}
 	}
 
@@ -499,7 +499,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_start_level.Value;
+			return var_dino_rage_start_level;
 		}
 	}
 
@@ -507,7 +507,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_duration.Value;
+			return var_dino_rage_duration;
 		}
 	}
 
@@ -515,7 +515,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_apples.Value;
+			return var_dino_rage_apples;
 		}
 	}
 
@@ -523,7 +523,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_dino_rage_loose_count.Value;
+			return var_dino_rage_loose_count;
 		}
 	}
 
@@ -531,7 +531,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_show_rate_prompt_level.Value;
+			return var_show_rate_prompt_level;
 		}
 	}
 
@@ -539,7 +539,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_show_rate_prompt_frequency.Value;
+			return var_show_rate_prompt_frequency;
 		}
 	}
 
@@ -547,7 +547,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_iOSPre7RateURL.Value;
+			return var_iOSPre7RateURL;
 		}
 	}
 
@@ -555,7 +555,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_iOSPost7RateURL.Value;
+			return var_iOSPost7RateURL;
 		}
 	}
 
@@ -563,7 +563,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_googlePlayRateURL.Value;
+			return var_googlePlayRateURL;
 		}
 	}
 
@@ -571,7 +571,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_moregamesURL_iOS.Value;
+			return var_moregamesURL_iOS;
 		}
 	}
 
@@ -579,7 +579,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_moregamesURL_Android.Value;
+			return var_moregamesURL_Android;
 		}
 	}
 
@@ -587,7 +587,7 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_verfiy_url_android.Value;
+			return var_verfiy_url_android;
 		}
 	}
 
@@ -595,84 +595,89 @@ public class KonfigurationData
 	{
 		get
 		{
-			return var_verfiy_url_ios.Value;
+			return var_verfiy_url_ios;
 		}
 	}
 
-	public void init()
-	{
-		var_use_skip_intro = Var.Define("feature.skip_intro_enabled", use_skip_intro);
-		var_use_dragshot_feature = Var.Define("feature.dragshot_enabled", use_dragshot_feature);
-		var_use_upgrade_timers = Var.Define("feature.use_upgrade_timers", use_upgrade_timers);
-		var_use_upgrade_locks = Var.Define("feature.use_upgrade_locks", use_upgrade_locks);
-		var_use_temp_upgrades = Var.Define("feature.use_temp_upgrades", use_temp_upgrades);
-		var_use_ShotSlot_upsell = Var.Define("feature.use_ShotSlot_upsell", use_ShotSlot_upsell);
-		var_maxClientLevel = Var.Define("game.maxClientLevel", 81);
-		var_show_app_update_prompt = Var.Define("game.show_update_prompt", show_update_prompt);
-		var_force_app_update = Var.Define("game.force_app_update", force_app_update);
-		var_hours_to_next_quest = Var.Define("quest.hours_to_next_quest", hours_to_next_quest);
-		var_first_quest_level = Var.Define("quest.first_quest_level", first_quest_level);
-		var_special_offer_start_level = Var.Define("special_offer.start_level", special_offer_start_level);
-		var_special_offer_loss_count = Var.Define("special_offer.loss_count", special_offer_loss_count);
-		var_specialOfferSaveRate = Var.Define("special_offer.save_rate", specialOfferSaveRate);
-		var_facebook_connect_reward = Var.Define("facebook.login_reward", facebook_connect_reward);
-		var_facebook_connect_interval = Var.Define("facebook.show_reward_login_interval", facebook_connect_interval);
-		var_friendGateDiamondCost = Var.Define("friendgate.DiamondCost", friendGateDiamondCost);
-		var_refillLivesDiamondCost = Var.Define("lives.refill_cost", refillLivesDiamondCost);
-		var_lifeRefillIntervall = Var.Define("lives.refill_interval_in_seconds", lifeRefillIntervall);
-		var_neanderRushUnits = Var.Define("level.CavemanRushUnits", neanderRushUnits);
-		var_neanderRushInterval = Var.Define("level.CavemanRushInterval", neanderRushInterval);
-		var_level_grind_factor = Var.Define("level.grind_factor", level_grind_factor);
-		var_level_grind_spread = Var.Define("level.grind_spread", level_grind_spread);
-		var_replayFactor = Var.Define("level.replayFactor", replayFactor);
-		var_win_loss_influce = Var.Define("level.win_loss_influce", win_loss_influce);
-		var_win_loss_maxCount = Var.Define("level.win_loss_maxCount", win_loss_maxCount);
-		var_appleBoostAmount = Var.Define("level.appleBoostAmount", appleBoostAmount);
-		var_appleCollectRate = Var.Define("level.appleCollectRate", LeanplumHelper.toListObject(AppleCollectRate));
-		var_appleUpgradeCost = Var.Define("level.appleUpgradeCost", LeanplumHelper.toListObject(AppleUpgradeCost));
-		var_consumable_unlock_fill = Var.Define("level.consumable_unlock_fill", consumable_unlock_fill);
-		foreach (KeyValuePair<UnitType, int> consumableRefillValue in ConsumableRefillValues)
-		{
-			string name = string.Format("level.consumable_refill_values.{0}.", consumableRefillValue.Key);
-			Var<int> value = Var.Define(name, consumableRefillValue.Value);
-			var_ConsumableRefillValues.Add(consumableRefillValue.Key, value);
-		}
-		var_dino_rage_threshold = Var.Define("dinorage.dino_rage_threshold", dino_rage_threshold);
-		var_dino_rage_cost = Var.Define("dinorage.dino_rage_cost", dino_rage_cost);
-		var_dino_rage_start_level = Var.Define("dinorage.dino_rage_start_level", dino_rage_start_level);
-		var_dino_rage_duration = Var.Define("dinorage.dino_rage_duration", dino_rage_duration);
-		var_dino_rage_apples = Var.Define("dinorage.dino_rage_apples", dino_rage_apples);
-		var_dino_rage_loose_count = Var.Define("dinorage.dino_rage_loose_count", dino_rage_loose_count);
-		var_show_rate_prompt_level = Var.Define("rate_prompt.show_rate_prompt_level", show_rate_prompt_level);
-		var_show_rate_prompt_frequency = Var.Define("rate_prompt.popup_frequency", show_rate_prompt_frequency);
-		var_iOSPre7RateURL = Var.Define("rate_prompt.url_ios_pre7", iOSPre7RateURL);
-		var_iOSPost7RateURL = Var.Define("rate_prompt.url_ios_post7", iOSPost7RateURL);
-		var_googlePlayRateURL = Var.Define("rate_prompt.url_google_play", googlePlayRateURL);
-		var_moregamesURL_iOS = Var.Define("more_games.ios_url", moregamesURL_iOS);
-		var_moregamesURL_Android = Var.Define("more_games.android_url", moregamesURL_Android);
-		var_verfiy_url_android = Var.Define("iap_validate.android_url", verfiy_url_android);
-		var_verfiy_url_ios = Var.Define("iap_validate.ios_url", verfiy_url_ios);
-		Leanplum.VariablesChanged += HandleVariablesChanged;
-	}
+    public void init()
+    {
+        var_use_skip_intro = use_skip_intro;
+        var_use_dragshot_feature = use_dragshot_feature;
+        var_use_upgrade_timers = use_upgrade_timers;
+        var_use_upgrade_locks = use_upgrade_locks;
+        var_use_temp_upgrades = use_temp_upgrades;
+        var_use_ShotSlot_upsell = use_ShotSlot_upsell;
+        var_maxClientLevel = 81;
+        var_show_app_update_prompt = show_update_prompt;
+        var_force_app_update = force_app_update;
+        var_hours_to_next_quest = hours_to_next_quest;
+        var_first_quest_level = first_quest_level;
+        var_special_offer_start_level = special_offer_start_level;
+        var_special_offer_loss_count = special_offer_loss_count;
+        var_specialOfferSaveRate = specialOfferSaveRate;
+        var_facebook_connect_reward = facebook_connect_reward;
+        var_facebook_connect_interval = facebook_connect_interval;
+        var_friendGateDiamondCost = friendGateDiamondCost;
+        var_refillLivesDiamondCost = refillLivesDiamondCost;
+        var_lifeRefillIntervall = lifeRefillIntervall;
+        var_neanderRushUnits = neanderRushUnits;
+        var_neanderRushInterval = neanderRushInterval;
+        var_level_grind_factor = level_grind_factor;
+        var_level_grind_spread = level_grind_spread;
+        var_replayFactor = replayFactor;
+        var_win_loss_influce = win_loss_influce;
+        var_win_loss_maxCount = win_loss_maxCount;
+        var_appleBoostAmount = appleBoostAmount;
 
-	private void HandleVariablesChanged()
-	{
-		try
-		{
-			AppleCollectRate = LeanplumHelper.toFloatArray(var_appleCollectRate);
-			AppleUpgradeCost = LeanplumHelper.toIntArray(var_appleUpgradeCost);
-			consumable_unlock_fill = var_consumable_unlock_fill.Value;
-			foreach (KeyValuePair<UnitType, Var<int>> var_ConsumableRefillValue in var_ConsumableRefillValues)
-			{
-				if (ConsumableRefillValues.ContainsKey(var_ConsumableRefillValue.Key))
-				{
-					ConsumableRefillValues[var_ConsumableRefillValue.Key] = var_ConsumableRefillValue.Value;
-				}
-			}
-		}
-		catch (Exception ex)
-		{
-			Debug.LogError(ex.Message + "\n" + ex.StackTrace);
-		}
-	}
+        // XÓA 2 dòng này - không cần convert nữa
+        // var_appleCollectRate = LeanplumHelper.toListObject(AppleCollectRate);
+        // var_appleUpgradeCost = LeanplumHelper.toListObject(AppleUpgradeCost);
+
+        var_consumable_unlock_fill = consumable_unlock_fill;
+
+        foreach (KeyValuePair<UnitType, int> consumableRefillValue in ConsumableRefillValues)
+        {
+            // Dùng trực tiếp giá trị mặc định thay vì Var.Define
+            var_ConsumableRefillValues.Add(consumableRefillValue.Key, consumableRefillValue.Value);
+        }
+
+        var_dino_rage_threshold = dino_rage_threshold;
+        var_dino_rage_cost = dino_rage_cost;
+        var_dino_rage_start_level = dino_rage_start_level;
+        var_dino_rage_duration = dino_rage_duration;
+        var_dino_rage_apples = dino_rage_apples;
+        var_dino_rage_loose_count = dino_rage_loose_count;
+        var_show_rate_prompt_level = show_rate_prompt_level;
+        var_show_rate_prompt_frequency = show_rate_prompt_frequency;
+        var_iOSPre7RateURL = iOSPre7RateURL;
+        var_iOSPost7RateURL = iOSPost7RateURL;
+        var_googlePlayRateURL = googlePlayRateURL;
+        var_moregamesURL_iOS = moregamesURL_iOS;
+        var_moregamesURL_Android = moregamesURL_Android;
+        var_verfiy_url_android = verfiy_url_android;
+        var_verfiy_url_ios = verfiy_url_ios;
+
+        // XÓA dòng này - không còn Leanplum callback
+        // Leanplum.VariablesChanged += HandleVariablesChanged;
+    }
+ //   private void HandleVariablesChanged()
+	//{
+	//	try
+	//	{
+	//		AppleCollectRate = LeanplumHelper.toFloatArray(var_appleCollectRate);
+	//		AppleUpgradeCost = LeanplumHelper.toIntArray(var_appleUpgradeCost);
+	//		consumable_unlock_fill = var_consumable_unlock_fill;
+	//		foreach (KeyValuePair<UnitType,int> var_ConsumableRefillValue in var_ConsumableRefillValues)
+	//		{
+	//			if (ConsumableRefillValues.ContainsKey(var_ConsumableRefillValue.Key))
+	//			{
+	//				ConsumableRefillValues[var_ConsumableRefillValue.Key] = var_ConsumableRefillValue.Value;
+	//			}
+	//		}
+	//	}
+	//	catch (Exception ex)
+	//	{
+	//		Debug.LogError(ex.Message + "\n" + ex.StackTrace);
+	//	}
+	//}
 }

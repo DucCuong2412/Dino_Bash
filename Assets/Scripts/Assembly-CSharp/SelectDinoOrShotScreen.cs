@@ -133,11 +133,11 @@ public abstract class SelectDinoOrShotScreen<T> : BaseScreen where T : struct, I
 
 	protected void Start()
 	{
-		dino_slot_template = base.transform.FindChild("MiddleCenter/dino_select/dino_slot");
-		dino_button_template = base.transform.FindChild("MiddleCenter/dino_select/dino_button");
-		error_dialog = base.transform.FindChild("MiddleCenter/error");
+		dino_slot_template = base.transform.Find("MiddleCenter/dino_select/dino_slot");
+		dino_button_template = base.transform.Find("MiddleCenter/dino_select/dino_button");
+		error_dialog = base.transform.Find("MiddleCenter/error");
 		CreateErrorTween();
-		Transform target = base.transform.FindChild("MiddleCenter/dino_info/infoContainerPosition");
+		Transform target = base.transform.Find("MiddleCenter/dino_info/infoContainerPosition");
 		infoContainer = InfoContainer.Load(target);
 		btn_back = FindChildComponent<StandardButton>("MiddleCenter/btn_back");
 		btn_back.uiItem.OnClick += delegate
@@ -151,8 +151,8 @@ public abstract class SelectDinoOrShotScreen<T> : BaseScreen where T : struct, I
 		};
 		updateBtnNextState();
 		FindChildComponent<LocalizedText>("MiddleCenter/title/title_label").Key = getTitle();
-		btn_buy_fourth_slot = base.transform.FindChild("MiddleCenter/selected_dinos/shot_slot_3").GetComponent<StandardButton>();
-		tk2dTextMesh component = btn_buy_fourth_slot.transform.FindChild("dinobuy_panel/price_label").GetComponent<tk2dTextMesh>();
+		btn_buy_fourth_slot = base.transform.Find("MiddleCenter/selected_dinos/shot_slot_3").GetComponent<StandardButton>();
+		tk2dTextMesh component = btn_buy_fourth_slot.transform.Find("dinobuy_panel/price_label").GetComponent<tk2dTextMesh>();
 		component.text = Konfiguration.getUpgradeBuyCost(UnitType.AdditionalShotSlot).ToString();
 		btn_buy_fourth_slot.uiItem.OnClick += delegate
 		{
@@ -232,10 +232,10 @@ public abstract class SelectDinoOrShotScreen<T> : BaseScreen where T : struct, I
 	private void setSlots()
 	{
 		selected_slots.Clear();
-		selected_slots.Add(new DinoSelectionSlot(base.transform.FindChild("MiddleCenter/selected_dinos/slot0")));
-		selected_slots.Add(new DinoSelectionSlot(base.transform.FindChild("MiddleCenter/selected_dinos/slot1")));
-		selected_slots.Add(new DinoSelectionSlot(base.transform.FindChild("MiddleCenter/selected_dinos/slot2")));
-		slot4 = base.transform.FindChild("MiddleCenter/selected_dinos/slot3");
+		selected_slots.Add(new DinoSelectionSlot(base.transform.Find("MiddleCenter/selected_dinos/slot0")));
+		selected_slots.Add(new DinoSelectionSlot(base.transform.Find("MiddleCenter/selected_dinos/slot1")));
+		selected_slots.Add(new DinoSelectionSlot(base.transform.Find("MiddleCenter/selected_dinos/slot2")));
+		slot4 = base.transform.Find("MiddleCenter/selected_dinos/slot3");
 		if (Konfiguration.GameConfig.Use_ShotSlot_upsell)
 		{
 			if (this is SelectDinoScreen)
@@ -260,7 +260,7 @@ public abstract class SelectDinoOrShotScreen<T> : BaseScreen where T : struct, I
 			{
 				selected_slots.ForEach(delegate(DinoSelectionSlot x)
 				{
-					x.transform.localPosition -= new Vector3(slot4.renderer.bounds.extents.x * slot_size_scale, 0f);
+					x.transform.localPosition -= new Vector3(slot4.GetComponent<Renderer>().bounds.extents.x * slot_size_scale, 0f);
 				});
 				reducedToThreeSlots = false;
 			}
@@ -272,7 +272,7 @@ public abstract class SelectDinoOrShotScreen<T> : BaseScreen where T : struct, I
 		{
 			selected_slots.ForEach(delegate(DinoSelectionSlot x)
 			{
-				x.transform.localPosition += new Vector3(slot4.renderer.bounds.extents.x * slot_size_scale, 0f);
+				x.transform.localPosition += new Vector3(slot4.GetComponent<Renderer>().bounds.extents.x * slot_size_scale, 0f);
 			});
 			reducedToThreeSlots = true;
 		}

@@ -58,17 +58,17 @@ public class tk2dButton : MonoBehaviour
 		if (viewCamera == null)
 		{
 			Transform parent = base.transform;
-			while ((bool)parent && parent.camera == null)
+			while ((bool)parent && parent.GetComponent<Camera>() == null)
 			{
 				parent = parent.parent;
 			}
-			if ((bool)parent && parent.camera != null)
+			if ((bool)parent && parent.GetComponent<Camera>() != null)
 			{
-				viewCamera = parent.camera;
+				viewCamera = parent.GetComponent<Camera>();
 			}
 			if (viewCamera == null && (bool)tk2dCamera.Instance)
 			{
-				viewCamera = tk2dCamera.Instance.camera;
+				viewCamera = tk2dCamera.Instance.GetComponent<Camera>();
 			}
 			if (viewCamera == null)
 			{
@@ -80,14 +80,14 @@ public class tk2dButton : MonoBehaviour
 		{
 			UpdateSpriteIds();
 		}
-		if (base.collider == null)
+		if (base.GetComponent<Collider>() == null)
 		{
 			BoxCollider boxCollider = base.gameObject.AddComponent<BoxCollider>();
 			Vector3 size = boxCollider.size;
 			size.z = 0.2f;
 			boxCollider.size = size;
 		}
-		if ((buttonDownSound != null || buttonPressedSound != null || buttonUpSound != null) && base.audio == null)
+		if ((buttonDownSound != null || buttonPressedSound != null || buttonUpSound != null) && base.GetComponent<AudioSource>() == null)
 		{
 			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
 			audioSource.playOnAwake = false;
@@ -103,9 +103,9 @@ public class tk2dButton : MonoBehaviour
 
 	private void PlaySound(AudioClip source)
 	{
-		if ((bool)base.audio && (bool)source)
+		if ((bool)base.GetComponent<AudioSource>() && (bool)source)
 		{
-			base.audio.PlayOneShot(source);
+			base.GetComponent<AudioSource>().PlayOneShot(source);
 		}
 	}
 
@@ -190,7 +190,7 @@ public class tk2dButton : MonoBehaviour
 			}
 			Ray ray = viewCamera.ScreenPointToRay(cursorPosition);
 			RaycastHit hitInfo;
-			bool colliderHit = base.collider.Raycast(ray, out hitInfo, float.PositiveInfinity);
+			bool colliderHit = base.GetComponent<Collider>().Raycast(ray, out hitInfo, float.PositiveInfinity);
 			if (buttonPressed && !colliderHit)
 			{
 				if (targetScale != 1f)
@@ -282,7 +282,7 @@ public class tk2dButton : MonoBehaviour
 				{
 					Ray ray = viewCamera.ScreenPointToRay(touch.position);
 					RaycastHit hitInfo;
-					if (base.collider.Raycast(ray, out hitInfo, 100000000f) && !Physics.Raycast(ray, hitInfo.distance - 0.01f))
+					if (base.GetComponent<Collider>().Raycast(ray, out hitInfo, 100000000f) && !Physics.Raycast(ray, hitInfo.distance - 0.01f))
 					{
 						StartCoroutine(coHandleButtonPress(touch.fingerId));
 						flag = true;
@@ -295,7 +295,7 @@ public class tk2dButton : MonoBehaviour
 		{
 			Ray ray2 = viewCamera.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitInfo2;
-			if (base.collider.Raycast(ray2, out hitInfo2, 100000000f) && !Physics.Raycast(ray2, hitInfo2.distance - 0.01f))
+			if (base.GetComponent<Collider>().Raycast(ray2, out hitInfo2, 100000000f) && !Physics.Raycast(ray2, hitInfo2.distance - 0.01f))
 			{
 				StartCoroutine(coHandleButtonPress(-1));
 			}

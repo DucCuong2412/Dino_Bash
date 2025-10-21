@@ -86,7 +86,7 @@ public class tk2dCameraAnchor : MonoBehaviour
 		{
 			if (tk2dCamera != null)
 			{
-				_anchorCamera = tk2dCamera.camera;
+				_anchorCamera = tk2dCamera.GetComponent<Camera>();
 				tk2dCamera = null;
 			}
 			return _anchorCamera;

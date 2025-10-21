@@ -39,7 +39,7 @@ public class FireProjectileHelper : MonoBase
 	{
 		for (int i = 0; i < fx.Length; i++)
 		{
-			fx[i].renderer.enabled = state;
+			fx[i].GetComponent<Renderer>().enabled = state;
 		}
 	}
 

@@ -70,7 +70,7 @@ public class MusicDownloader : MonoBehaviour
 				yield return new WaitForSeconds(30f);
 				continue;
 			}
-			AudioClip ac = www.audioClip;
+			AudioClip ac = www.GetAudioClip();
 			if (ac == null)
 			{
 				Debug.LogError("Not And Audio Clip: " + music);

@@ -28,7 +28,7 @@ public class TextSize
 	public TextSize(TextMesh tm)
 	{
 		textMesh = tm;
-		renderer = tm.renderer;
+		renderer = tm.GetComponent<Renderer>();
 		dict = new Hashtable();
 		getSpace();
 	}

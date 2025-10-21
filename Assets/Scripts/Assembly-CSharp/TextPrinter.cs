@@ -40,7 +40,7 @@ public class TextPrinter : MonoBehaviour
 		line_count = label.LineCount;
 		label.LineCount = 0;
 		label.text = string.Empty;
-		label.renderer.enabled = false;
+		label.GetComponent<Renderer>().enabled = false;
 		StartCoroutine(Run());
 	}
 
@@ -66,7 +66,7 @@ public class TextPrinter : MonoBehaviour
 			{
 				label.text = complete_text.Substring(0, index2);
 				label.ForceBuild();
-				label.renderer.enabled = true;
+				label.GetComponent<Renderer>().enabled = true;
 			}
 			yield return null;
 		}

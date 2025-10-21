@@ -42,7 +42,7 @@ public class tk2dPixelPerfectHelper : MonoBehaviour
 	{
 		get
 		{
-			return cam.isOrthoGraphic;
+			return cam.orthographic;
 		}
 	}
 
@@ -55,15 +55,15 @@ public class tk2dPixelPerfectHelper : MonoBehaviour
 	public virtual void Setup()
 	{
 		float num = (float)collectionTargetHeight / targetResolutionHeight;
-		if (base.camera != null)
+		if (base.GetComponent<Camera>() != null)
 		{
-			cam = base.camera;
+			cam = base.GetComponent<Camera>();
 		}
 		if (cam == null)
 		{
 			cam = Camera.main;
 		}
-		if (cam.isOrthoGraphic)
+		if (cam.orthographic)
 		{
 			scaleK = num * cam.orthographicSize / collectionOrthoSize;
 			scaleD = 0f;

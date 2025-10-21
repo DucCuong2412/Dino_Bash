@@ -90,7 +90,7 @@ public abstract class AbstractProjectile : MonoBase
 
 	protected virtual void Attack()
 	{
-		Collider[] array = Physics.OverlapSphere(base.transform.position, projectile.collider.bounds.extents.x * 1.2f, this.unit.CombatBehaviour.RayCastMask);
+		Collider[] array = Physics.OverlapSphere(base.transform.position, projectile.GetComponent<Collider>().bounds.extents.x * 1.2f, this.unit.CombatBehaviour.RayCastMask);
 		List<BaseEntity> list = AbstractCombatBehaviour.EntitiesForCollider(array);
 		for (int i = 0; i < list.Count; i++)
 		{

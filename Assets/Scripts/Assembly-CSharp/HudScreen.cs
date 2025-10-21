@@ -169,7 +169,7 @@ public class HudScreen : BaseScreen
 		}
 		else
 		{
-			skipIntroLabel.renderer.enabled = false;
+			skipIntroLabel.GetComponent<Renderer>().enabled = false;
 		}
 		base.Interactive = false;
 	}
@@ -254,7 +254,7 @@ public class HudScreen : BaseScreen
 			hit_flash.Play("hit");
 			if (duration == -1f)
 			{
-				duration = hit_flash.GetCurrentAnimationClipState(0)[0].clip.length;
+				duration = hit_flash.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 			}
 			WaitThen(duration, delegate
 			{
@@ -345,7 +345,7 @@ public class HudScreen : BaseScreen
 				skipIntroLabel.Commit();
 			}).onComplete(delegate
 			{
-				skipIntroLabel.renderer.enabled = false;
+				skipIntroLabel.GetComponent<Renderer>().enabled = false;
 			}));
 		}
 	}
@@ -445,7 +445,7 @@ public class HudScreen : BaseScreen
 			apple_upgrade_cost.text = "max".Localize();
 			apple_upgrade_cost.anchor = TextAnchor.MiddleCenter;
 			apple_upgrade_cost.transform.LocalPosX(0f);
-			apple_upgrade_cost.transform.parent.FindChild("icon_apple").gameObject.SetActive(false);
+			apple_upgrade_cost.transform.parent.Find("icon_apple").gameObject.SetActive(false);
 			SocialGamingManager.Instance.ReportProgress(AchievementIds.COMPLETELY_UPGRADE_YOUR_APPLE_COUNTER, 1);
 		}
 		else

@@ -140,7 +140,7 @@ public class Level : MonoBase
 	{
 		get
 		{
-			return Config.var_cuttoff.Value;
+			return Config.var_cuttoff;
 		}
 	}
 

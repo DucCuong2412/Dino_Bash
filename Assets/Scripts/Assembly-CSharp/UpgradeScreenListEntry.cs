@@ -200,7 +200,7 @@ public class UpgradeScreenListEntry : MonoBehaviour
 	{
 		setItem(adapter);
 		sortingLayerID = ScreenManager.GetScreen<UpgradeScreen>().SortingLayerID;
-		portait = base.transform.FindChild("item_portrait").GetComponent<SpriteRenderer>();
+		portait = base.transform.Find("item_portrait").GetComponent<SpriteRenderer>();
 		if (isUpgrade)
 		{
 			portait.transform.localScale = Vector3.one;
@@ -213,14 +213,14 @@ public class UpgradeScreenListEntry : MonoBehaviour
 		SpawnUpgradeFX();
 		if (isPremium)
 		{
-			base.transform.FindChild("bg_panel").GetComponent<SpriteRenderer>().sprite = premiumBg;
+			base.transform.Find("bg_panel").GetComponent<SpriteRenderer>().sprite = premiumBg;
 		}
 		string key = ((!isDino && !isUpgrade) ? shot_type.ToString() : unit_type.ToString());
 		item_name = base.transform.Search("item_name").GetComponent<LocalizedText>();
 		item_level = base.transform.Search("item_level").GetComponent<LocalizedText>();
 		infoContainer = spawnInfoContainer(base.transform.Find("infoContainer_position"));
 		item_name.Key = key;
-		locked_panel = base.transform.FindChild("locked_panel");
+		locked_panel = base.transform.Find("locked_panel");
 		button_buy = base.transform.Search("btn_buy").GetComponent<tk2dUIItem>();
 		upgrading_icon = base.transform.Search("upgrading");
 		upgrading_icon.gameObject.SetActive(false);
@@ -230,7 +230,7 @@ public class UpgradeScreenListEntry : MonoBehaviour
 		bg_panel_button.uiItem.OnClick += onClickBuyButton;
 		active_timer_bg = base.transform.Search("active_timer_bg").gameObject;
 		active_timer_bg.SetActive(false);
-		item_price = button_buy.transform.FindChild("item_price").GetComponent<tk2dTextMesh>();
+		item_price = button_buy.transform.Find("item_price").GetComponent<tk2dTextMesh>();
 		item_price_position = item_price.transform.localPosition;
 		item_price_size = item_price.scale;
 		mark_as_new = false;
@@ -353,18 +353,18 @@ public class UpgradeScreenListEntry : MonoBehaviour
 			}
 			return;
 		}
-		Transform transform = locked_panel.FindChild("lock icon");
-		transform.transform.PosX(item_level.transform.position.x + transform.renderer.bounds.extents.x);
-		item_level.transform.position += new Vector3(transform.renderer.bounds.size.x * 1.1f, 0f, 0f);
+		Transform transform = locked_panel.Find("lock icon");
+		transform.transform.PosX(item_level.transform.position.x + transform.GetComponent<Renderer>().bounds.extents.x);
+		item_level.transform.position += new Vector3(transform.GetComponent<Renderer>().bounds.size.x * 1.1f, 0f, 0f);
 		if (isPremium)
 		{
 			item_price.scale = item_price_size;
 			item_price.text = adapter.PremiumUnlockCost.ToString().GetGroupedNumberString();
 			item_level.Key = "Unlock for";
 			item_level.Localize();
-			locked_panel.transform.FindChild("label_level").gameObject.SetActive(false);
-			locked_panel.transform.FindChild("bg").gameObject.SetActive(false);
-			locked_panel.transform.FindChild("icon_game_level").gameObject.SetActive(false);
+			locked_panel.transform.Find("label_level").gameObject.SetActive(false);
+			locked_panel.transform.Find("bg").gameObject.SetActive(false);
+			locked_panel.transform.Find("icon_game_level").gameObject.SetActive(false);
 			if (isShot)
 			{
 				infoContainer.Set(shot_type, sortingLayerID, false);
@@ -376,9 +376,9 @@ public class UpgradeScreenListEntry : MonoBehaviour
 			if (isUpgrade && Player.ActiveUpgrades.Contains(unit_type))
 			{
 				item_name.transform.PosY(item_name.transform.parent.position.y);
-				Renderer obj = transform.renderer;
+				Renderer obj = transform.GetComponent<Renderer>();
 				bool flag = false;
-				item_level.renderer.enabled = flag;
+				item_level.GetComponent<Renderer>().enabled = flag;
 				obj.enabled = flag;
 				if (unit_type == UnitType.RaindowTrail)
 				{

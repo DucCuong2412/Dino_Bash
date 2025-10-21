@@ -1,11 +1,12 @@
-using ChartboostSDK;
+﻿using ChartboostSDK;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChartboostExample : MonoBehaviour
 {
-	public GameObject inPlayIcon;
+	public RawImage inPlayIcon;
 
-	public GameObject inPlayText;
+	public Text	 inPlayText;
 
 	private CBInPlay inPlayAd;
 
@@ -42,10 +43,21 @@ public class ChartboostExample : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.touchCount > 0 && inPlayIcon.guiTexture.HitTest(Input.GetTouch(0).position) && Input.GetTouch(0).phase == TouchPhase.Began)
-		{
-			inPlayAd.click();
-		}
+		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+{
+    Touch touch = Input.GetTouch(0);
+    Ray ray = Camera.main.ScreenPointToRay(touch.position);
+    RaycastHit hit;
+
+    if (Physics.Raycast(ray, out hit))
+    {
+        if (hit.transform == inPlayIcon.transform)
+        {
+            inPlayAd.click();
+        }
+    }
+}
+
 	}
 
 	private void OnGUI()
@@ -82,14 +94,15 @@ public class ChartboostExample : MonoBehaviour
 		if (GUILayout.Button("Show InPlay Ad"))
 		{
 			inPlayAd = Chartboost.getInPlay(CBLocation.Default);
-			if (inPlayAd != null)
-			{
-				inPlayIcon.guiTexture.texture = inPlayAd.appIcon;
-				inPlayText.guiText.text = inPlayAd.appName;
-				inPlayAd.show();
-			}
-		}
-	}
+            if (inPlayAd != null)
+            {
+                inPlayIcon.texture = inPlayAd.appIcon;   // inPlayIcon là RawImage
+                inPlayText.text = inPlayAd.appName;      // inPlayText là Text hoặc TMP_Text
+                inPlayAd.show();
+            }
+
+        }
+    }
 
 	private void OnDisable()
 	{

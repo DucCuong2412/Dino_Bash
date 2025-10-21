@@ -28,8 +28,8 @@ public class MessageCenterScreen : BaseScreen
 			icon_connecting = base.transform.Search("icon_connecting").GetComponent<SpriteRenderer>();
 			accept_all_button = base.transform.Search("accept_all_button").GetComponent<tk2dUIItem>();
 			accept_all_button.OnClick += OnAcceptAllClicked;
-			scrollView = base.transform.FindChild("MiddleCenter/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
-			entryDefinition = scrollView.transform.FindChild("Content/message_Definition").gameObject;
+			scrollView = base.transform.Find("MiddleCenter/ScrollableArea").GetComponent<tk2dUIScrollableArea>();
+			entryDefinition = scrollView.transform.Find("Content/message_Definition").gameObject;
 			entryDefinition.SetActive(false);
 			base.transform.localPosition += base.left;
 			base.gameObject.SetActive(false);

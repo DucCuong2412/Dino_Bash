@@ -90,11 +90,11 @@ public class Parallaxer : MonoBehaviour
 			Vector3 vector = Vector3.zero;
 			if (Application.isEditor)
 			{
-				vector = ui_camera.camera.ScreenToWorldPoint(Input.mousePosition);
+				vector = ui_camera.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
 			}
 			else if (Input.touches.Length > 0)
 			{
-				vector = ui_camera.camera.ScreenToWorldPoint(Input.touches[0].position);
+				vector = ui_camera.GetComponent<Camera>().ScreenToWorldPoint(Input.touches[0].position);
 			}
 			if (Input.GetMouseButtonDown(0))
 			{

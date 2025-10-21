@@ -243,9 +243,9 @@ public abstract class AbstractShot : MonoBase
 			Config = Konfiguration.ShotData[type];
 			ignoreMask = HitMasks.GetIgnoreMask((int)type);
 			hitModifier = HitMasks.GetHitModifier((int)type);
-			if ((bool)base.collider)
+			if ((bool)base.GetComponent<Collider>())
 			{
-				shotCollider = (CapsuleCollider)base.collider;
+				shotCollider = (CapsuleCollider)base.GetComponent<Collider>();
 			}
 			fx_impact = SetupFX(fx_impact);
 			if (fx_groundimpact != null)

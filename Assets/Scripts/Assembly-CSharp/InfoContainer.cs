@@ -141,7 +141,7 @@ public class InfoContainer : MonoBase
 		if ((attributes & Attribute.attack) == Attribute.attack)
 		{
 			tk2dTextMesh tk2dTextMesh4 = labels.Find((tk2dTextMesh x) => x.name == "label_attribute_attack");
-			tk2dTextMesh4.renderer.enabled = showAttributeNames;
+			tk2dTextMesh4.GetComponent<Renderer>().enabled = showAttributeNames;
 			tk2dTextMesh tk2dTextMesh5 = labels.Find((tk2dTextMesh x) => x.name == "label_current_attack");
 			if (animate)
 			{
@@ -160,7 +160,7 @@ public class InfoContainer : MonoBase
 		if ((attributes & Attribute.health) == Attribute.health)
 		{
 			tk2dTextMesh tk2dTextMesh6 = labels.Find((tk2dTextMesh x) => x.name == "label_attribute_health");
-			tk2dTextMesh6.renderer.enabled = showAttributeNames;
+			tk2dTextMesh6.GetComponent<Renderer>().enabled = showAttributeNames;
 			int to3 = ((adapter.AttackPower < 0) ? Mathf.Abs(adapter.AttackPower) : adapter.Health);
 			tk2dTextMesh tk2dTextMesh7 = labels.Find((tk2dTextMesh x) => x.name == "label_current_health");
 			if (animate)

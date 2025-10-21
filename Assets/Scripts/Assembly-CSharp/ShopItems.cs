@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Serialization;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 using mixpanel;
@@ -23,17 +23,16 @@ public static class ShopItems
 		[XmlAttribute("base_amount")]
 		public readonly int base_amount = 1;
 
-		[XmlIgnore]
-		public Var<int> var_amount;
 
-		[XmlIgnore]
-		public Var<string> var_id;
+		public int var_amount;
+
+		public string var_id;
 
 		public int amount
 		{
 			get
 			{
-				int value = var_amount.Value;
+				int value = var_amount;
 				return (currency != 0) ? value : ((int)((float)value * Konfiguration.GetChapterData(Player.MaxLevelID).shop_amount_multiplier));
 			}
 		}
@@ -51,7 +50,7 @@ public static class ShopItems
 		{
 			get
 			{
-				Pack pack = ((currency != 0) ? getPackById(diamond_shop_entries[0].Value) : getPackById(coin_shop_entries[0].Value));
+				Pack pack = ((currency != 0) ? getPackById(diamond_shop_entries[0]) : getPackById(coin_shop_entries[0]));
 				if (this == pack || pack == null)
 				{
 					return string.Empty;
@@ -104,7 +103,7 @@ public static class ShopItems
 		{
 			get
 			{
-				return Unibiller.GetPurchasableItemById(id);
+				return null;// Unibiller.GetPurchasableItemById(id);
 			}
 		}
 
@@ -116,8 +115,11 @@ public static class ShopItems
 		{
 			string[] array = id.Split('.');
 			string name = "store." + prefix + "." + array[array.Length - 1];
-			var_amount = Var.Define(name, base_amount);
+			//var_amount = Var.Define(name, base_amount);
+			var_amount = base_amount;
+
 		}
+
 
 		public float getQuantitySavingsAsFloat()
 		{
@@ -196,27 +198,33 @@ public static class ShopItems
 
 	public const string bundle_entry_default = "com.pokokostudio.dinobash.starter_pack";
 
-	public static Var<string> bundle_entry;
+	public static string  bundle_entry;
 
-	public static List<Var<string>> coin_shop_entries = new List<Var<string>>();
+	public static List<string> coin_shop_entries = new List<string>();
 
 	private static List<string> coin_shop_defaults = new List<string>(new string[5] { "com.pokokostudio.dinobash.coin_pack_1", "com.pokokostudio.dinobash.coin_pack_2", "com.pokokostudio.dinobash.coin_pack_3", "com.pokokostudio.dinobash.coin_pack_4", "com.pokokostudio.dinobash.coin_pack_5" });
 
-	public static List<Var<string>> diamond_shop_entries = new List<Var<string>>();
+	public static List<string> diamond_shop_entries = new List<string>();
 
 	private static List<string> diamond_shop_defaults = new List<string>(new string[5] { "com.pokokostudio.dinobash.diamond_pack_2_1", "com.pokokostudio.dinobash.diamond_pack_2_2", "com.pokokostudio.dinobash.diamond_pack_2_3", "com.pokokostudio.dinobash.diamond_pack_2_4", "com.pokokostudio.dinobash.diamond_pack_2_5" });
 
 	public static Packs packs { get; private set; }
 
-	private static void RegisterShopLists(string lp_group_name, List<string> ids, List<Var<string>> list)
-	{
-		for (int i = 0; i != ids.Count; i++)
-		{
-			list.Add(Var.Define(lp_group_name + ".slot_" + (i + 1), ids[i]));
-		}
-	}
-
-	public static void Init()
+    //private static void RegisterShopLists(string lp_group_name, List<string> ids, List<string> list)
+    //{
+    //	for (int i = 0; i != ids.Count; i++)
+    //	{
+    //		list.Add(Var.Define(lp_group_name + ".slot_" + (i + 1), ids[i]));
+    //	}
+    //}
+    private static void RegisterShopLists(string lp_group_name, List<string> ids, List<string> list)
+    {
+        for (int i = 0; i < ids.Count; i++)
+        {
+            list.Add(ids[i]); // Copy trực tiếp giá trị từ ids
+        }
+    }
+    public static void Init()
 	{
 		packs = Serializer.DeserializeFileOrTextAsset<Packs>("XML/shop_items");
 		packs.CoinPacks.ForEach(delegate(Pack p)
@@ -233,8 +241,8 @@ public static class ShopItems
 		});
 		RegisterShopLists("store.Coin_shoplist", coin_shop_defaults, coin_shop_entries);
 		RegisterShopLists("store.Diamond_shoplist", diamond_shop_defaults, diamond_shop_entries);
-		bundle_entry = Var.Define("store.bundle.item", "com.pokokostudio.dinobash.starter_pack");
-	}
+        bundle_entry = bundle_entry_default;
+    }
 
 	public static Pack getPackById(string id)
 	{

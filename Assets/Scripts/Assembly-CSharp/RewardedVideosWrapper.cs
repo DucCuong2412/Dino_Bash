@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 using mixpanel.platform;
@@ -37,33 +37,33 @@ public static class RewardedVideosWrapper
 
 	private const int upper_end_gift_range = 15;
 
-	private static Dictionary<RewardedVideoItems, Var<int>> rewards = new Dictionary<RewardedVideoItems, Var<int>>();
+	private static Dictionary<RewardedVideoItems, int> rewards = new Dictionary<RewardedVideoItems, int>();
 
-	private static Var<float> var_rewardedVideos_result_coin_boost_factor;
+	private static float var_rewardedVideos_result_coin_boost_factor;
 
-	private static Var<bool> var_rewardedVideos_hide_for_paying_users;
+	private static bool var_rewardedVideos_hide_for_paying_users;
 
-	private static Var<int> var_rewardedVideos_start_level;
+	private static int var_rewardedVideos_start_level;
 
-	private static Var<int> var_videos_per_day;
+	private static int var_videos_per_day;
 
-	private static Var<int> var_lives_videos_per_day;
+	private static int var_lives_videos_per_day;
 
 	private static List<object> show_on_lost = new List<object> { 2, 4, 7, 10 };
 
-	private static Var<List<object>> var_show_on_lost;
+	private static List<object> var_show_on_lost;
 
-	private static Var<int> var_lives_threshold;
+	private static int var_lives_threshold;
 
-	private static Var<bool> var_show_only_on_loose;
+	private static bool var_show_only_on_loose;
 
-	private static Var<int> var_coin_boosts_per_day;
+	private static int var_coin_boosts_per_day;
 
-	private static Var<int> var_gift_coin_videos_per_day;
+	private static int var_gift_coin_videos_per_day;
 
-	private static Var<int> var_lower_end_gift_range;
+	private static int var_lower_end_gift_range;
 
-	private static Var<int> var_upper_end_gift_range;
+	private static int var_upper_end_gift_range;
 
 	private static System.Random randomValue = new System.Random();
 
@@ -81,7 +81,7 @@ public static class RewardedVideosWrapper
 		{
 			if (var_rewardedVideos_result_coin_boost_factor != null)
 			{
-				return var_rewardedVideos_result_coin_boost_factor.Value;
+				return var_rewardedVideos_result_coin_boost_factor;
 			}
 			Debug.LogError("var_rewardedVideos_result_coin_boost_factor is null");
 			return 0f;
@@ -92,7 +92,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_rewardedVideos_start_level.Value;
+			return var_rewardedVideos_start_level;
 		}
 	}
 
@@ -100,7 +100,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_videos_per_day.Value;
+			return var_videos_per_day;
 		}
 	}
 
@@ -108,16 +108,16 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_lives_videos_per_day.Value;
+			return var_lives_videos_per_day;
 		}
 	}
 
-	public static List<int> Show_on_lost
+	public static List<int> Show_on_lost//cuongnd
 	{
 		get
 		{
-			int[] collection = LeanplumHelper.toIntArray(var_show_on_lost);
-			return LeanplumHelper.toList<int>(collection);
+			//int[] collection = LeanplumHelper.toIntArray(var_show_on_lost);
+			return null; // LeanplumHelper.toList<int>(collection);
 		}
 	}
 
@@ -125,7 +125,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_lives_threshold.Value;
+			return var_lives_threshold;
 		}
 	}
 
@@ -133,7 +133,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_show_only_on_loose.Value;
+			return var_show_only_on_loose;
 		}
 	}
 
@@ -141,7 +141,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_coin_boosts_per_day.Value;
+			return var_coin_boosts_per_day;
 		}
 	}
 
@@ -149,7 +149,7 @@ public static class RewardedVideosWrapper
 	{
 		get
 		{
-			return var_gift_coin_videos_per_day.Value;
+			return var_gift_coin_videos_per_day;
 		}
 	}
 
@@ -161,7 +161,7 @@ public static class RewardedVideosWrapper
 			{
 				return false;
 			}
-			if (Wallet.IsPayingUser && var_rewardedVideos_hide_for_paying_users.Value)
+			if (Wallet.IsPayingUser && var_rewardedVideos_hide_for_paying_users)
 			{
 				return false;
 			}
@@ -179,19 +179,19 @@ public static class RewardedVideosWrapper
 			}
 			if (App.State == App.States.Game)
 			{
-				return Mathf.RoundToInt((float)Player.Instance.LevelCoins * var_rewardedVideos_result_coin_boost_factor.Value);
+				return Mathf.RoundToInt((float)Player.Instance.LevelCoins * var_rewardedVideos_result_coin_boost_factor);
 			}
 		}
 		if (rewards.ContainsKey(item))
 		{
-			return rewards[item].Value;
+			return rewards[item];
 		}
 		return 0;
 	}
 
 	private static void NextRandomForGift()
 	{
-		currenRandomValue = randomValue.Next(var_lower_end_gift_range.Value, var_upper_end_gift_range.Value);
+		currenRandomValue = randomValue.Next(var_lower_end_gift_range, var_upper_end_gift_range);
 	}
 
 	private static int getCoinGift()
@@ -212,25 +212,25 @@ public static class RewardedVideosWrapper
 
 	public static void Init()
 	{
-		var_videos_per_day = Var.Define("rewarded_video.consumables_per_day", 10);
-		var_lives_videos_per_day = Var.Define("rewarded_video.lives_per_day", 10);
-		var_rewardedVideos_start_level = Var.Define("rewarded_video.start_level", 5);
-		var_lives_threshold = Var.Define("rewarded_video.lives_threshold", 0);
-		var_show_on_lost = Var.Define("rewarded_video.show_on_lost_count", show_on_lost);
-		var_show_only_on_loose = Var.Define("rewarded_video.show_only_on_loose", true);
-		var_rewardedVideos_hide_for_paying_users = Var.Define("rewarded_video.hideForPayingUsers", true);
-		var_rewardedVideos_result_coin_boost_factor = Var.Define("rewarded_video.result_coin_boost_factor", 0.25f);
-		var_coin_boosts_per_day = Var.Define("rewarded_video.result_coin_boost_per_day", 10);
-		var_gift_coin_videos_per_day = Var.Define("rewarded_video.gift_coins_per_day", 10);
-		var_lower_end_gift_range = Var.Define("rewarded_video.lower_end_gift_range", 5);
-		var_upper_end_gift_range = Var.Define("rewarded_video.upper_end_gift_range", 15);
-		Var<int> value = Var.Define("rewarded_video.reward.Lives", 2);
+		var_videos_per_day = 10;
+		var_lives_videos_per_day = 10;
+		var_rewardedVideos_start_level = 5;
+		var_lives_threshold = 0;
+		var_show_on_lost = show_on_lost;
+		var_show_only_on_loose = true;
+		var_rewardedVideos_hide_for_paying_users = true;
+		var_rewardedVideos_result_coin_boost_factor = 0.25f;
+		var_coin_boosts_per_day = 10;
+		var_gift_coin_videos_per_day = 10;
+		var_lower_end_gift_range = 5;
+		var_upper_end_gift_range = 15;
+		int value = 2;
 		rewards.Add(RewardedVideoItems.Lives, value);
-		Var<int> value2 = Var.Define("rewarded_video.reward.Megaball", 1);
+		int value2 = 1;
 		rewards.Add(RewardedVideoItems.MegaBall, value2);
-		Var<int> value3 = Var.Define("rewarded_video.reward.Blizzard", 1);
+		int value3 = 1;
 		rewards.Add(RewardedVideoItems.Blizzard, value3);
-		Var<int> value4 = Var.Define("rewarded_video.reward.MetorStorm", 1);
+		int	 value4 = 1;
 		rewards.Add(RewardedVideoItems.MeteorStorm, value4);
 		NextRandomForGift();
 		GameObject gameObject = new GameObject("SupersonicEvents");

@@ -249,7 +249,7 @@ public class MapScreen : BaseScreen
 			training_notification_label.maxChars = text.Length;
 			training_notification_label.Commit();
 			tk2dSlicedSprite component = training_notification_label.transform.parent.GetComponent<tk2dSlicedSprite>();
-			component.dimensions = new Vector2(training_notification_label.renderer.bounds.size.x + 160f, component.dimensions.y);
+			component.dimensions = new Vector2(training_notification_label.GetComponent<Renderer>().bounds.size.x + 160f, component.dimensions.y);
 			if (component.dimensions.x > 2000f)
 			{
 				Debug.LogError("Training Notification Localization is too long:\n" + training_notification_label.text);
@@ -345,7 +345,7 @@ public class MapScreen : BaseScreen
 
 	public void UpdateUpgradePossibilitesLabel()
 	{
-		tk2dTextMesh upgrade_new_label = upgradeButton.transform.FindChild("label_new").GetComponent<tk2dTextMesh>();
+		tk2dTextMesh upgrade_new_label = upgradeButton.transform.Find("label_new").GetComponent<tk2dTextMesh>();
 		int count = Player.getNewUpgradePossibilites.Count;
 		Go.to(this, 0.2f, new GoTweenConfig().intProp("upgrade_possibilities", count).onUpdate(delegate
 		{
@@ -477,9 +477,9 @@ public class MapScreen : BaseScreen
 			player_max_levelid = Player.MaxLevelID;
 			LevelButton lb = level_buttons[Player.MaxLevelID];
 			LevelButton lb_prev = level_buttons[Player.MaxLevelID - 1];
-			lb_prev.transform.FindChild("top/LevelButtonWin").GetComponent<Animator>().Play("level_button_no_haekchen");
+			lb_prev.transform.Find("top/LevelButtonWin").GetComponent<Animator>().Play("level_button_no_haekchen");
 			yield return new WaitForSeconds(delay);
-			lb_prev.transform.FindChild("top/LevelButtonWin").GetComponent<Animator>().Play("win in");
+			lb_prev.transform.Find("top/LevelButtonWin").GetComponent<Animator>().Play("win in");
 			Vector3 start_pos = lb_prev.selection.position;
 			Vector3 end_pos = lb.selection.position;
 			lb.selection.position = start_pos;
@@ -562,8 +562,8 @@ public class MapScreen : BaseScreen
 		{
 			StartCoroutine(fadeIsland(sr));
 		}
-		Transform transform = base.transform.FindChild("Map");
-		Transform transform2 = transform.FindChild("bg_islands/" + alignedTo.name);
+		Transform transform = base.transform.Find("Map");
+		Transform transform2 = transform.Find("bg_islands/" + alignedTo.name);
 		SpriteRenderer[] componentsInChildren2 = transform2.GetComponentsInChildren<SpriteRenderer>();
 		foreach (SpriteRenderer sr2 in componentsInChildren2)
 		{
@@ -579,8 +579,8 @@ public class MapScreen : BaseScreen
 	private FriendGate getFriendGate(int level_id)
 	{
 		string text = Konfiguration.GetLevelData(level_id).name;
-		Transform transform = base.transform.FindChild("Map");
-		return transform.FindChild("friendgates/" + text).GetComponent<FriendGate>();
+		Transform transform = base.transform.Find("Map");
+		return transform.Find("friendgates/" + text).GetComponent<FriendGate>();
 	}
 
 	private void setFriendGateState(int level_id, bool locked)
@@ -595,15 +595,15 @@ public class MapScreen : BaseScreen
 
 	private void initChaptersAndLevels()
 	{
-		Transform transform = base.transform.FindChild("Map");
-		Transform transform2 = transform.FindChild("buttons");
-		Transform transform3 = transform2.FindChild("LevelButton");
+		Transform transform = base.transform.Find("Map");
+		Transform transform2 = transform.Find("buttons");
+		Transform transform3 = transform2.Find("LevelButton");
 		int num = 0;
 		int num2 = 0;
 		for (int i = 0; i != Konfiguration.chapters.Count; i++)
 		{
 			ChapterData chapterData = Konfiguration.chapters[i];
-			Transform transform4 = transform.FindChild("chapters/chapter_" + i);
+			Transform transform4 = transform.Find("chapters/chapter_" + i);
 			num2 += chapterData.levelCount;
 			GameObject gameObject = new GameObject();
 			gameObject.name = transform4.name;

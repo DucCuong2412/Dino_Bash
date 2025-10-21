@@ -19,8 +19,8 @@ public class SpriteStretcher : MonoBehaviour
 			}
 		}
 		SpriteRenderer component = GetComponent<SpriteRenderer>();
-		Vector3 vector = tk2dCamera2.camera.ViewportToWorldPoint(Vector3.zero);
-		Vector3 vector2 = tk2dCamera2.camera.ViewportToWorldPoint(Vector3.one);
+		Vector3 vector = tk2dCamera2.GetComponent<Camera>().ViewportToWorldPoint(Vector3.zero);
+		Vector3 vector2 = tk2dCamera2.GetComponent<Camera>().ViewportToWorldPoint(Vector3.one);
 		base.transform.localScale = new Vector3(base.transform.localScale.x * 1.01f * (vector2.x - vector.x) / component.bounds.extents.x * 0.5f, base.transform.localScale.y * 1.01f * (vector2.y - vector.y) / component.bounds.extents.y * 0.5f, 1f);
 	}
 }

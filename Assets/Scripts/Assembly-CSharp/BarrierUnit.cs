@@ -19,7 +19,7 @@ public class BarrierUnit : BaseEntity
 	protected override void OnEnable()
 	{
 		base.OnEnable();
-		base.collider.enabled = true;
+		base.GetComponent<Collider>().enabled = true;
 		base.OnAnimationEvent += AnimationEventHandler;
 	}
 
@@ -31,7 +31,7 @@ public class BarrierUnit : BaseEntity
 
 	public override void stateDie()
 	{
-		base.collider.enabled = false;
+		base.GetComponent<Collider>().enabled = false;
 		base.stateDie();
 		base.animator.SetBool("isDead", true);
 	}

@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 using mixpanel;
@@ -47,7 +47,7 @@ public class Tracking
 		quit = 4
 	}
 
-	private static Var<bool> trackingEnabled;
+	private static bool trackingEnabled;
 
 	private static bool jb_evt_sent;
 
@@ -61,7 +61,7 @@ public class Tracking
 			{
 				return true;
 			}
-			return trackingEnabled.Value;
+			return trackingEnabled;
 		}
 	}
 
@@ -128,7 +128,7 @@ public class Tracking
 
 	public static void Initialize()
 	{
-		trackingEnabled = Var.Define("feature.TrackingEnabled", true);
+		trackingEnabled = true;
 		items_bought_count = 0;
 		App.OnStateChange += delegate
 		{
@@ -439,7 +439,7 @@ public class Tracking
 		track("Buy Item", "buy_item", Location.store, dictionary2);
 		dictionary2["EventTag"] = "buy_item";
 		dictionary2["Location"] = Location.store.ToString();
-		Leanplum.Track("Buy Item", dictionary2);
+		//Leanplum.Track("Buy Item", dictionary2);
 	}
 
 	public static void total_coins_earned(int amount)
@@ -585,7 +585,7 @@ public class Tracking
 			{ "pp", pack.priceInLocalCurrency },
 			{ "r", pack.priceInLocalCurrency }
 		}, "__iap__");
-		Leanplum.Track("Purchase", amount_usd);
+		//Leanplum.Track("Purchase", amount_usd);
 		Mixpanel.people.TrackChargeConverting(pack.priceInLocalCurrency, pack.isoCurrencyCode, properties);
 		Mixpanel.Track("IAP: Buy", properties);
 		Wallet.IsPayingUser = true;
@@ -609,7 +609,7 @@ public class Tracking
 			track("Rewarded Video", "rewarded_video", Location.level, dictionary);
 			dictionary["EventTag"] = "level";
 			dictionary["Location"] = Location.level.ToString();
-			Leanplum.Track("Rewarded Video", dictionary);
+			//Leanplum.Track("Rewarded Video", dictionary);
 		}
 	}
 
@@ -719,7 +719,7 @@ public class Tracking
 				Mixpanel.people.Set("highest_level_reached", Player.MaxLevelID);
 				dictionary = new Dictionary<string, object>();
 				dictionary.Add("highest_level_reached", Player.MaxLevelID);
-				Leanplum.SetUserAttributes(dictionary);
+				//Leanplum.SetUserAttributes(dictionary);
 			}
 			Mixpanel.people.Set("current_level", Player.CurrentLevelID);
 			Mixpanel.people.Set("total_lives_available", Player.Lives);
@@ -750,7 +750,7 @@ public class Tracking
 			track("level", "level", Location.level, dictionary2);
 			dictionary2["EventTag"] = "level";
 			dictionary2["Location"] = Location.level.ToString();
-			Leanplum.Track("level", dictionary2);
+			//Leanplum.Track("level", dictionary2);
 		}
 	}
 

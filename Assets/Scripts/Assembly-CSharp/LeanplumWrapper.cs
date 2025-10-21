@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 using mixpanel.platform;
@@ -21,16 +21,16 @@ public class LeanplumWrapper : MonoBehaviour
 	{
 		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
 		instance = this;
-		if (Application.isEditor)
-		{
-			LeanplumFactory.SDK = new LeanplumNative();
-		}
-		else
-		{
-			LeanplumFactory.SDK = new LeanplumAndroid();
-			Leanplum.SetGcmSenderId(Leanplum.LeanplumGcmSenderId);
-		}
-		Leanplum.SetGcmSenderId(Leanplum.LeanplumGcmSenderId);
+		//if (Application.isEditor)
+		//{
+		//	LeanplumFactory.SDK = new LeanplumNative();
+		//}
+		//else
+		//{
+		//	LeanplumFactory.SDK = new LeanplumAndroid();
+		//	Leanplum.SetGcmSenderId(Leanplum.LeanplumGcmSenderId);
+		//}
+		//Leanplum.SetGcmSenderId(Leanplum.LeanplumGcmSenderId);
 	}
 
 	private Dictionary<string, object> getUserAttributes()
@@ -51,11 +51,11 @@ public class LeanplumWrapper : MonoBehaviour
 		try
 		{
 			T result = default_value;
-			object obj = Leanplum.ObjectForKeyPath(list);
-			if (obj != null)
-			{
-				result = (T)Convert.ChangeType(obj, typeof(T));
-			}
+			//object obj = Leanplum.ObjectForKeyPath(list);
+			//if (obj != null)
+			//{
+			//	result = (T)Convert.ChangeType(obj, typeof(T));
+			//}
 			return result;
 		}
 		catch
@@ -69,10 +69,10 @@ public class LeanplumWrapper : MonoBehaviour
 	{
 		if (!(instance == null))
 		{
-			SocketUtilsFactory.Utils = new SocketUtils();
+			//SocketUtilsFactory.Utils = new SocketUtils();
 			if (!string.IsNullOrEmpty(App.VERSION_CODE))
 			{
-				Leanplum.SetAppVersion(App.VERSION_CODE);
+				//Leanplum.SetAppVersion(App.VERSION_CODE);
 			}
 			if (string.IsNullOrEmpty(instance.AppID) || string.IsNullOrEmpty(instance.ProductionKey) || string.IsNullOrEmpty(instance.DevelopmentKey))
 			{
@@ -80,13 +80,13 @@ public class LeanplumWrapper : MonoBehaviour
 			}
 			if (Debug.isDebugBuild)
 			{
-				Leanplum.SetAppIdForDevelopmentMode(instance.AppID, instance.DevelopmentKey);
+				//Leanplum.SetAppIdForDevelopmentMode(instance.AppID, instance.DevelopmentKey);
 			}
 			else
 			{
-				Leanplum.SetAppIdForProductionMode(instance.AppID, instance.ProductionKey);
+				//Leanplum.SetAppIdForProductionMode(instance.AppID, instance.ProductionKey);
 			}
-			Leanplum.Start(instance.getUserAttributes());
+			//Leanplum.Start(instance.getUserAttributes());
 		}
 	}
 }

@@ -375,7 +375,7 @@ public class tk2dTextMesh : MonoBehaviour, ISpriteCollectionForceBuild
 		{
 			if (_cachedRenderer == null)
 			{
-				_cachedRenderer = base.renderer;
+				_cachedRenderer = base.GetComponent<Renderer>();
 			}
 			return _cachedRenderer;
 		}
@@ -882,7 +882,7 @@ public class tk2dTextMesh : MonoBehaviour, ISpriteCollectionForceBuild
 		}
 		else if ((bool)Camera.main)
 		{
-			if (Camera.main.isOrthoGraphic)
+			if (Camera.main.orthographic)
 			{
 				num = Camera.main.orthographicSize;
 			}
@@ -907,9 +907,9 @@ public class tk2dTextMesh : MonoBehaviour, ISpriteCollectionForceBuild
 
 	private void UpdateMaterial()
 	{
-		if (base.renderer.sharedMaterial != _fontInst.materialInst)
+		if (base.GetComponent<Renderer>().sharedMaterial != _fontInst.materialInst)
 		{
-			base.renderer.material = _fontInst.materialInst;
+			base.GetComponent<Renderer>().material = _fontInst.materialInst;
 		}
 	}
 

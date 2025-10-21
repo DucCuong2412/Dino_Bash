@@ -15,7 +15,7 @@ public class AchievementPopUp : BaseScreen
 		label = GetComponentInChildren<tk2dTextMesh>();
 		icon = GetComponentInChildren<SpriteRenderer>();
 		icon_scale = icon.transform.localScale;
-		fx = icon.transform.FindChild("FX_Stars").GetComponent<ParticleSystem>();
+		fx = icon.transform.Find("FX_Stars").GetComponent<ParticleSystem>();
 		base.transform.localPosition += base.top;
 		base.gameObject.SetActive(false);
 	}

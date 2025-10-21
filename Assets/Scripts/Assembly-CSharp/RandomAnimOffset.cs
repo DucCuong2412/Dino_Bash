@@ -6,7 +6,7 @@ public class RandomAnimOffset : MonoBehaviour
 {
 	private void Start()
 	{
-		IEnumerator enumerator = base.animation.GetEnumerator();
+		IEnumerator enumerator = base.GetComponent<Animation>().GetEnumerator();
 		try
 		{
 			if (enumerator.MoveNext())

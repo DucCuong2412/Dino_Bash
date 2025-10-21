@@ -25,11 +25,11 @@ public class tk2dUILayout : MonoBehaviour
 
 	private void Reset()
 	{
-		if (!(base.collider != null))
+		if (!(base.GetComponent<Collider>() != null))
 		{
 			return;
 		}
-		BoxCollider boxCollider = base.collider as BoxCollider;
+		BoxCollider boxCollider = base.GetComponent<Collider>() as BoxCollider;
 		if (boxCollider != null)
 		{
 			Bounds bounds = boxCollider.bounds;

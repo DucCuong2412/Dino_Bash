@@ -70,10 +70,10 @@ public class DinoSelectButton : StandardButton
 	public void init()
 	{
 		dino_slot = GetComponent<SpriteRenderer>();
-		selected_sprite = base.transform.parent.FindChild("selected").GetComponent<SpriteRenderer>();
-		price_label = base.transform.parent.FindChild("price_label").GetComponent<tk2dTextMesh>();
+		selected_sprite = base.transform.parent.Find("selected").GetComponent<SpriteRenderer>();
+		price_label = base.transform.parent.Find("price_label").GetComponent<tk2dTextMesh>();
 		price_panel = price_label.transform.parent.Find("dinobuy_panel");
-		upgrade_icon = base.transform.parent.FindChild("upgrading");
+		upgrade_icon = base.transform.parent.Find("upgrading");
 		selected = false;
 	}
 }

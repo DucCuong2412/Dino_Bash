@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 
 public static class LeanplumHelper
@@ -39,53 +39,53 @@ public static class LeanplumHelper
 		return dictionary;
 	}
 
-	public static int[] toIntArray(Var<List<object>> item)
+	public static int[] toIntArray(List<object> item)
 	{
-		int[] array = new int[item.Value.Count];
-		for (int i = 0; i < item.Value.Count; i++)
+		int[] array = new int[item.Count];
+		for (int i = 0; i < item.Count; i++)
 		{
 			int result = -1;
 			float result2 = -1f;
-			if (int.TryParse(item.Value[i].ToString(), out result))
+			if (int.TryParse(item[i].ToString(), out result))
 			{
 				array[i] = result;
 			}
-			else if (float.TryParse(item.Value[i].ToString(), out result2))
+			else if (float.TryParse(item[i].ToString(), out result2))
 			{
 				array[i] = Mathf.RoundToInt(result2);
 			}
 			else
 			{
-				array[i] = (int)item.Value[i];
+				array[i] = (int)item[i];
 			}
 		}
 		return array;
 	}
 
-	public static float[] toFloatArray(Var<List<object>> item)
+	public static float[] toFloatArray(List<object> item)
 	{
-		float[] array = new float[item.Value.Count];
-		for (int i = 0; i < item.Value.Count; i++)
+		float[] array = new float[item.Count];
+		for (int i = 0; i < item.Count; i++)
 		{
 			float result = -1f;
-			if (float.TryParse(item.Value[i].ToString(), out result))
+			if (float.TryParse(item[i].ToString(), out result))
 			{
 				array[i] = result;
 			}
 			else
 			{
-				array[i] = (float)item.Value[i];
+				array[i] = (float)item[i];
 			}
 		}
 		return array;
 	}
 
-	public static string[] toStringArray(Var<List<object>> item)
+	public static string[] toStringArray(List<object> item)
 	{
-		string[] array = new string[item.Value.Count];
-		for (int i = 0; i < item.Value.Count; i++)
+		string[] array = new string[item.Count];
+		for (int i = 0; i < item.Count; i++)
 		{
-			array[i] = item.Value[i].ToString();
+			array[i] = item[i].ToString();
 		}
 		return array;
 	}

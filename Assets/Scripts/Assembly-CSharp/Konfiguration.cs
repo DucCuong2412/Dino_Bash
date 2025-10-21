@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 using dinobash;
 
@@ -62,7 +62,7 @@ public static class Konfiguration
 		LoadLevels();
 		LoadEntityData(Serializer.DeserializeFileOrTextAsset<List<EntityData>>("XML/entitydata"));
 		LoadShotData(Serializer.DeserializeFileOrTextAsset<List<ShotData>>("XML/shotdata"));
-		Leanplum.VariablesChanged += HandleVariablesChanged;
+		//Leanplum.VariablesChanged += HandleVariablesChanged;
 	}
 
 	private static void HandleVariablesChanged()

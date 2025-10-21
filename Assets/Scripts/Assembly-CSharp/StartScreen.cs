@@ -74,7 +74,7 @@ public class StartScreen : BaseScreen
 		component.text = App.VERSION_CODE;
 		component.ForceBuild();
 		label_login_successfull = base.transform.Search("login_success_label").GetComponent<LocalizedText>();
-		label_login_successfull.renderer.enabled = false;
+		label_login_successfull.GetComponent<Renderer>().enabled = false;
 		login_message_color = label_login_successfull.textMesh.color;
 		info_button = base.transform.Search("button_settings").GetComponent<StandardButton>();
 		info_button.uiItem.OnClick += delegate
@@ -135,7 +135,7 @@ public class StartScreen : BaseScreen
 		fb_login_label = fb_login_button.GetComponentInChildren<LocalizedText>();
 		fb_login_label_size = fb_login_label.textMesh.scale;
 		base.gameObject.SetActive(false);
-		rate_button = base.transform.FindChild("UpperCenter/rate_button").GetComponent<StandardButton>().uiItem;
+		rate_button = base.transform.Find("UpperCenter/rate_button").GetComponent<StandardButton>().uiItem;
 		rate_button.OnClick += delegate
 		{
 			RateAppScreen.OpenStoreRatingSite();
@@ -257,7 +257,7 @@ public class StartScreen : BaseScreen
 		{
 			label_login_successfull.Key = "login_failed";
 		}
-		label_login_successfull.renderer.enabled = true;
+		label_login_successfull.GetComponent<Renderer>().enabled = true;
 		label_login_successfull.textMesh.color = login_message_color;
 		label_login_successfull.transform.localScale = Vector3.zero;
 		Go.to(label_login_successfull.transform, 0.5f, new GoTweenConfig().scale(Vector3.one).setEaseType(GoEaseType.BounceOut));
@@ -268,7 +268,7 @@ public class StartScreen : BaseScreen
 		fadeout_tween = Go.to(label_login_successfull.textMesh, 1f, new GoTweenConfig().colorProp("color", Colors.Invisible).setDelay(5f));
 		fadeout_tween.setOnCompleteHandler(delegate
 		{
-			label_login_successfull.renderer.enabled = false;
+			label_login_successfull.GetComponent<Renderer>().enabled = false;
 		});
 	}
 

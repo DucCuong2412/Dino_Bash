@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using LeanplumSDK;
+//using LeanplumSDK;
 using UnityEngine;
 
 public class LevelData
@@ -12,13 +12,13 @@ public class LevelData
 
 	public readonly int level_coins;
 
-	[XmlIgnore]
-	private Var<int> var_level_coins;
+ 
+	private int var_level_coins;
 
 	public readonly int kill_coins;
 
-	[XmlIgnore]
-	private Var<int> var_kill_coins;
+ 
+	private int var_kill_coins;
 
 	public readonly int level_xp;
 
@@ -26,16 +26,16 @@ public class LevelData
 
 	public readonly bool is_friend_gate;
 
-	[XmlIgnore]
-	public Var<float> var_cuttoff;
+ 
+	public float var_cuttoff;
 
-	[XmlIgnore]
-	private Var<float> var_endlessScale;
+ 
+	private float var_endlessScale;
 
 	public readonly int friend_gate_duration_in_seconds;
 
 	[XmlIgnore]
-	private Var<int> var_friend_gate_duration_in_seconds;
+	private int var_friend_gate_duration_in_seconds;
 
 	public readonly UnitType unlockUnit;
 
@@ -69,7 +69,7 @@ public class LevelData
 				Debug.LogError("var_level_coins is null: " + name + " / " + display_name);
 				return 0;
 			}
-			return var_level_coins.Value;
+			return var_level_coins;
 		}
 	}
 
@@ -82,7 +82,7 @@ public class LevelData
 				Debug.LogError("var_level_coins is null");
 				return 0;
 			}
-			return var_kill_coins.Value;
+			return var_kill_coins;
 		}
 	}
 
@@ -93,7 +93,7 @@ public class LevelData
 			//Discarded unreachable code: IL_0013, IL_002e
 			try
 			{
-				return var_endlessScale.Value;
+				return var_endlessScale;
 			}
 			catch (Exception)
 			{
@@ -116,7 +116,7 @@ public class LevelData
 				Debug.LogError("var_friend_gate_duration_in_seconds is null");
 				return 0;
 			}
-			return var_friend_gate_duration_in_seconds.Value;
+			return var_friend_gate_duration_in_seconds;
 		}
 	}
 
@@ -160,13 +160,14 @@ public class LevelData
 	{
 		if (is_friend_gate)
 		{
-			var_friend_gate_duration_in_seconds = Var.Define("friendgate.duration_in_seconds." + name, friend_gate_duration_in_seconds);
-			return;
+			var_friend_gate_duration_in_seconds = friend_gate_duration_in_seconds;
+
+            return;
 		}
-		var_level_coins = Var.Define("level.level_coins." + name, level_coins);
-		var_kill_coins = Var.Define("level.kill_coins." + name, kill_coins);
-		var_cuttoff = Var.Define("level.cutoff." + name, 1f);
-		var_endlessScale = Var.Define("level.endless_scale." + name, 0.03f);
+		var_level_coins = level_coins;
+		var_kill_coins = kill_coins;
+		var_cuttoff = 1f;
+		var_endlessScale = 0.03f;
 	}
 
 	public int getOverrideLevel(ShotType shot = ShotType.None, UnitType unit = UnitType.None)

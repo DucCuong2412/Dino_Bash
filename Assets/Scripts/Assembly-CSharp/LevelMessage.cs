@@ -22,7 +22,7 @@ public class LevelMessage : MonoBase
 
 	private void ShowLabel()
 	{
-		label.renderer.enabled = true;
+		label.GetComponent<Renderer>().enabled = true;
 		scaleTween.playForward();
 		scaleTween.setOnCompleteHandler(null);
 		fadeTween.playForward();
@@ -33,7 +33,7 @@ public class LevelMessage : MonoBase
 		scaleTween.playBackwards();
 		scaleTween.setOnCompleteHandler(delegate
 		{
-			label.renderer.enabled = false;
+			label.GetComponent<Renderer>().enabled = false;
 		});
 		fadeTween.playBackwards();
 	}

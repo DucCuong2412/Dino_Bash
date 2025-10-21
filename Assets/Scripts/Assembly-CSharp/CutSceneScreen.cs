@@ -33,7 +33,7 @@ public class CutSceneScreen : MonoBase
 		{
 			skip_button.uiItem.enabled = false;
 			GetComponent<Animator>().enabled = false;
-			base.transform.Search("zfiller").renderer.enabled = false;
+			base.transform.Search("zfiller").GetComponent<Renderer>().enabled = false;
 			float duration = 0.3f;
 			SpriteRenderer component = base.transform.Search("schwarze_balken_oben").GetComponent<SpriteRenderer>();
 			SpriteRenderer component2 = base.transform.Search("schwarze_balken_unten").GetComponent<SpriteRenderer>();
@@ -58,7 +58,7 @@ public class CutSceneScreen : MonoBase
 						component3.GetParticles(array2);
 						Array.ForEach(array2, delegate(ParticleSystem.Particle p)
 						{
-							p.lifetime = duration;
+							p.remainingLifetime = duration;
 						});
 						component3.SetParticles(array2, array2.Length);
 					}

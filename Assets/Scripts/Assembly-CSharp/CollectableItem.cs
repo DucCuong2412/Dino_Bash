@@ -39,7 +39,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		}
 		sprite.gameObject.layer = 0;
 		base.transform.localScale = Vector3.one;
-		base.collider.enabled = true;
+		base.GetComponent<Collider>().enabled = true;
 		touched = false;
 		lifeTime = Time.time + Konfiguration.GameConfig.AppleCollectTimer;
 		uiItem.OnClick += OnClicked;
@@ -56,7 +56,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 
 	protected void Update()
 	{
-		if (Time.time > lifeTime && collectable.collider.enabled)
+		if (Time.time > lifeTime && collectable.GetComponent<Collider>().enabled)
 		{
 			collectable.stateDie();
 		}
@@ -72,7 +72,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		if (collectable.unitType == UnitType.CollectableApple)
 		{
 			AudioPlayer.PlayGuiSFX(Sounds.game_apple_collect, 0f);
-			target = MonoSingleton<ApplesLabel>.Instance.transform.parent.renderer;
+			target = MonoSingleton<ApplesLabel>.Instance.transform.parent.GetComponent<Renderer>();
 			onCollect = delegate
 			{
 				Player.Instance.Apples += Konfiguration.GameConfig.AppleCollectReward;
@@ -80,7 +80,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		}
 		if (collectable.unitType == UnitType.CollectableBlizzard)
 		{
-			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.Blizzard).renderer;
+			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.Blizzard).GetComponent<Renderer>();
 			onCollect = delegate
 			{
 				Player.changeConsumableCount(UnitType.Blizzard, 1);
@@ -88,7 +88,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		}
 		if (collectable.unitType == UnitType.CollectableMeteorStorm)
 		{
-			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.MeteorStorm).renderer;
+			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.MeteorStorm).GetComponent<Renderer>();
 			onCollect = delegate
 			{
 				Player.changeConsumableCount(UnitType.MeteorStorm, 1);
@@ -96,7 +96,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		}
 		if (collectable.unitType == UnitType.CollectableMegaBall)
 		{
-			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.MegaBall).renderer;
+			target = ScreenManager.GetScreen<HudScreen>().ConsumableButtons.Find((BuyUnitButton x) => x.Unit == UnitType.MegaBall).GetComponent<Renderer>();
 			onCollect = delegate
 			{
 				Player.changeConsumableCount(UnitType.MegaBall, 1);
@@ -106,7 +106,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		{
 			Tracking.pickup_consumable(collectable.unitType.ToString(), Level.Instance.levelid);
 		}
-		base.collider.enabled = false;
+		base.GetComponent<Collider>().enabled = false;
 		Vector3 position = sceneCamera.WorldToScreenPoint(base.transform.position);
 		base.transform.position = guiCamera.ScreenToWorldPoint(position).SetZ(10f);
 		sprite.sortingLayerID = target.sortingLayerID;
