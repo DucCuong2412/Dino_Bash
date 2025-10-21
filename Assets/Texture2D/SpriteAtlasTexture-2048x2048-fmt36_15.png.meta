@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: 57d681e248659ee4c876eb33d0032883
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: trex_oberkoerper_0
+  - first:
+      213: 21300002
+    second: rocky_0007_kopf_upgrade_2
+  - first:
+      213: 21300004
+    second: trex_vorderbein-oben_upgrade_1
+  - first:
+      213: 21300006
+    second: trex_oberkoerper_upgrade_2
+  - first:
+      213: 21300008
+    second: trex_vorderbein-mitte_0
+  - first:
+      213: 21300010
+    second: tri_koerper_upgrade_2
+  - first:
+      213: 21300012
+    second: frosti_0005_kopf_upgrade_2
+  - first:
+      213: 21300014
+    second: trex_oberkoerper_upgrade_1
+  - first:
+      213: 21300016
+    second: tri_kopf_upgrade_2
+  - first:
+      213: 21300018
+    second: brachio_koerperhinten
+  - first:
+      213: 21300020
+    second: Spitty_kopf_upgrade_2
+  - first:
+      213: 21300022
+    second: brachio_koerperhinten_upgrade_1
+  - first:
+      213: 21300024
+    second: trex_oberkoerper_upgrade_3
+  - first:
+      213: 21300026
+    second: tri_koerper_upgrade_3
+  - first:
+      213: 21300028
+    second: tri_kopf
+  - first:
+      213: 21300030
+    second: trex_kopf_upgrade_3
+  - first:
+      213: 21300032
+    second: rambo_hinterbein_vorn_oben_upgrade_1
+  - first:
+      213: 21300034
+    second: raptor_koerper_upgrade_3
+  - first:
+      213: 21300036
+    second: frosti_0005_kopf_upgrade_1
+  - first:
+      213: 21300038
+    second: trex_kopf_upgrade_2
+  - first:
+      213: 21300040
+    second: trex_kopf_upgrade_1
+  - first:
+      213: 21300042
+    second: tri_kopf_upgrade_3
+  - first:
+      213: 21300044
+    second: rocky_0010_hinterbein-oben-hinten
+  - first:
+      213: 21300046
+    second: tri_kopf_upgrade_1
+  - first:
+      213: 21300048
+    second: tri_koerper_upgrade_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 36
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 0
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trex_oberkoerper_0
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1425
+        width: 439
+        height: 430
+      alignment: 9
+      pivot: {x: 0.029122286, y: 0.58978677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocky_0007_kopf_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 829.02673
+        y: 386
+        width: 303.97324
+        height: 292
+      alignment: 9
+      pivot: {x: 0.3177613, y: 0.9793906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_vorderbein-oben_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 1068
+        width: 265
+        height: 336
+      alignment: 9
+      pivot: {x: 0.35419622, y: 0.80167264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_oberkoerper_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1575
+        width: 441
+        height: 430
+      alignment: 9
+      pivot: {x: 0.04712869, y: 0.6015532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_vorderbein-mitte_0
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 1330
+        width: 206
+        height: 214
+      alignment: 9
+      pivot: {x: 0.97025454, y: 0.7394315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_koerper_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 463.9239
+        height: 445
+      alignment: 9
+      pivot: {x: 0.42272663, y: 0.23865001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frosti_0005_kopf_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 614
+        width: 260
+        height: 140
+      alignment: 9
+      pivot: {x: 0.07337086, y: 0.34763235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_oberkoerper_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 531
+        height: 409
+      alignment: 9
+      pivot: {x: 0.19861978, y: 0.61947435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_kopf_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 809
+        width: 414
+        height: 486
+      alignment: 9
+      pivot: {x: 0.22826087, y: 0.18040626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerperhinten
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1299
+        width: 401
+        height: 481
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spitty_kopf_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1340
+        width: 197
+        height: 180
+      alignment: 9
+      pivot: {x: 0.48635447, y: 0.3028671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerperhinten_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 0
+        width: 401
+        height: 503
+      alignment: 9
+      pivot: {x: 0.5, y: 0.477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_oberkoerper_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 439
+        height: 430
+      alignment: 9
+      pivot: {x: 0.04067705, y: 0.5955795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_koerper_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1111
+        width: 449.9239
+        height: 445
+      alignment: 9
+      pivot: {x: 0.41293657, y: 0.26254508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_kopf
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 825
+        width: 414
+        height: 486
+      alignment: 9
+      pivot: {x: 0.1842807, y: 0.19666834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_kopf_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 506
+        width: 481
+        height: 420
+      alignment: 9
+      pivot: {x: 0.17268759, y: 0.31481472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rambo_hinterbein_vorn_oben_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 941
+        width: 171
+        height: 217
+      alignment: 9
+      pivot: {x: 0.36165258, y: 0.6105137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_koerper_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 1406
+        width: 152
+        height: 209
+      alignment: 9
+      pivot: {x: 0.4897998, y: 0.102748014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frosti_0005_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1842
+        width: 260
+        height: 171
+      alignment: 9
+      pivot: {x: 0.07337086, y: 0.28971493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_kopf_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 937
+        width: 481
+        height: 401
+      alignment: 9
+      pivot: {x: 0.1762892, y: 0.33422935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 474
+        height: 443
+      alignment: 9
+      pivot: {x: 0.17758004, y: 0.3133215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_kopf_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 450
+        width: 414
+        height: 486
+      alignment: 9
+      pivot: {x: 0.22475457, y: 0.18339312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocky_0010_hinterbein-oben-hinten
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1759
+        width: 204
+        height: 205
+      alignment: 9
+      pivot: {x: 0.3694348, y: 0.6120071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 0
+        width: 414
+        height: 486
+      alignment: 9
+      pivot: {x: 0.2037167, y: 0.19086026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri_koerper_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1582
+        width: 458
+        height: 420
+      alignment: 9
+      pivot: {x: 0.42330682, y: 0.22520903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spitty_kopf_upgrade_2: 21300020
+      brachio_koerperhinten: 21300018
+      brachio_koerperhinten_upgrade_1: 21300022
+      frosti_0005_kopf_upgrade_1: 21300036
+      frosti_0005_kopf_upgrade_2: 21300012
+      rambo_hinterbein_vorn_oben_upgrade_1: 21300032
+      raptor_koerper_upgrade_3: 21300034
+      rocky_0007_kopf_upgrade_2: 21300002
+      rocky_0010_hinterbein-oben-hinten: 21300044
+      trex_kopf_upgrade_1: 21300040
+      trex_kopf_upgrade_2: 21300038
+      trex_kopf_upgrade_3: 21300030
+      trex_oberkoerper_0: 21300000
+      trex_oberkoerper_upgrade_1: 21300014
+      trex_oberkoerper_upgrade_2: 21300006
+      trex_oberkoerper_upgrade_3: 21300024
+      trex_vorderbein-mitte_0: 21300008
+      trex_vorderbein-oben_upgrade_1: 21300004
+      tri_koerper_upgrade_1: 21300048
+      tri_koerper_upgrade_2: 21300010
+      tri_koerper_upgrade_3: 21300026
+      tri_kopf: 21300028
+      tri_kopf_upgrade_1: 21300046
+      tri_kopf_upgrade_2: 21300016
+      tri_kopf_upgrade_3: 21300042
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Stego
+  m_Controller: {fileID: 9100000, guid: 4afa129a6aee999428ee43344259d278, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 412cf96ad2427164cb3f317e52cfaaf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8887864a01878024a819aa2b7d8bd209, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3b6cda31d4e7a2142b2fa3cf3fa134d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d5b762cbd4832ac4d85c887669a4d889, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fa4fdf74fe946864e87b4105c01ec444, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a95a931b4ecf4954b9ba05eb713b3c04, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ae43250469248c046861c1f1f19d3197, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8446129c566a8174b8ff9708c7b3aa6a, type: 2}

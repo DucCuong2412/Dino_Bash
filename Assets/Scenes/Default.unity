@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &3
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData:
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 0
+    smallestHole: 0
+    backfaceThreshold: 0
+--- !u!104 &4
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &5
+HaloManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &6
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 2
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 0
+    m_BounceIntensity: 0
+    m_SkyLightColor: {r: 0, g: 0, b: 0, a: 0}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 0
+    m_FinalGatherRays: 0
+    m_FinalGatherContrastThreshold: 0
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 0
+    m_AOAmount: 0
+    m_AOMaxDistance: 1
+    m_AOContrast: 0
+    m_LODSurfaceMappingDistance: 0
+    m_Padding: 2
+    m_TextureCompression: 1
+    m_LockAtlas: 0
+--- !u!196 &7
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 0
+    heightInaccuracy: 0
+    tileSizeHint: 0
+  m_NavMesh: {fileID: 0}
+--- !u!1 &1
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Component:
+  - 4: {fileID: 2}
+  - 114: {fileID: 8}
+  - 114: {fileID: 11}
+  - 114: {fileID: 9}
+  - 114: {fileID: 10}
+  m_Layer: 0
+  m_Name: App
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdeb6a90d9c3b828872177f430b7945d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  cloudSaveGameManager: {fileID: 0}
+  facebookManager: {fileID: 0}
+  paymentManager: {fileID: 0}
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ded3980943ba06e49a04b4cb92ea68, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  spriteKeys:
+  - consumable_megaball
+  - shotbuy_icebomb
+  - dinobuy_spitty
+  - shotbuy_bomb
+  - consumable_blizzard
+  - dinobuy_trex
+  - person_dino_a
+  - dinobuy_rocky
+  - upgrade_additionalshotslot
+  - upgrade_raindowtrail
+  - dinobuy_raptor
+  - dinobuy_dinoegg
+  - upgrade_dynamite
+  - shotbuy_ice
+  - shotbuy_triple
+  - upgrade_stone
+  - dinobuy_trex_jr
+  - shotbuy_poison
+  - upgrade_smallbarricade
+  - shotbuy_heal
+  - upgrade_applestartbonus
+  - consumable_meteorstorm
+  - dinobuy_brachio
+  - upgrade_poisontrap
+  - upgrade_dynamitesmall
+  - dinobuy_frosty
+  - upgrade_raincloud
+  - person_dino_c
+  - shotbuy_rocket
+  - upgrade_xpdoubler
+  - dinobuy_stego
+  - dinobuy_tricer
+  - dinobuy_rambo
+  - shotbuy_normal
+  - shotbuy_doublehunk
+  - shotbuy_wobble
+  - upgrade_fastshotcooldown
+  - upgrade_coindoubler
+  - apple_upgrade
+  - person_dino_b
+  - dinobuy_snappy
+  - upgrade_eggprotection
+  spriteList:
+  - {fileID: 21300082, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300074, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300066, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300052, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300054, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300098, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300110, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+  - {fileID: 21300078, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300104, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300062, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300090, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300068, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300088, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300058, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300092, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300114, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300060, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300112, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300086, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300050, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300024, guid: e450264b3353d21438e13208e08ffd83, type: 3}
+  - {fileID: 21300056, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300072, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300102, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300026, guid: e450264b3353d21438e13208e08ffd83, type: 3}
+  - {fileID: 21300070, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300080, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300114, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+  - {fileID: 21300108, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300034, guid: 0e5f7a2ad2b7cd6448aff323c13c391e, type: 3}
+  - {fileID: 21300064, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300100, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300096, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300076, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300084, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300106, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300108, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+  - {fileID: 21300118, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+  - {fileID: 21300094, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300112, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+  - {fileID: 21300110, guid: d6daebc1d7b92764f8566c30d5f4de19, type: 3}
+  - {fileID: 21300116, guid: b80bdfb3ae2265842a6f9d498cb61b3d, type: 3}
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793bece8d315fdbdb8c9049259028fef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  environmentShadow:
+  - {r: 0.73333335, g: 0.6, b: 0.40784314, a: 1}
+  - {r: 0.5955882, g: 0.4165493, b: 0.25400084, a: 1}
+  - {r: 0.5441177, g: 0.38249713, b: 0.24005193, a: 1}
+  - {r: 0.61764705, g: 0.45640734, b: 0.37240484, a: 1}
+  - {r: 0.61764705, g: 0.45640734, b: 0.37240484, a: 1}
+  unlockScreenShadow: {r: 0.8235294, g: 0.7768166, b: 0.6600346, a: 1}
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a8d68cc8bd15acba51cb94aa329c32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  uiCamera: {fileID: 0}
+  raycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  areHoverEventsTracked: 0
+  useMultiTouch: 0

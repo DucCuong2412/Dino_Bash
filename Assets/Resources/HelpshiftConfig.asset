@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30e3608faa10033d773c8e8f04248db, type: 3}
+  m_Name: HelpshiftConfig
+  m_EditorClassIdentifier:
+  apiKey: f322cb503d6c5d9364082c91508893c6
+  domainName: tiltingpoint.helpshift.com
+  iosAppId: tiltingpoint_platform_20150812145235552-bd72f0a4e83e9e2
+  androidAppId: tiltingpoint_platform_20150812145235565-f000d7d1bb355a7
+  contactUsOption: 2
+  gotoConversation: 0
+  presentFullScreen: 0
+  enableInApp: 1
+  requireEmail: 0
+  hideNameAndEmail: 0
+  enablePrivacy: 1
+  showSearchOnNewConversation: 1
+  showConversationResolutionQuestion: 1
+  enableDefaultFallbackLanguage: 1
+  disableEntryExitAnimations: 0
+  conversationPrefillText:
+  contactUsOptions:
+  - always
+  - never
+  - after_viewing_faqs
+  - after_marking_answer_unhelpful
+  unityGameObject: HelpShift
+  notificationIcon:
+  notificationSound:

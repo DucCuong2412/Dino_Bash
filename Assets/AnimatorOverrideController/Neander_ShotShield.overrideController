@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Neander_ShotShield
+  m_Controller: {fileID: 9100000, guid: 4afa129a6aee999428ee43344259d278, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 412cf96ad2427164cb3f317e52cfaaf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad96bad15cae50844bbc78274c13f435, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3b6cda31d4e7a2142b2fa3cf3fa134d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a368896b460d9e4fbce02f9b83887f9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ae43250469248c046861c1f1f19d3197, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5f0e587da60e232419ac88fcef0d6e90, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fa4fdf74fe946864e87b4105c01ec444, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6fd3fc19cfff36f4482f4501da3fccb2, type: 2}

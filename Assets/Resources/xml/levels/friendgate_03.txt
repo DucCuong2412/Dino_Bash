@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LevelData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <name>friendgate_03</name>
+    <levelwidth>0</levelwidth>
+    <level_coins>0</level_coins>
+    <kill_coins>0</kill_coins>
+    <level_xp>0</level_xp>
+    <kill_xp>0</kill_xp>
+    <unlockUnit>None</unlockUnit>
+    <is_friend_gate>true</is_friend_gate>
+    <friend_gate_duration_in_seconds>86400</friend_gate_duration_in_seconds>
+    <endless_mode>false</endless_mode>
+    <enemies>
+  	</enemies>
+</LevelData>

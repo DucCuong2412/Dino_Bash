@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: trex_jr_dinorage_screen
+  m_Controller: {fileID: 9100000, guid: 4afa129a6aee999428ee43344259d278, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 24217ba156bad1247b8ca175f7582fc7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 855c3320b26bc614782128ef516c841d, type: 2}

@@ -1,0 +1,1022 @@
+fileFormatVersion: 2
+guid: bd871d0d682862947a3cb3ac6682cdce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: mund lachend
+  - first:
+      213: 21300002
+    second: schildi_kopf-hinten
+  - first:
+      213: 21300004
+    second: koerper weinend
+  - first:
+      213: 21300006
+    second: kopf lachend
+  - first:
+      213: 21300008
+    second: hinterarm_oben
+  - first:
+      213: 21300010
+    second: schildi_arm-rechts-oben
+  - first:
+      213: 21300012
+    second: auge rechts lachend
+  - first:
+      213: 21300014
+    second: schildi_mund
+  - first:
+      213: 21300016
+    second: schildi_stock
+  - first:
+      213: 21300018
+    second: schildi_arm-links-oben
+  - first:
+      213: 21300020
+    second: schildi_arm-links-unten
+  - first:
+      213: 21300022
+    second: schildi_koerper
+  - first:
+      213: 21300024
+    second: schildi_handy
+  - first:
+      213: 21300026
+    second: schwanz weinend
+  - first:
+      213: 21300028
+    second: mund weinend
+  - first:
+      213: 21300030
+    second: schildi_auge-zu-links
+  - first:
+      213: 21300032
+    second: schildi_auge-rechts
+  - first:
+      213: 21300034
+    second: schildi_pupille-rechts
+  - first:
+      213: 21300036
+    second: auge links weinend
+  - first:
+      213: 21300038
+    second: schildi_bein-links
+  - first:
+      213: 21300040
+    second: auge rechts weinend
+  - first:
+      213: 21300042
+    second: schildi_hand-rechts
+  - first:
+      213: 21300044
+    second: schildi_arm-links-shading
+  - first:
+      213: 21300046
+    second: schildi_schwanz
+  - first:
+      213: 21300048
+    second: schildi_kopf
+  - first:
+      213: 21300050
+    second: brauen links lachend
+  - first:
+      213: 21300052
+    second: schildi_arm-rechts-unten
+  - first:
+      213: 21300054
+    second: arm links oben weinend
+  - first:
+      213: 21300056
+    second: kopf weinend
+  - first:
+      213: 21300058
+    second: schildi_bein-rechts
+  - first:
+      213: 21300060
+    second: schildi_pupille-links
+  - first:
+      213: 21300062
+    second: auge links lachend
+  - first:
+      213: 21300064
+    second: brauen rechts lachend
+  - first:
+      213: 21300066
+    second: schildi_auge-zu-rechts
+  - first:
+      213: 21300068
+    second: schildi_auge-links
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 36
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 0
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mund lachend
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 24
+        width: 63
+        height: 84
+      alignment: 9
+      pivot: {x: 0.2232178, y: 0.8345281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_kopf-hinten
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 635
+        width: 32
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: koerper weinend
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 122
+        width: 248
+        height: 340
+      alignment: 9
+      pivot: {x: 0.52252185, y: 0.06690562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kopf lachend
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 450
+        width: 157
+        height: 161
+      alignment: 9
+      pivot: {x: 0.06812321, y: 0.6179809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hinterarm_oben
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 308
+        width: 112
+        height: 72
+      alignment: 9
+      pivot: {x: 0.17765339, y: 0.39197522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_arm-rechts-oben
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 638
+        width: 67
+        height: 92
+      alignment: 9
+      pivot: {x: 0.3031349, y: 0.79719245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auge rechts lachend
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 784
+        width: 39
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_mund
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 552
+        width: 62
+        height: 84
+      alignment: 9
+      pivot: {x: 0.26124406, y: 0.7792712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_stock
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 204
+        height: 299
+      alignment: 9
+      pivot: {x: 0.03376467, y: 0.03106317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_arm-links-oben
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 374
+        width: 81
+        height: 93
+      alignment: 9
+      pivot: {x: 0.72462904, y: 0.7847327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_arm-links-unten
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 613
+        width: 108
+        height: 81
+      alignment: 9
+      pivot: {x: 0.033783276, y: 0.71969575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_koerper
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 498
+        width: 248
+        height: 340
+      alignment: 9
+      pivot: {x: 0.52443796, y: 0.08110527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_handy
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 737
+        width: 112
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schwanz weinend
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 262
+        width: 140
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mund weinend
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 732
+        width: 50
+        height: 60
+      alignment: 9
+      pivot: {x: 0.118279494, y: 0.91816014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_auge-zu-links
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 662
+        width: 41
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_auge-rechts
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 689
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_pupille-rechts
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auge links weinend
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 732
+        width: 45
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_bein-links
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 110
+        height: 124
+      alignment: 9
+      pivot: {x: 0.4545454, y: 0.8599164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auge rechts weinend
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 0
+        width: 39
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_hand-rechts
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 356
+        width: 40
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_arm-links-shading
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 434
+        width: 50
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_schwanz
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 458
+        width: 139
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_kopf
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 99
+        width: 156
+        height: 161
+      alignment: 9
+      pivot: {x: 0.06073086, y: 0.5866189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brauen links lachend
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 613
+        width: 45
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_arm-rechts-unten
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 365
+        width: 70
+        height: 67
+      alignment: 9
+      pivot: {x: 0.31560418, y: 0.87933093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arm links oben weinend
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 469
+        width: 80
+        height: 93
+      alignment: 9
+      pivot: {x: 0.7552084, y: 0.8539429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kopf weinend
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 157
+        height: 162
+      alignment: 9
+      pivot: {x: 0.09934252, y: 0.5821386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_bein-rechts
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 562
+        width: 90
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_pupille-links
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 9
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auge links lachend
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 778
+        width: 41
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brauen rechts lachend
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 34
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_auge-zu-rechts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schildi_auge-links
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 794
+        width: 45
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      arm links oben weinend: 21300054
+      auge links lachend: 21300062
+      auge links weinend: 21300036
+      auge rechts lachend: 21300012
+      auge rechts weinend: 21300040
+      brauen links lachend: 21300050
+      brauen rechts lachend: 21300064
+      hinterarm_oben: 21300008
+      koerper weinend: 21300004
+      kopf lachend: 21300006
+      kopf weinend: 21300056
+      mund lachend: 21300000
+      mund weinend: 21300028
+      schildi_arm-links-oben: 21300018
+      schildi_arm-links-shading: 21300044
+      schildi_arm-links-unten: 21300020
+      schildi_arm-rechts-oben: 21300010
+      schildi_arm-rechts-unten: 21300052
+      schildi_auge-links: 21300068
+      schildi_auge-rechts: 21300032
+      schildi_auge-zu-links: 21300030
+      schildi_auge-zu-rechts: 21300066
+      schildi_bein-links: 21300038
+      schildi_bein-rechts: 21300058
+      schildi_hand-rechts: 21300042
+      schildi_handy: 21300024
+      schildi_koerper: 21300022
+      schildi_kopf: 21300048
+      schildi_kopf-hinten: 21300002
+      schildi_mund: 21300014
+      schildi_pupille-links: 21300060
+      schildi_pupille-rechts: 21300034
+      schildi_schwanz: 21300046
+      schildi_stock: 21300016
+      schwanz weinend: 21300026
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

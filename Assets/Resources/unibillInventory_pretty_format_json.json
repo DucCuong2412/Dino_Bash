@@ -1,0 +1,707 @@
+{
+    "iOSSKU":"DINO_BASH",
+    "macAppStoreSKU":"",
+    "androidBillingPlatform":"GooglePlay",
+    "GooglePlayPublicKey":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuEfyV+0VRGx3Ihk7tD3PX7joncW+ljnetowS9Hz3zV5p9kxr6/9Ftce7sx0xapiivWqpzMBUsFqN8b+cwWD3f7HpWFvKaxRa6QyKY0svZaYkQ9xxkFShIPc0oSyhLD+NyyW0f3o+Ybzy2NvzstjHddKTYvMtJJbYWiG8k8+QCJR7KJnc1k9vOO70STED2WxdketZocnc54NXE3yakjoHOMYnn/iLyf+mktyh5Z4GxdCLfFMLkIw5I8WmZe1WUhqLs4taLdeWlxMwTX/4KQAnCbk72vw08WVNb9Yom6u/x4xAxkNw+KX15FHkRBihWC/Ydj9F6FboAe3WgoRzAGqgwIDAQAB",
+    "useAmazonSandbox":false,
+    "UseWP8MockingFramework":false,
+    "useHostedConfig":false,
+    "hostedConfigUrl":null,
+    "UseWin8_1Sandbox":false,
+    "samsungAppsMode":"PRODUCTION",
+    "samsungAppsItemGroupId":"",
+    "purchasableItems":{
+        "com.pokokostudio.dinobash.coin_pack_1":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_1",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 1",
+            "description":"Coin Pack 1",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"1.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"2"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_1_discount50":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_1_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 1 discount50",
+            "description":"Coin Pack 1 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"0.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"1"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.coin_pack_2":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_2",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 2",
+            "description":"Coin Pack 2",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"4.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"5"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_2_discount20":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_2_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 2 discount20",
+            "description":"Coin Pack 2 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"3.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"4"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_2_discount40":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_2_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 2 discount40",
+            "description":"Coin Pack 2 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"2.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"3"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_2_discount60":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_2_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 2 discount60",
+            "description":"Coin Pack 2 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"1.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"2"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.coin_pack_3":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3",
+            "description":"Coin Pack 3",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"9.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"10"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount20":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount20",
+            "description":"Coin Pack 3 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"7.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"8"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount30":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount30",
+            "description":"Coin Pack 3 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"6.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"7"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount40":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount40",
+            "description":"Coin Pack 3 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"5.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"6"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount50":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount50",
+            "description":"Coin Pack 3 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"4.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"5"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount60":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount60",
+            "description":"Coin Pack 3 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"3.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"4"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_3_discount70":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_3_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 3 discount70",
+            "description":"Coin Pack 3 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"2.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"3"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.coin_pack_4":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4",
+            "description":"Coin Pack 4",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"19.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"20"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount20":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount20",
+            "description":"Coin Pack 4 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"15.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"16"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount30":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount30",
+            "description":"Coin Pack 4 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"13.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"14"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount40":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount40",
+            "description":"Coin Pack 4 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"11.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"12"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount50":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount50",
+            "description":"Coin Pack 4 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"9.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"10"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount60":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount60",
+            "description":"Coin Pack 4 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"7.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"8"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_4_discount70":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_4_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 4 discount70",
+            "description":"Coin Pack 4 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"5.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"6"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.coin_pack_5":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5",
+            "description":"Coin Pack 5",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"49.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"50"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount20":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount20",
+            "description":"Coin Pack 5 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"39.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"40"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount30":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount30",
+            "description":"Coin Pack 5 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"34.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"35"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount40":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount40",
+            "description":"Coin Pack 5 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"29.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"30"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount50":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount50",
+            "description":"Coin Pack 5 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"24.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"25"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount60":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount60",
+            "description":"Coin Pack 5 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"19.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"20"}
+            }
+        },
+        "com.pokokostudio.dinobash.coin_pack_5_discount70":{
+            "@id":"com.pokokostudio.dinobash.coin_pack_5_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Coin Pack 5 discount70",
+            "description":"Coin Pack 5 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"14.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"15"}
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "com.pokokostudio.dinobash.diamond_pack_2_1":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_1",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 1",
+            "description":"Diamond Pack 1",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"1.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"2"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_1_discount50":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_1_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 1 discount50",
+            "description":"Diamond Pack 1 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"0.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"1"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.diamond_pack_2_2":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_2",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 2",
+            "description":"Diamond Pack 2",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"4.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"5"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_2_discount20":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_2_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 2 discount20",
+            "description":"Diamond Pack 2 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"3.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"4"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_2_discount40":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_2_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 2 discount40",
+            "description":"Diamond Pack 2 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"2.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"3"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_2_discount60":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_2_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 2 discount60",
+            "description":"Diamond Pack 2 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"1.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"2"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.diamond_pack_2_3":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3",
+            "description":"Diamond Pack 3",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"9.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"10"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount20":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount20",
+            "description":"Diamond Pack 3 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"7.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"8"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount30":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount30",
+            "description":"Diamond Pack 3 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"6.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"7"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount40":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount40",
+            "description":"Diamond Pack 3 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"5.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"6"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount50":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount50",
+            "description":"Diamond Pack 3 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"4.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"5"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount60":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount60",
+            "description":"Diamond Pack 3 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"3.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"4"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_3_discount70":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_3_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 3 discount70",
+            "description":"Diamond Pack 3 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"2.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"3"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.diamond_pack_2_4":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4",
+            "description":"Diamond Pack 4",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"19.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"20"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount20":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount20",
+            "description":"Diamond Pack 4 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"15.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"16"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount30":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount30",
+            "description":"Diamond Pack 4 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"13.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"14"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount40":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount40",
+            "description":"Diamond Pack 4 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"11.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"12"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount50":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount50",
+            "description":"Diamond Pack 4 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"9.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"10"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount60":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount60",
+            "description":"Diamond Pack 4 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"7.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"8"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_4_discount70":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_4_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 4 discount70",
+            "description":"Diamond Pack 4 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"5.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"6"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.diamond_pack_2_5":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5",
+            "description":"Diamond Pack 5",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"49.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"50"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount20":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount20",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount20",
+            "description":"Diamond Pack 5 discount20",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"39.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"40"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount30":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount30",
+            "description":"Diamond Pack 5 discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"34.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"35"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount40":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount40",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount40",
+            "description":"Diamond Pack 5 discount40",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"29.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"30"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount50":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount50",
+            "description":"Diamond Pack 5 discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"24.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"25"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount60":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount60",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount60",
+            "description":"Diamond Pack 5 discount60",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"19.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"20"}
+            }
+        },
+        "com.pokokostudio.dinobash.diamond_pack_2_5_discount70":{
+            "@id":"com.pokokostudio.dinobash.diamond_pack_2_5_discount70",
+            "@purchaseType":"Consumable",
+            "name":"Diamond Pack 5 discount70",
+            "description":"Diamond Pack 5 discount70",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"14.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"15"}
+            }
+        },
+
+
+
+
+
+        "com.pokokostudio.dinobash.starter_pack":{
+            "@id":"com.pokokostudio.dinobash.starter_pack",
+            "@purchaseType":"Consumable",
+            "name":"Starter Pack",
+            "description":"Starter Pack",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"3.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"4"}
+            }
+        },
+         "com.pokokostudio.dinobash.starter_pack_discount25":{
+            "@id":"com.pokokostudio.dinobash.starter_pack_discount25",
+            "@purchaseType":"Consumable",
+            "name":"Starter Pack discount25",
+            "description":"Starter Pack discount25",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"2.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"3"}
+            }
+        },
+         "com.pokokostudio.dinobash.starter_pack_discount50":{
+            "@id":"com.pokokostudio.dinobash.starter_pack_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Starter Pack discount50",
+            "description":"Starter Pack discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"1.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"2"}
+            }
+        },
+         "com.pokokostudio.dinobash.starter_pack_discount75":{
+            "@id":"com.pokokostudio.dinobash.starter_pack_discount75",
+            "@purchaseType":"Consumable",
+            "name":"Starter Pack discount75",
+            "description":"Starter Pack discount75",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"0.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"1"}
+            }
+        },
+
+
+
+        "com.pokokostudio.dinobash.regular_pack":{
+            "@id":"com.pokokostudio.dinobash.regular_pack",
+            "@purchaseType":"Consumable",
+            "name":"Regular Pack",
+            "description":"Regular Pack",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"19.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"20"}
+            }
+        },
+         "com.pokokostudio.dinobash.regular_pack_discount15":{
+            "@id":"com.pokokostudio.dinobash.regular_pack_discount15",
+            "@purchaseType":"Consumable",
+            "name":"Regular Pack discount15",
+            "description":"Regular Pack discount15",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"16.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"17"}
+            }
+        },
+         "com.pokokostudio.dinobash.regular_pack_discount30":{
+            "@id":"com.pokokostudio.dinobash.regular_pack_discount30",
+            "@purchaseType":"Consumable",
+            "name":"Regular Pack discount30",
+            "description":"Regular Pack discount30",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"13.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"14"}
+            }
+        },
+         "com.pokokostudio.dinobash.regular_pack_discount50":{
+            "@id":"com.pokokostudio.dinobash.regular_pack_discount50",
+            "@purchaseType":"Consumable",
+            "name":"Regular Pack discount50",
+            "description":"Regular Pack discount50",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"9.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"10"}
+            }
+        },
+             "com.pokokostudio.dinobash.regular_pack_discount65":{
+            "@id":"com.pokokostudio.dinobash.regular_pack_discount65",
+            "@purchaseType":"Consumable",
+            "name":"Regular Pack discount65",
+            "description":"Regular Pack discount65",
+            "platforms":{  
+                "GooglePlay":{ "priceInLocalCurrency":"6.99", "defaultLocale":"en_US"},
+                "AppleAppStore":{"screenshotPath":"", "appleAppStorePriceTier":"7"}
+            }
+        }
+        
+    },
+    "currencies":{
+
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LevelData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <name>level_16</name>
+    <levelwidth>5500</levelwidth>
+    <level_coins>500</level_coins>
+    <kill_coins>900</kill_coins>
+    <level_xp>140</level_xp>
+    <kill_xp>0</kill_xp>
+    <endless_mode>false</endless_mode>
+    <unlockUnit>Blizzard</unlockUnit>
+    <unlockShot>None</unlockShot>
+    <override_shots_selection>false</override_shots_selection>
+    <override_dino_selection>false</override_dino_selection>
+    <selection_override>
+    </selection_override>
+    <is_friend_gate>false</is_friend_gate>
+    <friend_gate_duration_in_seconds>0</friend_gate_duration_in_seconds>
+    <enemies>
+        <LevelEnemy Unit="Neander_FrontShield" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_ShotShield" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_FrontShield" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Heavy" Delay="6.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Weak" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="9.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="0.2" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Weak" Delay="0.3" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="0.4" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Weak" Delay="0.5" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Heavy" Delay="9.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Heavy" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Weak" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="0.3" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Weak" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Heavy" Delay="0.3" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Strong" Delay="4.0" Level="0" Command=""/>
+    </enemies>
+</LevelData>

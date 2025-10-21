@@ -1,0 +1,297 @@
+ù4Shader "Pokoko/LavaScroller" {
+Properties {
+ _MainTex ("Sprite Texture", 2D) = "white" {}
+ _Color ("Tint", Color) = (1,1,1,1)
+ _Speed ("Speed", Float) = 0
+ _LayerOffset ("LayerOffset", Float) = 0
+ _LayerOpacity ("LayerOpacity", Range(0,1)) = 1
+}
+SubShader { 
+ Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="true" "RenderType"="Opaque" "PreviewType"="Plane" }
+ Pass {
+  Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="true" "RenderType"="Opaque" "PreviewType"="Plane" }
+  ZWrite Off
+  Cull Off
+  Fog { Mode Off }
+  Blend SrcAlpha OneMinusSrcAlpha
+Program "vp" {
+SubProgram "gles " {
+Keywords { "DUMMY" }
+"!!GLES
+
+
+#ifdef VERTEX
+
+attribute vec4 _glesVertex;
+attribute vec4 _glesColor;
+attribute vec4 _glesMultiTexCoord0;
+uniform highp vec4 _Time;
+uniform highp mat4 glstate_matrix_mvp;
+uniform lowp vec4 _Color;
+uniform lowp float _Speed;
+uniform lowp float _LayerOffset;
+varying lowp vec4 xlv_COLOR;
+varying mediump vec2 xlv_TEXCOORD0;
+varying mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 tmpvar_1;
+  mediump vec2 tmpvar_2;
+  mediump vec2 tmpvar_3;
+  highp vec2 tmpvar_4;
+  tmpvar_4.x = 0.0;
+  tmpvar_4.y = (fract(_Time.x) * _Speed);
+  highp vec2 tmpvar_5;
+  tmpvar_5 = (_glesMultiTexCoord0.xy + tmpvar_4);
+  tmpvar_2 = tmpvar_5;
+  highp vec2 tmpvar_6;
+  tmpvar_6 = (_glesMultiTexCoord0.xy + (tmpvar_4 * _LayerOffset));
+  tmpvar_3 = tmpvar_6;
+  highp vec4 tmpvar_7;
+  tmpvar_7 = (_glesColor * _Color);
+  tmpvar_1 = tmpvar_7;
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_COLOR = tmpvar_1;
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD1 = tmpvar_3;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+uniform lowp float _LayerOpacity;
+uniform sampler2D _MainTex;
+varying lowp vec4 xlv_COLOR;
+varying mediump vec2 xlv_TEXCOORD0;
+varying mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 result_1;
+  result_1.xyz = ((texture2D (_MainTex, xlv_TEXCOORD0) * xlv_COLOR) * mix (1.0, (texture2D (_MainTex, xlv_TEXCOORD1) * xlv_COLOR).x, _LayerOpacity)).xyz;
+  result_1.w = 1.0;
+  gl_FragData[0] = result_1;
+}
+
+
+
+#endif"
+}
+SubProgram "gles3 " {
+Keywords { "DUMMY" }
+"!!GLES3#version 300 es
+
+
+#ifdef VERTEX
+
+
+in vec4 _glesVertex;
+in vec4 _glesColor;
+in vec4 _glesMultiTexCoord0;
+uniform highp vec4 _Time;
+uniform highp mat4 glstate_matrix_mvp;
+uniform lowp vec4 _Color;
+uniform lowp float _Speed;
+uniform lowp float _LayerOffset;
+out lowp vec4 xlv_COLOR;
+out mediump vec2 xlv_TEXCOORD0;
+out mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 tmpvar_1;
+  mediump vec2 tmpvar_2;
+  mediump vec2 tmpvar_3;
+  highp vec2 tmpvar_4;
+  tmpvar_4.x = 0.0;
+  tmpvar_4.y = (fract(_Time.x) * _Speed);
+  highp vec2 tmpvar_5;
+  tmpvar_5 = (_glesMultiTexCoord0.xy + tmpvar_4);
+  tmpvar_2 = tmpvar_5;
+  highp vec2 tmpvar_6;
+  tmpvar_6 = (_glesMultiTexCoord0.xy + (tmpvar_4 * _LayerOffset));
+  tmpvar_3 = tmpvar_6;
+  highp vec4 tmpvar_7;
+  tmpvar_7 = (_glesColor * _Color);
+  tmpvar_1 = tmpvar_7;
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_COLOR = tmpvar_1;
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD1 = tmpvar_3;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+
+layout(location=0) out mediump vec4 _glesFragData[4];
+uniform lowp float _LayerOpacity;
+uniform sampler2D _MainTex;
+in lowp vec4 xlv_COLOR;
+in mediump vec2 xlv_TEXCOORD0;
+in mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 result_1;
+  result_1.xyz = ((texture (_MainTex, xlv_TEXCOORD0) * xlv_COLOR) * mix (1.0, (texture (_MainTex, xlv_TEXCOORD1) * xlv_COLOR).x, _LayerOpacity)).xyz;
+  result_1.w = 1.0;
+  _glesFragData[0] = result_1;
+}
+
+
+
+#endif"
+}
+SubProgram "gles " {
+Keywords { "PIXELSNAP_ON" }
+"!!GLES
+
+
+#ifdef VERTEX
+
+attribute vec4 _glesVertex;
+attribute vec4 _glesColor;
+attribute vec4 _glesMultiTexCoord0;
+uniform highp vec4 _Time;
+uniform highp mat4 glstate_matrix_mvp;
+uniform lowp vec4 _Color;
+uniform lowp float _Speed;
+uniform lowp float _LayerOffset;
+varying lowp vec4 xlv_COLOR;
+varying mediump vec2 xlv_TEXCOORD0;
+varying mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 tmpvar_1;
+  mediump vec2 tmpvar_2;
+  mediump vec2 tmpvar_3;
+  highp vec2 tmpvar_4;
+  tmpvar_4.x = 0.0;
+  tmpvar_4.y = (fract(_Time.x) * _Speed);
+  highp vec2 tmpvar_5;
+  tmpvar_5 = (_glesMultiTexCoord0.xy + tmpvar_4);
+  tmpvar_2 = tmpvar_5;
+  highp vec2 tmpvar_6;
+  tmpvar_6 = (_glesMultiTexCoord0.xy + (tmpvar_4 * _LayerOffset));
+  tmpvar_3 = tmpvar_6;
+  highp vec4 tmpvar_7;
+  tmpvar_7 = (_glesColor * _Color);
+  tmpvar_1 = tmpvar_7;
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_COLOR = tmpvar_1;
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD1 = tmpvar_3;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+uniform lowp float _LayerOpacity;
+uniform sampler2D _MainTex;
+varying lowp vec4 xlv_COLOR;
+varying mediump vec2 xlv_TEXCOORD0;
+varying mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 result_1;
+  result_1.xyz = ((texture2D (_MainTex, xlv_TEXCOORD0) * xlv_COLOR) * mix (1.0, (texture2D (_MainTex, xlv_TEXCOORD1) * xlv_COLOR).x, _LayerOpacity)).xyz;
+  result_1.w = 1.0;
+  gl_FragData[0] = result_1;
+}
+
+
+
+#endif"
+}
+SubProgram "gles3 " {
+Keywords { "PIXELSNAP_ON" }
+"!!GLES3#version 300 es
+
+
+#ifdef VERTEX
+
+
+in vec4 _glesVertex;
+in vec4 _glesColor;
+in vec4 _glesMultiTexCoord0;
+uniform highp vec4 _Time;
+uniform highp mat4 glstate_matrix_mvp;
+uniform lowp vec4 _Color;
+uniform lowp float _Speed;
+uniform lowp float _LayerOffset;
+out lowp vec4 xlv_COLOR;
+out mediump vec2 xlv_TEXCOORD0;
+out mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 tmpvar_1;
+  mediump vec2 tmpvar_2;
+  mediump vec2 tmpvar_3;
+  highp vec2 tmpvar_4;
+  tmpvar_4.x = 0.0;
+  tmpvar_4.y = (fract(_Time.x) * _Speed);
+  highp vec2 tmpvar_5;
+  tmpvar_5 = (_glesMultiTexCoord0.xy + tmpvar_4);
+  tmpvar_2 = tmpvar_5;
+  highp vec2 tmpvar_6;
+  tmpvar_6 = (_glesMultiTexCoord0.xy + (tmpvar_4 * _LayerOffset));
+  tmpvar_3 = tmpvar_6;
+  highp vec4 tmpvar_7;
+  tmpvar_7 = (_glesColor * _Color);
+  tmpvar_1 = tmpvar_7;
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_COLOR = tmpvar_1;
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD1 = tmpvar_3;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+
+layout(location=0) out mediump vec4 _glesFragData[4];
+uniform lowp float _LayerOpacity;
+uniform sampler2D _MainTex;
+in lowp vec4 xlv_COLOR;
+in mediump vec2 xlv_TEXCOORD0;
+in mediump vec2 xlv_TEXCOORD1;
+void main ()
+{
+  lowp vec4 result_1;
+  result_1.xyz = ((texture (_MainTex, xlv_TEXCOORD0) * xlv_COLOR) * mix (1.0, (texture (_MainTex, xlv_TEXCOORD1) * xlv_COLOR).x, _LayerOpacity)).xyz;
+  result_1.w = 1.0;
+  _glesFragData[0] = result_1;
+}
+
+
+
+#endif"
+}
+}
+Program "fp" {
+SubProgram "gles " {
+Keywords { "DUMMY" }
+"!!GLES"
+}
+SubProgram "gles3 " {
+Keywords { "DUMMY" }
+"!!GLES3"
+}
+SubProgram "gles " {
+Keywords { "PIXELSNAP_ON" }
+"!!GLES"
+}
+SubProgram "gles3 " {
+Keywords { "PIXELSNAP_ON" }
+"!!GLES3"
+}
+}
+ }
+}
+}

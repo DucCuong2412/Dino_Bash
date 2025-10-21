@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Packs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<!-- This file is auto-generated! use convert_iap_master_table.py and iap_master_table.csv to re-generate -->
+	<CoinPacks>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_1" currency="Coins" base_amount="1400" preview_price="1.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_1_discount50" currency="Coins" base_amount="1400" preview_price="0.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_2" currency="Coins" base_amount="3900" preview_price="4.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_2_discount20" currency="Coins" base_amount="3900" preview_price="3.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_2_discount40" currency="Coins" base_amount="3900" preview_price="2.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_2_discount60" currency="Coins" base_amount="3900" preview_price="1.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3" currency="Coins" base_amount="8500" preview_price="9.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount20" currency="Coins" base_amount="8500" preview_price="7.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount30" currency="Coins" base_amount="8500" preview_price="6.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount40" currency="Coins" base_amount="8500" preview_price="5.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount50" currency="Coins" base_amount="8500" preview_price="4.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount60" currency="Coins" base_amount="8500" preview_price="3.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_3_discount70" currency="Coins" base_amount="8500" preview_price="2.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4" currency="Coins" base_amount="17500" preview_price="19.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount20" currency="Coins" base_amount="17500" preview_price="15.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount30" currency="Coins" base_amount="17500" preview_price="13.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount40" currency="Coins" base_amount="17500" preview_price="11.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount50" currency="Coins" base_amount="17500" preview_price="9.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount60" currency="Coins" base_amount="17500" preview_price="7.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_4_discount70" currency="Coins" base_amount="17500" preview_price="5.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5" currency="Coins" base_amount="46000" preview_price="49.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount20" currency="Coins" base_amount="46000" preview_price="39.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount30" currency="Coins" base_amount="46000" preview_price="34.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount40" currency="Coins" base_amount="46000" preview_price="29.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount50" currency="Coins" base_amount="46000" preview_price="24.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount60" currency="Coins" base_amount="46000" preview_price="19.99"/>
+		<Pack id="com.pokokostudio.dinobash.coin_pack_5_discount70" currency="Coins" base_amount="46000" preview_price="14.99"/>
+	</CoinPacks>
+
+	<DiamondPacks>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_1" currency="Diamonds" base_amount="14" preview_price="1.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_2_discount20" currency="Diamonds" base_amount="39" preview_price="3.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_2_discount60" currency="Diamonds" base_amount="39" preview_price="1.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_2_discount40" currency="Diamonds" base_amount="39" preview_price="2.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_1_discount50" currency="Diamonds" base_amount="14" preview_price="0.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_2" currency="Diamonds" base_amount="39" preview_price="4.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount20" currency="Diamonds" base_amount="85" preview_price="7.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3" currency="Diamonds" base_amount="85" preview_price="9.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount30" currency="Diamonds" base_amount="85" preview_price="6.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount40" currency="Diamonds" base_amount="85" preview_price="5.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount50" currency="Diamonds" base_amount="85" preview_price="4.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount60" currency="Diamonds" base_amount="85" preview_price="3.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_3_discount70" currency="Diamonds" base_amount="85" preview_price="2.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4" currency="Diamonds" base_amount="175" preview_price="19.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount20" currency="Diamonds" base_amount="175" preview_price="15.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount30" currency="Diamonds" base_amount="175" preview_price="13.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount40" currency="Diamonds" base_amount="175" preview_price="11.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount50" currency="Diamonds" base_amount="175" preview_price="9.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount60" currency="Diamonds" base_amount="175" preview_price="7.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_4_discount70" currency="Diamonds" base_amount="175" preview_price="5.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5" currency="Diamonds" base_amount="460" preview_price="49.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount20" currency="Diamonds" base_amount="460" preview_price="39.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount30" currency="Diamonds" base_amount="460" preview_price="34.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount40" currency="Diamonds" base_amount="460" preview_price="29.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount50" currency="Diamonds" base_amount="460" preview_price="24.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount60" currency="Diamonds" base_amount="460" preview_price="19.99"/>
+		<Pack id="com.pokokostudio.dinobash.diamond_pack_2_5_discount70" currency="Diamonds" base_amount="460" preview_price="14.99"/>
+	</DiamondPacks>
+
+	<BundlePacks>
+		<Pack id="com.pokokostudio.dinobash.starter_pack" currency="StarterPack" base_amount="1" preview_price="3.99"/>
+		<Pack id="com.pokokostudio.dinobash.starter_pack_discount25" currency="StarterPack" base_amount="1" preview_price="2.99"/>
+		<Pack id="com.pokokostudio.dinobash.starter_pack_discount50" currency="StarterPack" base_amount="1" preview_price="1.99"/>
+		<Pack id="com.pokokostudio.dinobash.starter_pack_discount75" currency="StarterPack" base_amount="1" preview_price="0.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack" currency="RegularPack" base_amount="1" preview_price="19.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_discount15" currency="RegularPack" base_amount="1" preview_price="16.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_discount30" currency="RegularPack" base_amount="1" preview_price="13.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_discount50" currency="RegularPack" base_amount="1" preview_price="9.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_discount65" currency="RegularPack" base_amount="1" preview_price="6.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_2" currency="RegularPack" base_amount="1" preview_price="29.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_3" currency="RegularPack" base_amount="1" preview_price="39.99"/>
+		<Pack id="com.pokokostudio.dinobash.regular_pack_4" currency="RegularPack" base_amount="1" preview_price="49.99"/>
+	</BundlePacks>
+</Packs>

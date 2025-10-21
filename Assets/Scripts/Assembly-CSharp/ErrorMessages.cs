@@ -1,0 +1,6 @@
+public enum ErrorMessages
+{
+	NO_INTERNET_CONNECTIVITY_ERROR = 0,
+	IAP_NOT_AVAILABLE = 1,
+	IAP_PURCHASE_FAILED = 2
+}

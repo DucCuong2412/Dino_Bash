@@ -1,0 +1,747 @@
+fileFormatVersion: 2
+guid: 0718a97490a82f14fbcaa00ada21a546
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: brachio_koerperhinten_upgrade_2
+  - first:
+      213: 21300002
+    second: brachio_koerper-vorn_upgrade_1
+  - first:
+      213: 21300004
+    second: stego_kopf_upgrade_3
+  - first:
+      213: 21300006
+    second: stego_hinterbein_unten_vorn
+  - first:
+      213: 21300008
+    second: raptor_koerper
+  - first:
+      213: 21300010
+    second: trex_oberkoerper_upgrade_1
+  - first:
+      213: 21300012
+    second: raptor_kopf_upgrade_1
+  - first:
+      213: 21300014
+    second: stego_koerper_upgrade_1
+  - first:
+      213: 21300016
+    second: brachio_hinterbein-vorn-unten
+  - first:
+      213: 21300018
+    second: trex_kopf_upgrade_1
+  - first:
+      213: 21300020
+    second: stego_koerper_upgrade_2
+  - first:
+      213: 21300022
+    second: stego_koerper
+  - first:
+      213: 21300024
+    second: stego_koerper_upgrade_3
+  - first:
+      213: 21300026
+    second: stego_kopf_upgrade_1
+  - first:
+      213: 21300028
+    second: stego_hinterbein_oben_hinten
+  - first:
+      213: 21300030
+    second: raptor_kopf
+  - first:
+      213: 21300032
+    second: brachio_koerper-vorn_upgrade_3
+  - first:
+      213: 21300034
+    second: stego_schwanz
+  - first:
+      213: 21300036
+    second: frosti_0005_kopf
+  - first:
+      213: 21300038
+    second: frosti_0005_kopf_upgrade_3
+  - first:
+      213: 21300040
+    second: brachio_koerper-vorn_upgrade_2
+  - first:
+      213: 21300042
+    second: brachio_koerper-vorn
+  - first:
+      213: 21300044
+    second: brachio_koerperhinten_upgrade_3
+  - first:
+      213: 21300046
+    second: raptor_koerper_upgrade_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 36
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 0
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 0.97709924
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brachio_koerperhinten_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1016
+        width: 475
+        height: 512
+      alignment: 9
+      pivot: {x: 0.39039978, y: 0.5238949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerper-vorn_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 477
+        height: 512
+      alignment: 9
+      pivot: {x: 0.14125845, y: 0.8262946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_kopf_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 0
+        width: 184
+        height: 170
+      alignment: 9
+      pivot: {x: 0.36891913, y: 0.49402636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_hinterbein_unten_vorn
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1772
+        width: 200
+        height: 166
+      alignment: 9
+      pivot: {x: 0.94909364, y: 0.87488824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_koerper
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 928
+        width: 148
+        height: 202
+      alignment: 9
+      pivot: {x: 0.4934655, y: 0.057954393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_oberkoerper_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1531
+        width: 531
+        height: 430
+      alignment: 9
+      pivot: {x: 0.2085423, y: 0.5776584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 0
+        width: 284
+        height: 129
+      alignment: 9
+      pivot: {x: 0.38080433, y: 0.111350834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_koerper_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 361
+        width: 596
+        height: 639
+      alignment: 9
+      pivot: {x: 0.26462707, y: 0.102747865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_hinterbein-vorn-unten
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1893
+        width: 270
+        height: 106
+      alignment: 9
+      pivot: {x: 0.39889887, y: 0.67338103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trex_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1547
+        width: 481
+        height: 461
+      alignment: 9
+      pivot: {x: 0.16936228, y: 0.29540032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_koerper_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 596
+        height: 647
+      alignment: 9
+      pivot: {x: 0.24708934, y: 0.10722823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_koerper
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 596
+        height: 639
+      alignment: 9
+      pivot: {x: 0.25815532, y: 0.103640564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_koerper_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 379
+        width: 596
+        height: 639
+      alignment: 9
+      pivot: {x: 0.24381171, y: 0.102747865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_kopf_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 172
+        width: 194
+        height: 183
+      alignment: 9
+      pivot: {x: 0.41406634, y: 0.6329151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_hinterbein_oben_hinten
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 236
+        height: 173
+      alignment: 9
+      pivot: {x: 0.51704895, y: 0.7314072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_kopf
+      rect:
+        serializedVersion: 2
+        x: 1744.0762
+        y: 1876.013
+        width: 243.87256
+        height: 112.98709
+      alignment: 9
+      pivot: {x: 0.27936342, y: 0.090415075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerper-vorn_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1034
+        width: 450
+        height: 512
+      alignment: 9
+      pivot: {x: 0.17387132, y: 0.85961086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stego_schwanz
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1717
+        width: 195
+        height: 174
+      alignment: 9
+      pivot: {x: 0.95402896, y: 0.38201132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frosti_0005_kopf
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 131
+        width: 259
+        height: 122
+      alignment: 9
+      pivot: {x: 0.07337083, y: 0.40544757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frosti_0005_kopf_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1668
+        width: 260
+        height: 156
+      alignment: 9
+      pivot: {x: 0.0733708, y: 0.31442422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerper-vorn_upgrade_2
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1217
+        width: 450
+        height: 512
+      alignment: 9
+      pivot: {x: 0.16707696, y: 0.8491607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerper-vorn
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1206
+        width: 450
+        height: 512
+      alignment: 9
+      pivot: {x: 0.15213305, y: 0.8380594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brachio_koerperhinten_upgrade_3
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 706
+        width: 473
+        height: 512
+      alignment: 9
+      pivot: {x: 0.42082632, y: 0.5131944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_koerper_upgrade_1
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1826
+        width: 169
+        height: 209
+      alignment: 9
+      pivot: {x: 0.4866255, y: 0.09229399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      brachio_hinterbein-vorn-unten: 21300016
+      brachio_koerper-vorn: 21300042
+      brachio_koerper-vorn_upgrade_1: 21300002
+      brachio_koerper-vorn_upgrade_2: 21300040
+      brachio_koerper-vorn_upgrade_3: 21300032
+      brachio_koerperhinten_upgrade_2: 21300000
+      brachio_koerperhinten_upgrade_3: 21300044
+      frosti_0005_kopf: 21300036
+      frosti_0005_kopf_upgrade_3: 21300038
+      raptor_koerper: 21300008
+      raptor_koerper_upgrade_1: 21300046
+      raptor_kopf: 21300030
+      raptor_kopf_upgrade_1: 21300012
+      stego_hinterbein_oben_hinten: 21300028
+      stego_hinterbein_unten_vorn: 21300006
+      stego_koerper: 21300022
+      stego_koerper_upgrade_1: 21300014
+      stego_koerper_upgrade_2: 21300020
+      stego_koerper_upgrade_3: 21300024
+      stego_kopf_upgrade_1: 21300026
+      stego_kopf_upgrade_3: 21300004
+      stego_schwanz: 21300034
+      trex_kopf_upgrade_1: 21300018
+      trex_oberkoerper_upgrade_1: 21300010
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

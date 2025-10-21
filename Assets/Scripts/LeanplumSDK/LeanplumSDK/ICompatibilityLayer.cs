@@ -1,0 +1,61 @@
+using System;
+
+namespace LeanplumSDK
+{
+	internal interface ICompatibilityLayer
+	{
+		bool LeanplumDeveloperMode { get; set; }
+
+		string VersionName { get; set; }
+
+		void Init();
+
+		void LogDebug(string message);
+
+		void Log(string message);
+
+		void LogError(string message);
+
+		void LogError(Exception error);
+
+		void LogError(string message, Exception error);
+
+		void LogWarning(string message);
+
+		void DisplayModal(string title, string message);
+
+		void DisplayTextInputModal(string title, string message, Action<string> callback);
+
+		string GetSavedString(string key, string defaultValue = null);
+
+		int GetSavedInt(string key, int defaultValue = 0);
+
+		void StoreSavedString(string key, string val);
+
+		void StoreSavedInt(string key, int val);
+
+		void DeleteSavedSetting(string key);
+
+		void FlushSavedSettings();
+
+		WebRequest CreateWebRequest(string url, int timeout);
+
+		string GetDeviceId();
+
+		string GetDeviceName();
+
+		string GetDeviceModel();
+
+		string GetSystemName();
+
+		string GetSystemVersion();
+
+		string GetPlatformName();
+
+		bool IsSimulator();
+
+		bool IsConnected();
+
+		string URLEncode(string str);
+	}
+}

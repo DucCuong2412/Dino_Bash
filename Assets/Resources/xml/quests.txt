@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfQuest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Quest id="Kill_10_Neanders" objective="Kill_Neander" duration="short_term" max_count="50"
+	coins="1000" diamonds="0" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Kill_100_Neanders" objective="Kill_Neander" duration="medium_term" max_count="250"
+	coins="0" diamonds="0" megaballs="0" blizzard="1" meteorstorm="0"/>
+	<Quest id="Kill_250_Neanders" objective="Kill_Neander" duration="long_term" max_count="500"
+	coins="0" diamonds="0" megaballs="1" blizzard="0" meteorstorm="0"/>
+	<Quest id="Kill_500_Neanders" objective="Kill_Neander" duration="long_term" max_count="1000"
+	coins="0" diamonds="1" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Win_One_Level" objective="Win_Level" duration="short_term" max_count="3"
+	coins="1500" diamonds="0" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Win_Three_Level" objective="Win_Level" duration="medium_term" max_count="5"
+	coins="0" diamonds="0" megaballs="0" blizzard="0" meteorstorm="1"/>
+	<Quest id="Win_Five_Level" objective="Win_Level" duration="long_term" max_count="8"
+	coins="0" diamonds="1" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Play_A_Level" objective="Play_Level" duration="short_term" max_count="1"
+	coins="500" diamonds="0" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Deploy_20_Dino" objective="Deploy_Dino" duration="short_term" max_count="200"
+	coins="750" diamonds="0" megaballs="0" blizzard="0" meteorstorm="0"/>
+	<Quest id="Deploy_100_Dino" objective="Deploy_Dino" duration="medium_term" max_count="500"
+	coins="0" diamonds="0" megaballs="0" blizzard="0" meteorstorm="1"/>
+	<Quest id="Deploy_250_Dino" objective="Deploy_Dino" duration="long_term" max_count="1000"
+	coins="0" diamonds="0" megaballs="1" blizzard="0" meteorstorm="0"/>
+	<Quest id="Ground_Flyers" objective="Ground_Flyer" duration="medium_term" max_count="50"
+	coins="0" diamonds="0" megaballs="0" blizzard="1" meteorstorm="0"/>
+	<Quest id="Blast_Neander" objective="Blast_Neander" duration="long_term" max_count="300"
+	coins="0" diamonds="0" megaballs="0" blizzard="0" meteorstorm="1"/>
+	<Quest id="IceAge" objective="IceAge" duration="medium_term" max_count="100"
+	coins="0" diamonds="0" megaballs="0" blizzard="1" meteorstorm="0"/>
+</ArrayOfQuest>

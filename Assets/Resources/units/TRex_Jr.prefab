@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1209000508458385}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1209000508458385
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4670913575083585}
+  - 114: {fileID: 114844140408780142}
+  - 54: {fileID: 54437711932703382}
+  - 65: {fileID: 65137874922132019}
+  - 114: {fileID: 114125995366509849}
+  - 114: {fileID: 114732917765565056}
+  - 114: {fileID: 114225248446497584}
+  m_Layer: 10
+  m_Name: TRex_Jr
+  m_TagString: Body
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4670913575083585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114844140408780142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211cb948b3bfbf5dc62dcb0452afd640, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  combat_effects_mask: -1
+  bodyCollider: {fileID: 0}
+  StopAtLevelEnd: 1
+  hits_to_kill: -1
+  immune_to_stun: 0
+  state: 0
+--- !u!54 &54437711932703382
+Rigidbody:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65137874922132019
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 560, y: 1250, z: 1024}
+  m_Center: {x: 15.5, y: -165.2, z: 0}
+--- !u!114 &114125995366509849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8e32e773b3adcd09e0fbaef429d9da, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  AttackModifier: 1
+  canMultiAttack: 1
+--- !u!114 &114732917765565056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b485b065fd602c99d5a73f811a6e6c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  spawnPrefab: {fileID: 1262289824359843, guid: 02226b5499afbbb4cb414d2a1a462840, type: 2}
+  transformTargets:
+  - {fileID: 4670913575083585}
+  animatorOverride: {fileID: 0}
+  updateMode: 0
+  scale: {x: 0.8, y: 0.8, z: 0.8}
+  spawnedTag: EntityGraphics
+  changeLayer: 0
+  destroySpawner: 0
+--- !u!114 &114225248446497584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209000508458385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4b0d077622cfed502fa3a0f39f07e5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  FX_Prefab: {fileID: 198235115968241026, guid: e027c78d21c3124429309a512212388b, type: 2}
+  FX_Parent_Name: trex_mundraum_0
+  emitCount: 5
+  spawnOnTarget: 0
+  sharedFX: 1

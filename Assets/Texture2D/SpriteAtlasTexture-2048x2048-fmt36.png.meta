@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 011686ac78429d34f92d82654e491a83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: level bomb bg
+  - first:
+      213: 21300002
+    second: raincloud_01
+  - first:
+      213: 21300004
+    second: catapult_0009_Arm
+  - first:
+      213: 21300006
+    second: raincloud_03
+  - first:
+      213: 21300008
+    second: bush
+  - first:
+      213: 21300010
+    second: oberkoerper_0
+  - first:
+      213: 21300012
+    second: schatten_0
+  - first:
+      213: 21300014
+    second: level bomb big bg
+  - first:
+      213: 21300016
+    second: lancer_unterarm rechts_0
+  - first:
+      213: 21300018
+    second: level bomb big fg
+  - first:
+      213: 21300020
+    second: ei unten vorn
+  - first:
+      213: 21300022
+    second: bush_volcano
+  - first:
+      213: 21300024
+    second: raincloud_04
+  - first:
+      213: 21300026
+    second: catapult_0002_Katapult-Busch
+  - first:
+      213: 21300028
+    second: stein_mauer
+  - first:
+      213: 21300030
+    second: ei links vorn
+  - first:
+      213: 21300032
+    second: ei_mauer stachel 03
+  - first:
+      213: 21300034
+    second: oberarm links_0
+  - first:
+      213: 21300036
+    second: flyer
+  - first:
+      213: 21300038
+    second: healer haare_0
+  - first:
+      213: 21300040
+    second: neander_arm_rechts_unten_0
+  - first:
+      213: 21300042
+    second: stein mauer unten vorn
+  - first:
+      213: 21300044
+    second: stein riss 04
+  - first:
+      213: 21300046
+    second: stein riss 03
+  - first:
+      213: 21300048
+    second: stein mauer oben vorn
+  - first:
+      213: 21300050
+    second: neander_arm_rechts_oben neander 4
+  - first:
+      213: 21300052
+    second: zopf rechts_0
+  - first:
+      213: 21300054
+    second: ei
+  - first:
+      213: 21300056
+    second: neander_arm_rechts_oben neander 3
+  - first:
+      213: 21300058
+    second: smallbarricade
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 36
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 0
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 0.8631179
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: level bomb bg
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1251
+        width: 511
+        height: 227
+      alignment: 9
+      pivot: {x: 0.49996653, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raincloud_01
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 425
+        width: 512
+        height: 268
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4995099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catapult_0009_Arm
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 795
+        height: 268
+      alignment: 9
+      pivot: {x: 0.37927797, y: 0.593874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raincloud_03
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 886
+        width: 512
+        height: 203
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.49890813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 565
+        height: 367.9239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5028214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oberkoerper_0
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 234
+        width: 305
+        height: 323
+      alignment: 9
+      pivot: {x: 0.35795608, y: 0.067809395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schatten_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 125
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level bomb big bg
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1472
+        width: 512
+        height: 218
+      alignment: 9
+      pivot: {x: 0.49947414, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lancer_unterarm rechts_0
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 345
+        width: 38
+        height: 99
+      alignment: 9
+      pivot: {x: 0.035898108, y: 0.03351443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level bomb big fg
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1374
+        width: 564
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ei unten vorn
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 539
+        width: 370
+        height: 240
+      alignment: 9
+      pivot: {x: 0.23124748, y: 0.07330526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_volcano
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 627
+        width: 565
+        height: 367.9239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5028214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raincloud_04
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1645
+        width: 512
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4988681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catapult_0002_Katapult-Busch
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 946
+        height: 486
+      alignment: 9
+      pivot: {x: 0.5082044, y: 0.114441045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stein_mauer
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1269
+        width: 420
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ei links vorn
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 347
+        height: 303
+      alignment: 9
+      pivot: {x: 0.17308462, y: 0.6561865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ei_mauer stachel 03
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 228
+        width: 36
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oberarm links_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 172
+        height: 85
+      alignment: 9
+      pivot: {x: 0.883093, y: 0.56293136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flyer
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1648
+        width: 791
+        height: 225
+      alignment: 9
+      pivot: {x: 0.43159205, y: 0.14654964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer haare_0
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 385
+        width: 167
+        height: 83
+      alignment: 9
+      pivot: {x: 0.39503333, y: 0.80907047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neander_arm_rechts_unten_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 75
+        height: 134
+      alignment: 9
+      pivot: {x: 0.2426064, y: 0.0860241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stein mauer unten vorn
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1325
+        width: 420
+        height: 226
+      alignment: 9
+      pivot: {x: 0.18712391, y: 0.12354775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stein riss 04
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 0
+        width: 85
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stein riss 03
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 410
+        width: 88
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stein mauer oben vorn
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 694
+        width: 361
+        height: 343
+      alignment: 9
+      pivot: {x: 0.11291614, y: 0.47255892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neander_arm_rechts_oben neander 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 125
+        height: 73
+      alignment: 9
+      pivot: {x: 0.096076906, y: 0.25913814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zopf rechts_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 148
+        height: 83
+      alignment: 9
+      pivot: {x: 0.07873904, y: 0.22524536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ei
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 956
+        width: 374
+        height: 449
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neander_arm_rechts_oben neander 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 125
+        height: 73
+      alignment: 9
+      pivot: {x: 0.08446249, y: 0.25692838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallbarricade
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 365
+        height: 428
+      alignment: 9
+      pivot: {x: 0.5157608, y: 0.022102712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bush: 21300008
+      bush_volcano: 21300022
+      catapult_0002_Katapult-Busch: 21300026
+      catapult_0009_Arm: 21300004
+      ei: 21300054
+      ei links vorn: 21300030
+      ei unten vorn: 21300020
+      ei_mauer stachel 03: 21300032
+      flyer: 21300036
+      healer haare_0: 21300038
+      lancer_unterarm rechts_0: 21300016
+      level bomb bg: 21300000
+      level bomb big bg: 21300014
+      level bomb big fg: 21300018
+      neander_arm_rechts_oben neander 3: 21300056
+      neander_arm_rechts_oben neander 4: 21300050
+      neander_arm_rechts_unten_0: 21300040
+      oberarm links_0: 21300034
+      oberkoerper_0: 21300010
+      raincloud_01: 21300002
+      raincloud_03: 21300006
+      raincloud_04: 21300024
+      schatten_0: 21300012
+      smallbarricade: 21300058
+      stein mauer oben vorn: 21300048
+      stein mauer unten vorn: 21300042
+      stein riss 03: 21300046
+      stein riss 04: 21300044
+      stein_mauer: 21300028
+      zopf rechts_0: 21300052
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

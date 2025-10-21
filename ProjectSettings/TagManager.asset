@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  tags:
+  - Default
+  - Weapon
+  - Body
+  - NeanderBase
+  - CollectableApple
+  - DinoEgg
+  - Ground
+  - GUIButton
+  - DinoBase
+  - NeanderBaseBlocker
+  - EntityGraphics
+  - UI_Disabled
+  - GUICamera
+  - Armor
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Builtin Layer 0: Default
+  Builtin Layer 1: TransparentFX
+  Builtin Layer 2: Ignore Raycast
+  Builtin Layer 3:
+  Builtin Layer 4: Water
+  Builtin Layer 5: UI
+  Builtin Layer 6:
+  Builtin Layer 7:
+  User Layer 8: Ground
+  User Layer 9: Bullet
+  User Layer 10: Dino
+  User Layer 11: Neander
+  User Layer 12: GUI
+  User Layer 13: Intro
+  User Layer 14:
+  User Layer 15: Interaction
+  User Layer 16: Loader
+  User Layer 17: DepthMask
+  User Layer 18: Projectile
+  User Layer 19: Defense
+  User Layer 20:
+  User Layer 21:
+  User Layer 22:
+  User Layer 23:
+  User Layer 24:
+  User Layer 25:
+  User Layer 26:
+  User Layer 27:
+  User Layer 28:
+  User Layer 29:
+  User Layer 30:
+  User Layer 31:
+  m_SortingLayers:
+  - name: Default
+    userID: 0
+    uniqueID: 0
+    locked: 0
+  - name: Layer_0
+    userID: 49
+    uniqueID: 4049284355
+    locked: 0
+  - name: Layer_1
+    userID: 1
+    uniqueID: 4167652407
+    locked: 0
+  - name: Layer_2
+    userID: 2
+    uniqueID: 3251745103
+    locked: 0
+  - name: Layer_3
+    userID: 3
+    uniqueID: 3414233925
+    locked: 0
+  - name: Layer_4
+    userID: 4
+    uniqueID: 2067413191
+    locked: 0
+  - name: Layer_5
+    userID: 5
+    uniqueID: 2918542167
+    locked: 0
+  - name: Layer_6
+    userID: 6
+    uniqueID: 4258403801
+    locked: 0
+  - name: Layer_7
+    userID: 7
+    uniqueID: 3784371789
+    locked: 0
+  - name: Layer_8
+    userID: 8
+    uniqueID: 1638403245
+    locked: 0
+  - name: Layer_9
+    userID: 9
+    uniqueID: 369348249
+    locked: 0
+  - name: Layer_10
+    userID: 10
+    uniqueID: 2389544257
+    locked: 0
+  - name: Layer_11
+    userID: 11
+    uniqueID: 811684555
+    locked: 0
+  - name: Layer_12
+    userID: 12
+    uniqueID: 32265425
+    locked: 0
+  - name: Layer_13
+    userID: 13
+    uniqueID: 3060609333
+    locked: 0
+  - name: Layer_14
+    userID: 14
+    uniqueID: 2912517163
+    locked: 0
+  - name: Layer_15
+    userID: 15
+    uniqueID: 3898682253
+    locked: 0
+  - name: Layer_16
+    userID: 16
+    uniqueID: 1925082185
+    locked: 0
+  - name: Layer_17
+    userID: 17
+    uniqueID: 3511536979
+    locked: 0
+  - name: Layer_18
+    userID: 18
+    uniqueID: 1948289699
+    locked: 0
+  - name: Layer_19
+    userID: 19
+    uniqueID: 1190987137
+    locked: 0
+  - name: Layer_20
+    userID: 20
+    uniqueID: 1822572485
+    locked: 0
+  - name: Layer_21
+    userID: 21
+    uniqueID: 2466572937
+    locked: 0
+  - name: Layer_22
+    userID: 22
+    uniqueID: 3810762787
+    locked: 0
+  - name: Layer_23
+    userID: 23
+    uniqueID: 1888167063
+    locked: 0
+  - name: Layer_24
+    userID: 24
+    uniqueID: 435112747
+    locked: 0
+  - name: Layer_25
+    userID: 25
+    uniqueID: 2775532999
+    locked: 0
+  - name: Layer_26
+    userID: 26
+    uniqueID: 1923138741
+    locked: 0
+  - name: Layer_27
+    userID: 27
+    uniqueID: 2411718795
+    locked: 0
+  - name: Layer_28
+    userID: 28
+    uniqueID: 3931331251
+    locked: 0
+  - name: Layer_29
+    userID: 29
+    uniqueID: 1414357351
+    locked: 0
+  - name: Layer_30
+    userID: 30
+    uniqueID: 2734308955
+    locked: 0
+  - name: Layer_31
+    userID: 31
+    uniqueID: 266377205
+    locked: 0
+  - name: Layer_32
+    userID: 32
+    uniqueID: 4282499199
+    locked: 0
+  - name: Layer_33
+    userID: 33
+    uniqueID: 90200771
+    locked: 0
+  - name: Layer_34
+    userID: 34
+    uniqueID: 4147864661
+    locked: 0
+  - name: Layer_35
+    userID: 35
+    uniqueID: 1175288079
+    locked: 0
+  - name: Layer_36
+    userID: 36
+    uniqueID: 2314568225
+    locked: 0
+  - name: Layer_37
+    userID: 37
+    uniqueID: 180818797
+    locked: 0
+  - name: Layer_38
+    userID: 38
+    uniqueID: 4254233049
+    locked: 0
+  - name: Layer_39
+    userID: 39
+    uniqueID: 3728259479
+    locked: 0
+  - name: Layer_40
+    userID: 40
+    uniqueID: 2281521897
+    locked: 0
+  - name: Layer_41
+    userID: 41
+    uniqueID: 1404790771
+    locked: 0
+  - name: Layer_42
+    userID: 42
+    uniqueID: 4263465205
+    locked: 0
+  - name: Layer_43
+    userID: 43
+    uniqueID: 2101186039
+    locked: 0
+  - name: Layer_44
+    userID: 44
+    uniqueID: 1890662853
+    locked: 0
+  - name: Layer_45
+    userID: 45
+    uniqueID: 2894148655
+    locked: 0
+  - name: Layer_46
+    userID: 46
+    uniqueID: 3133331529
+    locked: 0
+  - name: Layer_47
+    userID: 47
+    uniqueID: 3108472651
+    locked: 0
+  - name: Layer_48
+    userID: 48
+    uniqueID: 2478374745
+    locked: 0

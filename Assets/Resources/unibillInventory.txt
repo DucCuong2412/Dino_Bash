@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<inventory>
+  <iOSSKU>DINO_BASH</iOSSKU>
+  <androidBillingPlatform>GooglePlay</androidBillingPlatform>
+  <GooglePlayPublicKey>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuEfyV+0VRGx3Ihk7tD3PX7joncW+ljnetowS9Hz3zV5p9kxr6/9Ftce7sx0xapiivWqpzMBUsFqN8b+cwWD3f7HpWFvKaxRa6QyKY0svZaYkQ9xxkFShIPc0oSyhLD+NyyW0f3o+Ybzy2NvzstjHddKTYvMtJJbYWiG8k8+QCJR7KJnc1k9vOO70STED2WxdketZocnc54NXE3yakjoHOMYnn/iLyf+mktyh5Z4GxdCLfFMLkIw5I8WmZe1WUhqLs4taLdeWlxMwTX/4KQAnCbk72vw08WVNb9Yom6u/x4xAxkNw+KX15FHkRBihWC/Ydj9F6FboAe3WgoRzAGqgwIDAQAB</GooglePlayPublicKey>
+  <useAmazonSandbox>false</useAmazonSandbox>
+  <UseWP8MockingFramework>false</UseWP8MockingFramework>
+  <useHostedConfig>false</useHostedConfig>
+  <hostedConfigUrl>https://</hostedConfigUrl>
+  <item id="com.pokokostudio.dinobash.coin_pack_1" purchaseType="Consumable">
+    <name>Coin Pack 1</name>
+    <description>Coin Pack 1</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>1.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>bd1f4bd2e3d8743dcacce331c87e07bb</screenshotPath>
+        <appleAppStorePriceTier>2</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.coin_pack_2" purchaseType="Consumable">
+    <name>Coin Pack 2</name>
+    <description>Coin Pack 2</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>4.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>bd1f4bd2e3d8743dcacce331c87e07bb</screenshotPath>
+        <appleAppStorePriceTier>5</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.coin_pack_3" purchaseType="Consumable">
+    <name>Coin Pack 3</name>
+    <description>Coin Pack 3</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>19.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>bd1f4bd2e3d8743dcacce331c87e07bb</screenshotPath>
+        <appleAppStorePriceTier>10</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.coin_pack_4" purchaseType="Consumable">
+    <name>Coin Pack 4</name>
+    <description>Coin Pack 4</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>49.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>bd1f4bd2e3d8743dcacce331c87e07bb</screenshotPath>
+        <appleAppStorePriceTier>20</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.coin_pack_5" purchaseType="Consumable">
+    <name>Coin Pack 5</name>
+    <description>Coin Pack 5</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>99.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>bd1f4bd2e3d8743dcacce331c87e07bb</screenshotPath>
+        <appleAppStorePriceTier>50</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.diamond_pack_2_1" purchaseType="Consumable">
+    <name>Diamond Pack 1</name>
+    <description>Diamond Pack 1</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>1.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>9caec4638eb254d55891ba128dfa777e</screenshotPath>
+        <appleAppStorePriceTier>2</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.diamond_pack_2_2" purchaseType="Consumable">
+    <name>Diamond Pack 2</name>
+    <description>Diamond Pack 2</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>4.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>9caec4638eb254d55891ba128dfa777e</screenshotPath>
+        <appleAppStorePriceTier>5</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.diamond_pack_2_3" purchaseType="Consumable">
+    <name>Diamond Pack 3</name>
+    <description>Diamond Pack 3</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>19.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>9caec4638eb254d55891ba128dfa777e</screenshotPath>
+        <appleAppStorePriceTier>10</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.diamond_pack_2_4" purchaseType="Consumable">
+    <name>Diamond Pack 4</name>
+    <description>Diamond Pack 4</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>49.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>9caec4638eb254d55891ba128dfa777e</screenshotPath>
+        <appleAppStorePriceTier>20</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <item id="com.pokokostudio.dinobash.diamond_pack_2_5" purchaseType="Consumable">
+    <name>Diamond Pack 5</name>
+    <description>Diamond Pack 5</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>99.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <screenshotPath>9caec4638eb254d55891ba128dfa777e</screenshotPath>
+        <appleAppStorePriceTier>50</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+      <WindowsPhone8 />
+    </platforms>
+  </item>
+  <currencies />
+</inventory>

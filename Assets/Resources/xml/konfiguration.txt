@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KonfigurationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppleCollectRate>
+  	<float>1.5</float>
+    <float>1.35</float>
+    <float>1.0</float>
+    <float>0.7</float>
+    <float>0.5</float>
+  </AppleCollectRate>
+  <AppleUpgradeCost>  	
+  <int>5</int>
+    <int>20</int>
+    <int>45</int>
+    <int>70</int>
+    <int>99</int>
+  </AppleUpgradeCost>
+  <appleBoostAmount>25</appleBoostAmount>
+  <AppleCollectTimer>8</AppleCollectTimer>
+  <AppleCollectReward>1</AppleCollectReward> 
+  <win_loss_influce>0.05</win_loss_influce>
+  <win_loss_maxCount>6</win_loss_maxCount>
+  <lifeRefillIntervall>1800</lifeRefillIntervall>
+  <special_offer_start_level>19</special_offer_start_level>
+  <special_offer_loss_count>4</special_offer_loss_count>
+  <dino_rage_threshold>0.75</dino_rage_threshold>
+  <dino_rage_duration>12.0</dino_rage_duration>
+  <dino_rage_cost>5</dino_rage_cost>
+  <dino_rage_apples>50</dino_rage_apples>
+  <dino_rage_loose_count>2</dino_rage_loose_count>
+   
+  <consumable_unlock_fill>3</consumable_unlock_fill>
+  
+  <ConsumableRefillValues>
+    <Item>
+	  <Key>
+	    <UnitType>MegaBall</UnitType>
+	  </Key>
+	  <Value>
+	    <int>3</int>
+	  </Value>
+	</Item>
+    <Item>
+	  <Key>
+	    <UnitType>Blizzard</UnitType>
+	  </Key>
+	  <Value>
+	    <int>3</int>
+	  </Value>
+	</Item>
+    <Item>
+	  <Key>
+	    <UnitType>MeteorStorm</UnitType>
+	  </Key>
+	  <Value>
+	    <int>3</int>
+	  </Value>
+	</Item>
+  </ConsumableRefillValues>
+  
+  <Megball_Refill>3</Megball_Refill>
+  <friendGateDiamondCost>7</friendGateDiamondCost>
+  <refillLivesDiamondCost>7</refillLivesDiamondCost>
+  <Start_Coins>5</Start_Coins>
+  <Start_Diamonds>1</Start_Diamonds>
+  <CoinBonusForTappingOnNotification>5000</CoinBonusForTappingOnNotification>
+  <privacy_policy_url>http://www.tilting-point.com/privacy-policy/</privacy_policy_url>
+  <terms_of_use_url>http://www.tilting-point.com/terms-of-use/</terms_of_use_url>
+  <faq_url>http://www.pokokostudio.com/faq/</faq_url>
+  <specialOfferSaveRate>0.5</specialOfferSaveRate>
+  <iOSPre7RateURL>itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&amp;id=895462868</iOSPre7RateURL>
+  <iOSPost7RateURL>itms-apps://itunes.apple.com/app/id895462868</iOSPost7RateURL>
+  <googlePlayRateURL>market://details?id=com.pokokostudio.dinobash</googlePlayRateURL>
+</KonfigurationData>

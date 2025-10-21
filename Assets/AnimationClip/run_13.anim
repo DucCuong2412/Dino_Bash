@@ -1,0 +1,804 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: run
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.0041865306, w: -0.99999124}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.0006067096, y: -0.0012260941, z: 2.7072148, w: 0.012218951}
+        tangentMode: 1
+      - time: 0.20000002
+        value: {x: 2.5230731E-12, y: 1.8587291E-10, z: 0.47631264, w: -0.879276}
+        inSlope: {x: 0.0003743915, y: 0.012971881, z: 0.25257465, w: 0.1367925}
+        outSlope: {x: -0.010466564, y: -0.023423912, z: 0.26771, w: 0.14509474}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: 0.005735052, y: 0.0065851645, z: -0.20497513, w: -0.97872823}
+        inSlope: {x: -0.03680986, y: -0.033250876, z: -0.44686455, w: 0.093153544}
+        outSlope: {x: 0.05184673, y: 0.02461253, z: -0.5102158, w: 0.10728837}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.0041865306, w: -0.99999124}
+        inSlope: {x: 0.01978718, y: 0.006186208, z: 1.1753944, w: 0.004768372}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_rechts_oben/neander_arm_rechts_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.19213958, w: -0.9813676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -1.4158088, w: -0.2768834}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: -0, y: -0, z: -0.31877533, w: -0.9478303}
+        inSlope: {x: -0, y: -0, z: 0.02090136, w: -0.0069936104}
+        outSlope: {x: -0, y: -0, z: -0.021219257, w: 0.0071525583}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.19213958, w: -0.9813676}
+        inSlope: {x: 0, y: 0, z: 1.4151734, w: 0.27672458}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_rechts_oben
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.72756827, w: -0.68603534}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -0.34904474, w: -0.37002558}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: -0, y: -0, z: -0.21834129, w: -0.97587246}
+        inSlope: {x: -0, y: -0, z: 0.016609825, w: -0.003655751}
+        outSlope: {x: -0, y: -0, z: -0.016927721, w: 0.003814698}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.72756827, w: -0.68603534}
+        inSlope: {x: 0, y: 0, z: 0.3498396, w: 0.37082043}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_links
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.007165522, w: -0.9999743}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0.027973201, w: 0.0001589457}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: 0, y: 0, z: 0.007165522, w: -0.9999743}
+        inSlope: {x: 0, y: 0, z: -0.52323437, w: -0.0038146966}
+        outSlope: {x: 0, y: 0, z: -0.47920987, w: -0.0035762799}
+        tangentMode: 1
+      - time: 0.575
+        value: {x: -0, y: -0, z: -0.1712412, w: -0.98522913}
+        inSlope: {x: -0, y: -0, z: 0.09797517, w: -0.016987348}
+        outSlope: {x: -0, y: -0, z: 0.0022990361, w: -0.00034059794}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.007165522, w: -0.9999743}
+        inSlope: {x: 0, y: 0, z: 1.0898869, w: 0.007833753}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_links_oben/neander_arm_links_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.71472263, w: 0.699408}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -0.4534459, w: 0.45598507}
+        tangentMode: 1
+      - time: 0.025
+        value: {x: 0, y: 0, z: 0.7033865, w: 0.7108076}
+        inSlope: {x: 0, y: 0, z: -0.39970398, w: 0.3971088}
+        outSlope: {x: 0, y: 0, z: -0.39970398, w: 0.3971088}
+        tangentMode: 1
+      - time: 0.05
+        value: {x: 0, y: 0, z: 0.69473743, w: 0.71926343}
+        inSlope: {x: 0, y: 0, z: -0.30460477, w: 0.29509902}
+        outSlope: {x: 0, y: 0, z: -0.30460477, w: 0.29509902}
+        tangentMode: 1
+      - time: 0.075
+        value: {x: 0, y: 0, z: 0.68815625, w: 0.7255626}
+        inSlope: {x: 0, y: 0, z: -0.23528337, w: 0.22359967}
+        outSlope: {x: 0, y: 0, z: -0.23528337, w: 0.22359967}
+        tangentMode: 1
+      - time: 0.1
+        value: {x: 0, y: 0, z: 0.68297327, w: 0.7304434}
+        inSlope: {x: 0, y: 0, z: -0.19338371, w: 0.18099548}
+        outSlope: {x: 0, y: 0, z: -0.19338371, w: 0.18099548}
+        tangentMode: 1
+      - time: 0.125
+        value: {x: 0, y: 0, z: 0.67848706, w: 0.73461235}
+        inSlope: {x: 0, y: 0, z: -0.17995714, w: 0.16620634}
+        outSlope: {x: 0, y: 0, z: -0.17995714, w: 0.16620634}
+        tangentMode: 1
+      - time: 0.15
+        value: {x: 0, y: 0, z: 0.6739754, w: 0.73875374}
+        inSlope: {x: 0, y: 0, z: -0.19576307, w: 0.1784193}
+        outSlope: {x: 0, y: 0, z: -0.19576307, w: 0.1784193}
+        tangentMode: 1
+      - time: 0.17500001
+        value: {x: 0, y: 0, z: 0.6686989, w: 0.7435333}
+        inSlope: {x: 0, y: 0, z: -0.24155492, w: 0.21680947}
+        outSlope: {x: 0, y: 0, z: -0.24155492, w: 0.21680945}
+        tangentMode: 1
+      - time: 0.20000002
+        value: {x: 0, y: 0, z: 0.66189766, w: 0.7495942}
+        inSlope: {x: 0, y: 0, z: -0.31832805, w: 0.2802419}
+        outSlope: {x: 0, y: 0, z: -0.31832808, w: 0.2802419}
+        tangentMode: 1
+      - time: 0.22500002
+        value: {x: 0, y: 0, z: 0.6527825, w: 0.7575454}
+        inSlope: {x: 0, y: 0, z: -0.42755833, w: 0.36694995}
+        outSlope: {x: 0, y: 0, z: -0.4275583, w: 0.36694995}
+        tangentMode: 1
+      - time: 0.25000003
+        value: {x: 0, y: 0, z: 0.64051974, w: 0.7679417}
+        inSlope: {x: 0, y: 0, z: -0.57142365, w: 0.4742025}
+        outSlope: {x: 0, y: 0, z: -0.57142365, w: 0.4742025}
+        tangentMode: 1
+      - time: 0.27500004
+        value: {x: 0, y: 0, z: 0.6242113, w: 0.78125554}
+        inSlope: {x: 0, y: 0, z: -0.75294, w: 0.59791315}
+        outSlope: {x: 0, y: 0, z: -0.75294, w: 0.59791315}
+        tangentMode: 1
+      - time: 0.30000004
+        value: {x: 0, y: 0, z: 0.6028727, w: 0.7978374}
+        inSlope: {x: 0, y: 0, z: -0.9760282, w: 0.7321928}
+        outSlope: {x: 0, y: 0, z: -0.9760282, w: 0.7321928}
+        tangentMode: 1
+      - time: 0.32500005
+        value: {x: 0, y: 0, z: 0.5754099, w: 0.8178652}
+        inSlope: {x: 0, y: 0, z: -1.2454329, w: 0.8688341}
+        outSlope: {x: 0, y: 0, z: -1.2454329, w: 0.868834}
+        tangentMode: 1
+      - time: 0.35000005
+        value: {x: 0, y: 0, z: 0.5406011, w: 0.8412791}
+        inSlope: {x: 0, y: 0, z: -1.566424, w: 0.99669075}
+        outSlope: {x: 0, y: 0, z: -1.566424, w: 0.99669075}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: 0, y: 0, z: 0.49708867, w: 0.86769974}
+        inSlope: {x: 0, y: 0, z: -2.334704, w: 1.2889179}
+        outSlope: {x: 0, y: 0, z: -2.334704, w: 1.288918}
+        tangentMode: 1
+      - time: 0.40000007
+        value: {x: 0, y: 0, z: 0.42386585, w: 0.905725}
+        inSlope: {x: 0, y: 0, z: -3.6332688, w: 1.6250142}
+        outSlope: {x: 0, y: 0, z: -3.6332688, w: 1.6250142}
+        tangentMode: 1
+      - time: 0.42500007
+        value: {x: 0, y: 0, z: 0.3154252, w: 0.94895047}
+        inSlope: {x: 0, y: 0, z: -4.526601, w: 1.4914128}
+        outSlope: {x: 0, y: 0, z: -4.526601, w: 1.4914128}
+        tangentMode: 1
+      - time: 0.45000008
+        value: {x: 0, y: 0, z: 0.19753575, w: 0.98029566}
+        inSlope: {x: 0, y: 0, z: -4.3010297, w: 0.9199867}
+        outSlope: {x: 0, y: 0, z: -4.3010297, w: 0.9199867}
+        tangentMode: 1
+      - time: 0.47500008
+        value: {x: 0, y: 0, z: 0.100373656, w: 0.9949498}
+        inSlope: {x: 0, y: 0, z: -2.8508635, w: 0.36382198}
+        outSlope: {x: 0, y: 0, z: -2.8508635, w: 0.36382198}
+        tangentMode: 1
+      - time: 0.50000006
+        value: {x: 0, y: 0, z: 0.0549926, w: 0.99848676}
+        inSlope: {x: 0, y: 0, z: -0.7794587, w: 0.063268006}
+        outSlope: {x: 0, y: 0, z: -0.7794587, w: 0.063268006}
+        tangentMode: 1
+      - time: 0.52500004
+        value: {x: 0, y: 0, z: 0.06140076, w: 0.9981132}
+        inSlope: {x: 0, y: 0, z: 0.8227034, w: -0.06235487}
+        outSlope: {x: 0, y: 0, z: 0.8227034, w: -0.062354863}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: 0, y: 0, z: 0.09612773, w: 0.995369}
+        inSlope: {x: 0, y: 0, z: 1.8500321, w: -0.20054358}
+        outSlope: {x: 0, y: 0, z: 1.8500321, w: -0.20054358}
+        tangentMode: 1
+      - time: 0.575
+        value: {x: 0, y: 0, z: 0.15390228, w: 0.98808604}
+        inSlope: {x: 0, y: 0, z: 2.6592824, w: -0.43928427}
+        outSlope: {x: 0, y: 0, z: 2.6592827, w: -0.43928427}
+        tangentMode: 1
+      - time: 0.59999996
+        value: {x: 0, y: 0, z: 0.22909173, w: 0.9734048}
+        inSlope: {x: 0, y: 0, z: 3.2350366, w: -0.7842346}
+        outSlope: {x: 0, y: 0, z: 3.2350366, w: -0.7842345}
+        tangentMode: 1
+      - time: 0.62499994
+        value: {x: 0, y: 0, z: 0.31565395, w: 0.94887435}
+        inSlope: {x: 0, y: 0, z: 3.5643413, w: -1.2022865}
+        outSlope: {x: 0, y: 0, z: 3.564341, w: -1.2022865}
+        tangentMode: 1
+      - time: 0.6499999
+        value: {x: 0, y: 0, z: 0.4073086, w: 0.91329056}
+        inSlope: {x: 0, y: 0, z: 3.645486, w: -1.6331223}
+        outSlope: {x: 0, y: 0, z: 3.645486, w: -1.6331223}
+        tangentMode: 1
+      - time: 0.6749999
+        value: {x: 0, y: 0, z: 0.49792808, w: 0.8672183}
+        inSlope: {x: 0, y: 0, z: 3.4946969, w: -2.0026572}
+        outSlope: {x: 0, y: 0, z: 3.4946969, w: -2.0026572}
+        tangentMode: 1
+      - time: 0.69999987
+        value: {x: 0, y: 0, z: 0.5820433, w: 0.8131578}
+        inSlope: {x: 0, y: 0, z: 3.1475027, w: -2.2370467}
+        outSlope: {x: 0, y: 0, z: 3.1475024, w: -2.2370467}
+        tangentMode: 1
+      - time: 0.72499985
+        value: {x: 0, y: 0, z: 0.65530306, w: 0.7553661}
+        inSlope: {x: 0, y: 0, z: 2.6535811, w: -2.27499}
+        outSlope: {x: 0, y: 0, z: 2.653581, w: -2.27499}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.71472263, w: 0.699408}
+        inSlope: {x: 0, y: 0, z: 2.376768, w: -2.2383099}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_rechts/neander_bein_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.29829735, w: 0.95447296}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -0.95084304, w: 0.29712912}
+        tangentMode: 1
+      - time: 0.20000002
+        value: {x: -0, y: -0, z: -0.2962623, w: 0.9551066}
+        inSlope: {x: -0, y: -0, z: -0.97915524, w: -0.30368564}
+        outSlope: {x: -0, y: -0, z: -1.0240076, w: -0.31777784}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: -0, y: -0, z: -0.7137576, w: 0.70039284}
+        inSlope: {x: 0, y: 0, z: -0.1917566, w: -0.19550319}
+        outSlope: {x: -0, y: -0, z: -0.19900008, w: -0.20281477}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.29829735, w: 0.95447296}
+        inSlope: {x: 0, y: 0, z: 0.5167332, w: -0.16148904}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_rechts
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.46070808, w: -0.8875517}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -2.312213, w: -1.1995434}
+        tangentMode: 1
+      - time: 0.20000002
+        value: {x: -0, y: -0, z: -0.14420225, w: -0.98954827}
+        inSlope: {x: -0, y: -0, z: -2.9356775, w: 0.42676923}
+        outSlope: {x: -0, y: -0, z: -2.9815938, w: 0.4356247}
+        tangentMode: 1
+      - time: 0.37500006
+        value: {x: -0, y: -0, z: -0.44151685, w: -0.897253}
+        inSlope: {x: 0, y: 0, z: -0.0023841853, w: 0.0010217937}
+        outSlope: {x: -0, y: -0, z: 0.00166893, w: -0.00047683716}
+        tangentMode: 1
+      - time: 0.50000006
+        value: {x: -0, y: -0, z: -0.28013998, w: -0.95995915}
+        inSlope: {x: 0, y: 0, z: 2.3829937, w: -0.6957054}
+        outSlope: {x: -0, y: -0, z: 2.3841882, w: -0.6961829}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: -0, y: -0, z: -0.14420217, w: -0.98954827}
+        inSlope: {x: 0, y: 0, z: 2.9832153, w: -0.43511432}
+        outSlope: {x: -0, y: -0, z: 2.9375405, w: -0.4270673}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.46070808, w: -0.8875517}
+        inSlope: {x: 0, y: 0, z: 2.3111703, w: 1.1989475}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_links_oben
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0.69957477, w: 0.7145594}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: -3.0199685, w: 2.9551983}
+        tangentMode: 1
+      - time: 0.15
+        value: {x: 0, y: 0, z: -0.041311182, w: 0.99914634}
+        inSlope: {x: 0, y: 0, z: -0.012392997, w: -0.0003973643}
+        outSlope: {x: 0, y: 0, z: 0.012947454, w: 0.00052981905}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: 0, y: 0, z: 0.8027084, w: 0.59637177}
+        inSlope: {x: 0, y: 0, z: 0.007417467, w: -0.010066562}
+        outSlope: {x: 0, y: 0, z: 0.0013623917, w: -0.0020435876}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: 0, y: 0, z: 0.87821335, w: 0.47826907}
+        inSlope: {x: 0, y: 0, z: 0.0010217938, w: -0.0018732887}
+        outSlope: {x: 0, y: 0, z: -0.003576279, w: 0.0068545346}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0.6167407, w: 0.78716636}
+        inSlope: {x: 0, y: 0, z: 1.2800095, w: -1.0025502}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_links/neander_bein_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -41.500088, y: -6.2020416, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: 43.0249, y: -19.670929, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: -41.500088, y: -6.2020416, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_links
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 45.109695, y: -18.624306, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.2
+        value: {x: 10.042822, y: 8.207176, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: -23.48529, y: -8.460457, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 45.109695, y: -18.624306, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_rechts
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 19.55664, y: -40.890297, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: -0.0011189778, y: -0.0032043455, z: 0}
+        tangentMode: 1
+      - time: 0.15
+        value: {x: 19.556473, y: -40.890778, z: 0}
+        inSlope: {x: -0.0001780192, y: -0.0005340576, z: 0}
+        outSlope: {x: -0.00017801917, y: -0.0005340575, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: 19.556644, y: -40.890297, z: 0}
+        inSlope: {x: 0.0003760202, y: 0.0010790143, z: 0}
+        outSlope: {x: 0.00037602015, y: 0.0010790144, z: 0}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: 19.556643, y: -40.890293, z: 0}
+        inSlope: {x: -1.0217938E-05, y: 1.3623918E-06, z: 0}
+        outSlope: {x: -1.0217939E-05, y: 1.3623903E-06, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 19.55664, y: -40.890297, z: 0}
+        inSlope: {x: -9.536744E-06, y: -1.9073488E-05, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_links/neander_bein_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 102.11726, y: 42.978806, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0.00011444092, y: -3.8146973E-05, z: 0}
+        tangentMode: 1
+      - time: 0.2
+        value: {x: 102.11729, y: 42.978798, z: 0}
+        inSlope: {x: 4.6321325E-05, y: -8.174352E-06, z: 0}
+        outSlope: {x: 4.6321325E-05, y: -8.174352E-06, z: 0}
+        tangentMode: 1
+      - time: 0.55
+        value: {x: 102.11728, y: 42.978806, z: 0}
+        inSlope: {x: -4.9046106E-05, y: 1.0899134E-05, z: 0}
+        outSlope: {x: -4.904611E-05, y: 1.0899134E-05, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 102.11726, y: 42.978806, z: 0}
+        inSlope: {x: -7.629395E-05, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_rechts_oben/neander_arm_rechts_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -55.115665, y: 27.557663, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: -55.115665, y: 27.557663, z: 0}
+        inSlope: {x: -0.9333611, y: -6.9471173, z: 0}
+        outSlope: {x: -0.9333611, y: -6.9471173, z: 0}
+        tangentMode: 1
+      - time: 0.575
+        value: {x: -55.48901, y: 24.778816, z: 0}
+        inSlope: {x: 0.1333371, y: 0.9924436, z: 0}
+        outSlope: {x: 0.1333372, y: 0.99244404, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: -55.115665, y: 27.557663, z: 0}
+        inSlope: {x: 2.1333966, y: 15.879123, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_links_oben/neander_arm_links_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 19.557194, y: -40.891953, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: -0.008295695, y: 0.003957113, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: 19.554083, y: -40.89047, z: 0}
+        inSlope: {x: -0.004674276, y: -0.00089009636, z: 0}
+        outSlope: {x: -0.004674276, y: -0.00089009595, z: 0}
+        tangentMode: 1
+      - time: 0.5
+        value: {x: 19.553951, y: -40.891186, z: 0}
+        inSlope: {x: 0.005958557, y: -0.0044021606, z: 0}
+        outSlope: {x: 0.005958557, y: -0.0044021606, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 19.557194, y: -40.891953, z: 0}
+        inSlope: {x: 0.012969971, y: -0.0030670166, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_bein_oben_rechts/neander_bein_unten
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.70949626, y: 151.19446, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.2
+        value: {x: 0.694819, y: 83.24039, z: 0}
+        inSlope: {x: 0, y: 7.6293945E-05, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.375
+        value: {x: -0.70949626, y: 151.19446, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.575
+        value: {x: 0.694819, y: 83.24039, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: -0.70949626, y: 151.19446, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 97.42559, y: 98.64966, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 97.42559, y: 98.64966, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_koerper/neander_arm_rechts_oben
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - time: 0.75
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: neander_schatten
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: typetree_3305885265
+    path: neander_schatten
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5019608
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 0.75
+        value: 0.5019608
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: typetree_304273561
+    path: neander_schatten
+    classID: 212
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 40
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 2152355232
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2384025631
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2234923016
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 727843258
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1187000519
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2749015493
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4126273879
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 727843258
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2409417079
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2152355232
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1187000519
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2749015493
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2384025631
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3134677911
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2234923016
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3923243668
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2409417079
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3923243668
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3923243668
+      attribute: 304273561
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 0.75
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []

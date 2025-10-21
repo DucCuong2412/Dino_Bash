@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LevelData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <name>level_32</name>
+    <levelwidth>7000</levelwidth>
+    <level_coins>2400</level_coins>
+    <kill_coins>2820</kill_coins>
+    <level_xp>140</level_xp>
+    <kill_xp>0</kill_xp>
+    <endless_mode>false</endless_mode>
+    <unlockUnit>None</unlockUnit>
+    <unlockShot>None</unlockShot>
+    <override_shots_selection>false</override_shots_selection>
+    <override_dino_selection>false</override_dino_selection>
+    <selection_override>
+    </selection_override>
+    <is_friend_gate>false</is_friend_gate>
+    <friend_gate_duration_in_seconds>0</friend_gate_duration_in_seconds>
+    <enemies>
+        <LevelEnemy Unit="Message" Delay="2.0" Level="0" Command="AirRaid"/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="6.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="8.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="8.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="9.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="6.0" Level="0" Command=""/>
+    </enemies>
+</LevelData>

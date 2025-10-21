@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTutorial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Tutorial name="BasicShooting_Tutorial" level="level_01" onMap="false"/>
+	<Tutorial name="BasicUnit_Tutorial" level="level_02" onMap="false"/>
+	<Tutorial name="PanOverMap" level="level_03" onMap="true"/>
+	<Tutorial name="Bomb_Tutorial" level="level_03" onMap="false"/>
+	<Tutorial name="Ingame_Hints" level="level_04" onMap="false"/>
+	<Tutorial name="UpgradeTutorial" level="level_04" onMap="true"/>
+	<Tutorial name="ThirdShot_Tutorial" level="level_08" onMap="false"/>
+	<Tutorial name="WaitForTank_Tutorial" level="level_09" onMap="false"/>
+	<Tutorial name="FriendGate_Tutorial" level="friendgate_01" onMap="false"/>
+	<Tutorial name="MegaBallTutorial" level="level_12" onMap="false"/>
+	<Tutorial name="AppleUpgradeTutorial" level="level_14" onMap="false"/>
+	<Tutorial name="SpecialMissionTutorial" level="level_18" onMap="false"/>
+	<Tutorial name="dialog_map2_end" level="level_25" onMap="false"/>
+	<Tutorial name="dialog_map3_start" level="level_26" onMap="true"/>
+	<Tutorial name="dialog_brachio_appears" level="level_34" onMap="false"/>
+	<Tutorial name="dialog_map3_end" level="level_50" onMap="false"/>
+	<Tutorial name="dialog_map4_start" level="level_51" onMap="true"/>
+	<Tutorial name="dialog_disguise_appears" level="level_56" onMap="false"/>
+	<Tutorial name="dialog_trex_appears" level="level_69" onMap="false"/>
+	<Tutorial name="dialog_map4_end" level="level_75" onMap="false"/>
+	<Tutorial name="dialog_map5_start" level="level_76" onMap="true"/>
+</ArrayOfTutorial>

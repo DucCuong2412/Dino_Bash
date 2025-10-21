@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LevelData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <name>level_100</name>
+    <levelwidth>6500</levelwidth>
+    <level_coins>23000</level_coins>
+    <kill_coins>7800</kill_coins>
+    <level_xp>140</level_xp>
+    <kill_xp>0</kill_xp>
+    <endless_mode>false</endless_mode>
+    <unlockUnit>None</unlockUnit>
+    <unlockShot>None</unlockShot>
+    <override_shots_selection>false</override_shots_selection>
+    <override_dino_selection>false</override_dino_selection>
+    <selection_override>
+    </selection_override>
+    <is_friend_gate>false</is_friend_gate>
+    <friend_gate_duration_in_seconds>0</friend_gate_duration_in_seconds>
+    <enemies>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Healer_Strong" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Healer_Strong" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Healer_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Catapult" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Healer_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Catapult" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="6.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_SuperHeavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Healer_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Catapult" Delay="5.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="12.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="13.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank_Strong" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Catapult" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Tank" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Disguise" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="CollectableMegaBall" Delay="0.1" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="1.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="4.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Message" Delay="2.0" Level="0" Command="FinalWave"/>
+        <LevelEnemy Unit="Neander_Spear_Heavy" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Bush" Delay="5.0" Level="0" Command="Neander_Fire_Strong"/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Fire_Strong" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Shooter_Fire" Delay="2.0" Level="0" Command=""/>
+        <LevelEnemy Unit="Neander_Flyer_Fire" Delay="3.0" Level="0" Command=""/>
+    </enemies>
+</LevelData>

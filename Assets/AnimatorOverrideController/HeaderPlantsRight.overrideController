@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HeaderPlantsRight
+  m_Controller: {fileID: 9100000, guid: a48b413d085332e48a010b904b871161, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 1628fd6b8f48a2847b7d63981fa0df3d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 966fd748fcdf8a54bb770db80efab492, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 34e6cf32c12e68f41930e8617d3a3b45, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a44f7cfd7ddd5b84da1a3ebd47b5c357, type: 2}
