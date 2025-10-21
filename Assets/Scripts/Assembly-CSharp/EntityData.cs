@@ -118,10 +118,10 @@ public struct EntityData
 	{
 		get
 		{
-			if (Konfiguration.GameConfig.Use_temp_upgrades)
-			{
-				return minutes_available;
-			}
+			//if (Konfiguration.GameConfig.Use_temp_upgrades)
+			//{
+			//	return minutes_available;
+			//}
 			return 0;
 		}
 	}

@@ -20,7 +20,7 @@ public class ChapterData
 	{
 		get
 		{
-			return levelnames.Length;
+			return 0;// levelnames.Length;//cuongnd
 		}
 	}
 

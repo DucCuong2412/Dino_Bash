@@ -267,7 +267,7 @@ namespace ChartboostSDK
 
 		public static void setCustomId(string customId)
 		{
-			_plugin.Call("setCustomId", customId);
+			//_plugin.Call("setCustomId", customId);
 		}
 
 		public static bool getAutoCacheAds()
@@ -277,34 +277,34 @@ namespace ChartboostSDK
 
 		public static void setAutoCacheAds(bool autoCacheAds)
 		{
-			_plugin.Call("setAutoCacheAds", autoCacheAds);
+			//_plugin.Call("setAutoCacheAds", autoCacheAds);
 		}
 
 		public static void setShouldRequestInterstitialsInFirstSession(bool shouldRequest)
 		{
-			_plugin.Call("setShouldRequestInterstitialsInFirstSession", shouldRequest);
+			//_plugin.Call("setShouldRequestInterstitialsInFirstSession", shouldRequest);
 		}
 
 		public static void setShouldDisplayLoadingViewForMoreApps(bool shouldDisplay)
 		{
-			_plugin.Call("setShouldDisplayLoadingViewForMoreApps", shouldDisplay);
+			//_plugin.Call("setShouldDisplayLoadingViewForMoreApps", shouldDisplay);
 		}
 
 		public static void setShouldPrefetchVideoContent(bool shouldPrefetch)
 		{
-			_plugin.Call("setShouldPrefetchVideoContent", shouldPrefetch);
+			//_plugin.Call("setShouldPrefetchVideoContent", shouldPrefetch);
 		}
 
 		public static void setGameObjectName(string name)
 		{
-			_plugin.Call("setGameObjectName", name);
+			//_plugin.Call("setGameObjectName", name);
 		}
 
 		public static void pause(bool paused)
 		{
 			if (checkInitialized())
 			{
-				_plugin.Call("pause", paused);
+				//_plugin.Call("pause", paused);
 				Log("Android : pause");
 			}
 		}
@@ -313,7 +313,7 @@ namespace ChartboostSDK
 		{
 			if (checkInitialized())
 			{
-				_plugin.Call("destroy");
+				//_plugin.Call("destroy");
 				initialized = false;
 				Log("Android : destroy");
 			}
@@ -333,14 +333,14 @@ namespace ChartboostSDK
 
 		public static void trackInAppGooglePlayPurchaseEvent(string title, string description, string price, string currency, string productID, string purchaseData, string purchaseSignature)
 		{
-			Log("Android: trackInAppGooglePlayPurchaseEvent");
-			_plugin.Call("trackInAppGooglePlayPurchaseEvent", title, description, price, currency, productID, purchaseData, purchaseSignature);
+			//Log("Android: trackInAppGooglePlayPurchaseEvent");
+			//_plugin.Call("trackInAppGooglePlayPurchaseEvent", title, description, price, currency, productID, purchaseData, purchaseSignature);
 		}
 
 		public static void trackInAppAmazonStorePurchaseEvent(string title, string description, string price, string currency, string productID, string userID, string purchaseToken)
 		{
-			Log("Android: trackInAppAmazonStorePurchaseEvent");
-			_plugin.Call("trackInAppAmazonStorePurchaseEvent", title, description, price, currency, productID, userID, purchaseToken);
+			//Log("Android: trackInAppAmazonStorePurchaseEvent");
+			//_plugin.Call("trackInAppAmazonStorePurchaseEvent", title, description, price, currency, productID, userID, purchaseToken);
 		}
 	}
 }

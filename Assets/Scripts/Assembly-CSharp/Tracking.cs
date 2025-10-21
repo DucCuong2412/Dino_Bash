@@ -556,22 +556,22 @@ public class Tracking
 		form.AddField("currency_code", currency_code);
 		form.AddField("facebook_id", facebook_id);
 		form.AddField("receipt", receipt);
-		WWW www = new WWW(Konfiguration.GameConfig.VERIFY_URL_ANDROID, form);
-		yield return www;
-		if (!string.IsNullOrEmpty(www.error))
-		{
-			Debug.LogWarning("Failed to verify receipt via " + www.url + ", error: " + www.error);
-			yield break;
-		}
-		if (www.text != "true")
-		{
-			Debug.LogError("IAP-Validation failed: text=" + www.text);
-			Mixpanel.people.Set("IAPThiefe", true);
-			Mixpanel.people.Increment("CheatedIAPAmount", amount_usd);
-			properties["EventTag"] = "fake_purchase";
-			Mixpanel.Track("IAP: Steal", properties);
-			yield break;
-		}
+		//WWW www = new WWW(Konfiguration.GameConfig.VERIFY_URL_ANDROID, form);
+		//yield return www;
+		//if (!string.IsNullOrEmpty(www.error))
+		//{
+		//	Debug.LogWarning("Failed to verify receipt via " + www.url + ", error: " + www.error);
+		//	yield break;
+		//}
+		//if (www.text != "true")
+		//{
+		//	Debug.LogError("IAP-Validation failed: text=" + www.text);
+		//	Mixpanel.people.Set("IAPThiefe", true);
+		//	Mixpanel.people.Increment("CheatedIAPAmount", amount_usd);
+		//	properties["EventTag"] = "fake_purchase";
+		//	Mixpanel.Track("IAP: Steal", properties);
+		//	yield break;
+		//}
 		Mixpanel.people.Set("IAPThiefe", false);
 		Mixpanel.people.Set("total_spend", string.Format("{0}({1})", Wallet.Total_spent, CurrencyHelper.getCurrencyCode()));
 		Apsalar.SendEvent(new Dictionary<string, object>

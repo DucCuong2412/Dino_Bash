@@ -13,7 +13,7 @@ public class MoreGamesScreen : BaseScreen
 	{
 		get
 		{
-			return Konfiguration.GameConfig.MoregamesURL_Android + MixpanelUnityPlatform.get_distinct_id();
+			return "";// Konfiguration.GameConfig.MoregamesURL_Android + MixpanelUnityPlatform.get_distinct_id();
 		}
 	}
 

@@ -222,167 +222,167 @@ namespace Helpshift
 
 		private void hsApiCall(string api, params object[] args)
 		{
-			hsHelpshiftClass.CallStatic(api, args);
+			//hsHelpshiftClass.CallStatic(api, args);
 		}
 
 		private void hsApiCall(string api)
 		{
-			hsHelpshiftClass.CallStatic(api);
+			//hsHelpshiftClass.CallStatic(api);
 		}
 
 		private void hsSupportApiCall(string api, params object[] args)
 		{
-			hsSupportClass.CallStatic(api, args);
+			//hsSupportClass.CallStatic(api, args);
 		}
 
 		private void hsSupportApiCall(string api)
 		{
-			hsSupportClass.CallStatic(api);
+			//hsSupportClass.CallStatic(api);
 		}
 
 		public void install(string apiKey, string domain, string appId, Dictionary<string, object> configMap)
 		{
-			hsApiCall("install", application, apiKey, domain, appId, convertToJavaHashMap(configMap));
+			//hsApiCall("install", application, apiKey, domain, appId, convertToJavaHashMap(configMap));
 		}
 
 		public void install()
 		{
-			hsApiCall("install", application);
+			//hsApiCall("install", application);
 		}
 
 		public int getNotificationCount(bool isAsync)
 		{
-			return hsHelpshiftClass.CallStatic<int>("getNotificationCount", new object[1] { isAsync });
+			return 0;// hsHelpshiftClass.CallStatic<int>("getNotificationCount", new object[1] { isAsync });
 		}
 
 		public void setNameAndEmail(string userName, string email)
 		{
-			hsApiCall("setNameAndEmail", userName, email);
+			//hsApiCall("setNameAndEmail", userName, email);
 		}
 
 		public void setUserIdentifier(string identifier)
 		{
-			hsApiCall("setUserIdentifier", identifier);
+			//hsApiCall("setUserIdentifier", identifier);
 		}
 
 		public void registerDeviceToken(string deviceToken)
 		{
-			hsApiCall("registerDeviceToken", currentActivity, deviceToken);
+			//hsApiCall("registerDeviceToken", currentActivity, deviceToken);
 		}
 
 		public void leaveBreadCrumb(string breadCrumb)
 		{
-			hsApiCall("leaveBreadCrumb", breadCrumb);
+			//hsApiCall("leaveBreadCrumb", breadCrumb);
 		}
 
 		public void clearBreadCrumbs()
 		{
-			hsApiCall("clearBreadCrumbs");
+			//hsApiCall("clearBreadCrumbs");
 		}
 
 		public void login(string identifier, string userName, string email)
 		{
-			hsApiCall("login", identifier, userName, email);
+			//hsApiCall("login", identifier, userName, email);
 		}
 
 		public void logout()
 		{
-			hsApiCall("logout");
+			//hsApiCall("logout");
 		}
 
 		public void showConversation(Dictionary<string, object> configMap)
 		{
-			hsApiCall("showConversation", currentActivity, convertToJavaHashMap(configMap));
+			//hsApiCall("showConversation", currentActivity, convertToJavaHashMap(configMap));
 		}
 
 		public void showFAQSection(string sectionPublishId, Dictionary<string, object> configMap)
 		{
-			hsApiCall("showFAQSection", currentActivity, sectionPublishId, convertToJavaHashMap(configMap));
+			//hsApiCall("showFAQSection", currentActivity, sectionPublishId, convertToJavaHashMap(configMap));
 		}
 
 		public void showSingleFAQ(string questionPublishId, Dictionary<string, object> configMap)
 		{
-			hsApiCall("showSingleFAQ", currentActivity, questionPublishId, convertToJavaHashMap(configMap));
+			//hsApiCall("showSingleFAQ", currentActivity, questionPublishId, convertToJavaHashMap(configMap));
 		}
 
 		public void showFAQs(Dictionary<string, object> configMap)
 		{
-			hsApiCall("showFAQs", currentActivity, convertToJavaHashMap(configMap));
+			//hsApiCall("showFAQs", currentActivity, convertToJavaHashMap(configMap));
 		}
 
 		public void showConversation()
 		{
-			hsApiCall("showConversation");
+			//hsApiCall("showConversation");
 		}
 
 		public void showFAQSection(string sectionPublishId)
 		{
-			hsApiCall("showFAQSection", sectionPublishId);
+			//hsApiCall("showFAQSection", sectionPublishId);
 		}
 
 		public void showSingleFAQ(string questionPublishId)
 		{
-			hsApiCall("showSingleFAQ", questionPublishId);
+			//hsApiCall("showSingleFAQ", questionPublishId);
 		}
 
 		public void showFAQs()
 		{
-			hsApiCall("showFAQs");
+			//hsApiCall("showFAQs");
 		}
 
 		public void showConversationWithMeta(Dictionary<string, object> configMap)
 		{
-			hsApiCall("showConversationWithMeta", convertMetadataToJavaHashMap(configMap));
+			//hsApiCall("showConversationWithMeta", convertMetadataToJavaHashMap(configMap));
 		}
 
 		public void showFAQSectionWithMeta(string sectionPublishId, Dictionary<string, object> configMap)
 		{
-			hsApiCall("showFAQSectionWithMeta", sectionPublishId, convertMetadataToJavaHashMap(configMap));
+			//hsApiCall("showFAQSectionWithMeta", sectionPublishId, convertMetadataToJavaHashMap(configMap));
 		}
 
 		public void showSingleFAQWithMeta(string questionPublishId, Dictionary<string, object> configMap)
 		{
-			hsApiCall("showSingleFAQWithMeta", questionPublishId, convertMetadataToJavaHashMap(configMap));
+			//hsApiCall("showSingleFAQWithMeta", questionPublishId, convertMetadataToJavaHashMap(configMap));
 		}
 
 		public void showFAQsWithMeta(Dictionary<string, object> configMap)
 		{
-			hsApiCall("showFAQsWithMeta", convertMetadataToJavaHashMap(configMap));
+			//hsApiCall("showFAQsWithMeta", convertMetadataToJavaHashMap(configMap));
 		}
 
 		public void updateMetaData(Dictionary<string, object> metaData)
 		{
-			hsApiCall("setMetaData", Json.Serialize(metaData));
+			//hsApiCall("setMetaData", Json.Serialize(metaData));
 		}
 
 		public void handlePushNotification(string issueId)
 		{
-			hsApiCall("handlePush", currentActivity, issueId);
+			//hsApiCall("handlePush", currentActivity, issueId);
 		}
 
 		public void showAlertToRateAppWithURL(string url)
 		{
-			hsApiCall("showAlertToRateApp", url);
+			//hsApiCall("showAlertToRateApp", url);
 		}
 
 		public void registerDelegates()
 		{
-			hsApiCall("registerDelegates");
+			//hsApiCall("registerDelegates");
 		}
 
 		public void registerForPushWithGcmId(string gcmId)
 		{
-			hsApiCall("registerGcmKey", gcmId, currentActivity);
+			//hsApiCall("registerGcmKey", gcmId, currentActivity);
 		}
 
 		public void setSDKLanguage(string locale)
 		{
-			hsApiCall("setSDKLanguage", locale);
+			//hsApiCall("setSDKLanguage", locale);
 		}
 
 		public void showDynamicForm(string title, Dictionary<string, object>[] flows)
 		{
-			hsSupportApiCall("showDynamicFormFromDataJson", currentActivity, Json.Serialize(flows));
+			//hsSupportApiCall("showDynamicFormFromDataJson", currentActivity, Json.Serialize(flows));
 		}
 	}
 }

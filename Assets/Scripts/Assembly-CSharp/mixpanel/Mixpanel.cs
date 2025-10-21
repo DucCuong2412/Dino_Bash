@@ -89,7 +89,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.set(property, to);
+					//mixpanel.people.set(property, to);
 				}
 			}
 
@@ -97,7 +97,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.set_once(property, to);
+					//mixpanel.people.set_once(property, to);
 				}
 			}
 
@@ -105,7 +105,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.unset(properties);
+					//mixpanel.people.unset(properties);
 				}
 			}
 
@@ -121,7 +121,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.increment(property, by);
+					//mixpanel.people.increment(property, by);
 				}
 			}
 
@@ -129,7 +129,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.append(listName, value);
+					//mixpanel.people.append(listName, value);
 				}
 			}
 
@@ -137,7 +137,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.union_(listName, values);
+					//mixpanel.people.union_(listName, values);
 				}
 			}
 
@@ -145,7 +145,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.track_charge(amount, properties);
+					//mixpanel.people.track_charge(amount, properties);
 				}
 			}
 
@@ -153,7 +153,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.track_charge(amount, new Value());
+					//mixpanel.people.track_charge(amount, new Value());
 				}
 			}
 
@@ -161,7 +161,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.track_charge_converting(amount, currency_code, properties);
+					//mixpanel.people.track_charge_converting(amount, currency_code, properties);
 				}
 			}
 
@@ -169,7 +169,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.track_charge_converting(amount, currency_code, new Value());
+					//mixpanel.people.track_charge_converting(amount, currency_code, new Value());
 				}
 			}
 
@@ -177,7 +177,7 @@ namespace mixpanel
 			{
 				if (tracking_enabled)
 				{
-					mixpanel.people.clear_charges();
+					//mixpanel.people.clear_charges();
 				}
 			}
 
@@ -543,11 +543,11 @@ namespace mixpanel
 			{
 				if (focusStatus)
 				{
-					mp_interface.on_entered_foreground();
+					//mp_interface.on_entered_foreground();
 				}
 				else
 				{
-					mp_interface.on_entered_background();
+					//mp_interface.on_entered_background();
 				}
 			}
 		}

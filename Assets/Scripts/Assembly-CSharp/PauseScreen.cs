@@ -53,7 +53,7 @@ public class PauseScreen : BaseScreen
 		{
 			standardButton.uiItem.OnClick += delegate
 			{
-				Application.OpenURL(Konfiguration.GameConfig.faq_url);
+				//Application.OpenURL(Konfiguration.GameConfig.faq_url);
 			};
 		}
 		targetText.Key = ((!Player.Instance.bird_focus_on_visible_neanders) ? "bird_target_first" : "bird_target_visible");
@@ -68,11 +68,11 @@ public class PauseScreen : BaseScreen
 			base.Hide();
 			HideTo(base.left, ScreenManager.GetScreen<QuitLevelRequestScreen>().Show, 0.3f, GoUpdateType.TimeScaleIndependentUpdate);
 		};
-		if (Konfiguration.GameConfig.Use_dragshot_feature)
-		{
-			targetButton.gameObject.SetActive(false);
-			endButton.transform.position = targetButton.transform.position;
-		}
+		//if (Konfiguration.GameConfig.Use_dragshot_feature)
+		//{
+		//	targetButton.gameObject.SetActive(false);
+		//	endButton.transform.position = targetButton.transform.position;
+		//}
 		base.transform.localPosition += base.right;
 		base.gameObject.SetActive(false);
 	}

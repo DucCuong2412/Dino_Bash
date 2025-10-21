@@ -13,7 +13,7 @@ public class FreeOrDestoryOnLevelBoundsExit : MonoBehaviour
 
 	private void OnEnable()
 	{
-		levelMin = Konfiguration.GameConfig.levelstart - 1024f;
+		//levelMin = Konfiguration.GameConfig.levelstart - 1024f;
 		levelMax = Level.Instance.Config.levelwidth + 1024;
 		StartCoroutine(CheckIfInBounds());
 	}

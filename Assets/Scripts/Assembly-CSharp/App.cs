@@ -268,7 +268,7 @@ public class App : MonoBase
 
 	private void StartGame()
 	{
-		if (Player.MaxLevelID > Tutorials.LevelID("BasicShooting_Tutorial") || !Konfiguration.GameConfig.Use_skip_intro)
+		if (Player.MaxLevelID > Tutorials.LevelID("BasicShooting_Tutorial") /*|| !Konfiguration.GameConfig.Use_skip_intro*/)
 		{
 			stateStartScreen();
 			return;

@@ -501,7 +501,7 @@ public class ResultScreen : BaseScreen
 			{
 				dino_screen.Show(premium_units[0].unittype, true);
 			}
-			else if (Player.CurrentLevelID == player_maxlevel_id && discount_items.Count > 0 && display_level_name > Konfiguration.GameConfig.Special_offer_start_level && display_level_name % 3 == 0)
+			else if (Player.CurrentLevelID == player_maxlevel_id && discount_items.Count > 0/* && display_level_name > Konfiguration.GameConfig.Special_offer_start_level*/ && display_level_name % 3 == 0)
 			{
 				UnitType item3 = discount_items[UnityEngine.Random.Range(0, discount_items.Count)];
 				if (Konfiguration.isDinoUnit(item3) || Konfiguration.isConsumable(item3))
@@ -514,15 +514,15 @@ public class ResultScreen : BaseScreen
 				}
 			}
 		}
-		else if (Player.LooseCount % Konfiguration.GameConfig.Special_offer_loss_count == 0 && display_level_name > Konfiguration.GameConfig.Special_offer_start_level)
-		{
-			List<UnitType> consumables3 = discount_items.FindAll((UnitType item) => Konfiguration.isConsumable(item));
-			if (consumables3.Count > 0)
-			{
-				UnitType item2 = consumables3[UnityEngine.Random.Range(0, consumables3.Count)];
-				dino_screen.Show(item2, true);
-			}
-		}
+		//else if (/*Player.LooseCount % Konfiguration.GameConfig.Special_offer_loss_count == 0 &&*/ display_level_name > Konfiguration.GameConfig.Special_offer_start_level)
+		//{
+		//	List<UnitType> consumables3 = discount_items.FindAll((UnitType item) => Konfiguration.isConsumable(item));
+		//	if (consumables3.Count > 0)
+		//	{
+		//		UnitType item2 = consumables3[UnityEngine.Random.Range(0, consumables3.Count)];
+		//		dino_screen.Show(item2, true);
+		//	}
+		//}
 		while (upgrade_screen.isVisible)
 		{
 			yield return null;
@@ -538,7 +538,7 @@ public class ResultScreen : BaseScreen
 			}
 			yield return new WaitForSeconds(0.3f);
 		}
-		if (Player.LooseCount == 0 && Player.CurrentLevelID == player_maxlevel_id && player_maxlevel_id >= Konfiguration.GameConfig.Show_rate_prompt_level && player_maxlevel_id % Konfiguration.GameConfig.Show_rate_prompt_frequency == 2 && Player.Instance.shouldShowRatePrompt)
+		if (Player.LooseCount == 0 && Player.CurrentLevelID == player_maxlevel_id && Player.Instance.shouldShowRatePrompt)
 		{
 			Debug.Log("Showing App Rating Screen !!!");
 			RateAppScreen screen = ScreenManager.GetScreen<RateAppScreen>();

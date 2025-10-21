@@ -23,52 +23,52 @@ public class AndroidAgent : SupersonicIAgent
 	public void start()
 	{
 		Debug.Log("Android started");
-		using (AndroidJavaClass androidJavaClass = new AndroidJavaClass(AndroidBridge))
-		{
-			_androidBridge = androidJavaClass.CallStatic<AndroidJavaObject>("getInstance", new object[0]);
-		}
-		_androidBridge.Call("setPluginData", "Unity", "6.3.2");
+		//using (AndroidJavaClass androidJavaClass = new AndroidJavaClass(AndroidBridge))
+		//{
+		//	//_androidBridge = androidJavaClass.CallStatic<AndroidJavaObject>("getInstance", new object[0]);
+		//}
+		//_androidBridge.Call("setPluginData", "Unity", "6.3.2");
 		Debug.Log("Android started - ended");
 	}
 
 	public void onResume()
 	{
-		_androidBridge.Call("onResume");
+		//_androidBridge.Call("onResume");
 	}
 
 	public void onPause()
 	{
-		_androidBridge.Call("onPause");
+		//_androidBridge.Call("onPause");
 	}
 
 	public void setAge(int age)
 	{
-		_androidBridge.Call("setAge", age);
+		//_androidBridge.Call("setAge", age);
 	}
 
 	public void setGender(string gender)
 	{
-		_androidBridge.Call("setGender", gender);
+		//_androidBridge.Call("setGender", gender);
 	}
 
 	public void initRewardedVideo(string appKey, string userId)
 	{
-		_androidBridge.Call("initRewardedVideo", appKey, userId);
+		//_androidBridge.Call("initRewardedVideo", appKey, userId);
 	}
 
 	public void showRewardedVideo()
 	{
-		_androidBridge.Call("showRewardedVideo");
+		//_androidBridge.Call("showRewardedVideo");
 	}
 
 	public void showRewardedVideo(string placementName)
 	{
-		_androidBridge.Call("showRewardedVideo", placementName);
+		//_androidBridge.Call("showRewardedVideo", placementName);
 	}
 
 	public bool isRewardedVideoAvailable()
 	{
-		return _androidBridge.Call<bool>("isRewardedVideoAvailable", new object[0]);
+		return false;// _androidBridge.Call<bool>("isRewardedVideoAvailable", new object[0]);
 	}
 
 	public SupersonicPlacement getPlacementInfo(string placementName)
@@ -88,36 +88,36 @@ public class AndroidAgent : SupersonicIAgent
 
 	public void initInterstitial(string appKey, string userId)
 	{
-		_androidBridge.Call("initInterstitial", appKey, userId);
+		//_androidBridge.Call("initInterstitial", appKey, userId);
 	}
 
 	public void showInterstitial()
 	{
-		_androidBridge.Call("showInterstitial");
+		//_androidBridge.Call("showInterstitial");
 	}
 
 	public bool isInterstitialAdAvailalbe()
 	{
-		return _androidBridge.Call<bool>("isInterstitialAdAvailalbe", new object[0]);
+		return false;// _androidBridge.Call<bool>("isInterstitialAdAvailalbe", new object[0]);
 	}
 
 	public void initOfferwall(string appKey, string userId)
 	{
-		_androidBridge.Call("initOfferwall", appKey, userId);
+		//_androidBridge.Call("initOfferwall", appKey, userId);
 	}
 
 	public void showOfferwall()
 	{
-		_androidBridge.Call("showOfferwall");
+		//_androidBridge.Call("showOfferwall");
 	}
 
 	public void getOfferwallCredits()
 	{
-		_androidBridge.Call("getOfferwallCredits");
+		//_androidBridge.Call("getOfferwallCredits");
 	}
 
 	public bool isOfferwallAvailable()
 	{
-		return _androidBridge.Call<bool>("isOfferwallAvailable", new object[0]);
+		return false;
 	}
 }

@@ -41,7 +41,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 		base.transform.localScale = Vector3.one;
 		base.GetComponent<Collider>().enabled = true;
 		touched = false;
-		lifeTime = Time.time + Konfiguration.GameConfig.AppleCollectTimer;
+		//lifeTime = Time.time + Konfiguration.GameConfig.AppleCollectTimer;
 		uiItem.OnClick += OnClicked;
 		Level.Instance.OnLevelWon += OnDisable;
 		Level.Instance.OnLevelLost += OnDisable;
@@ -75,7 +75,7 @@ public class CollectableItem : tk2dUIBaseItemControl
 			target = MonoSingleton<ApplesLabel>.Instance.transform.parent.GetComponent<Renderer>();
 			onCollect = delegate
 			{
-				Player.Instance.Apples += Konfiguration.GameConfig.AppleCollectReward;
+				//Player.Instance.Apples += Konfiguration.GameConfig.AppleCollectReward;
 			};
 		}
 		if (collectable.unitType == UnitType.CollectableBlizzard)

@@ -124,7 +124,7 @@ public class GameCamera : MonoBase
 			init = true;
 			tk2d_camera = base.gameObject.GetComponent<tk2dCamera>();
 			screen_width = tk2d_camera.ScreenExtents.width;
-			level_start = Konfiguration.GameConfig.levelstart;
+			//level_start = Konfiguration.GameConfig.levelstart;
 			level_end = (float)Level.Instance.Config.levelwidth - screen_width;
 			allowScrolling = true;
 			Level.Instance.OnLevelPlay += OnLevelStart;

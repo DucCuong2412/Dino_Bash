@@ -236,20 +236,20 @@ namespace mixpanel.detail
 			{
 				get
 				{
-					string result = MixpanelSDKPINVOKE.CSharp_Mixpanel_LogEntry_message_get(swigCPtr);
-					if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-					{
-						throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-					}
-					return result;
+					//string result = MixpanelSDKPINVOKE.CSharp_Mixpanel_LogEntry_message_get(swigCPtr);
+					//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+					//{
+					//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+					//}
+					return string.Empty;
 				}
 				set
 				{
-					MixpanelSDKPINVOKE.CSharp_Mixpanel_LogEntry_message_set(swigCPtr, value);
-					if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-					{
-						throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-					}
+					//MixpanelSDKPINVOKE.CSharp_Mixpanel_LogEntry_message_set(swigCPtr, value);
+					//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+					//{
+					//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+					//}
 				}
 			}
 
@@ -260,7 +260,7 @@ namespace mixpanel.detail
 			}
 
 			public LogEntry()
-				: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel_LogEntry(), true)
+				//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel_LogEntry(), true)
 			{
 			}
 
@@ -307,8 +307,8 @@ namespace mixpanel.detail
 		{
 			get
 			{
-				IntPtr intPtr = MixpanelSDKPINVOKE.CSharp_Mixpanel_people_get(swigCPtr);
-				return (!(intPtr == IntPtr.Zero)) ? new People(intPtr, false) : null;
+				//IntPtr intPtr = MixpanelSDKPINVOKE.CSharp_Mixpanel_people_get(swigCPtr);
+				return null;// (!(intPtr == IntPtr.Zero)) ? new People(intPtr, false) : null;
 			}
 			set
 			{
@@ -323,7 +323,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking, bool enable_local_time_tracking, bool enable_log_queue)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_0(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking, enable_log_queue), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_0(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking, enable_log_queue), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -333,7 +333,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking, bool enable_local_time_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_1(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_1(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -343,7 +343,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_2(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_2(token, enable_install_tracking, enable_session_tracking, enable_reachability_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -353,7 +353,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, bool enable_install_tracking, bool enable_session_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_3(token, enable_install_tracking, enable_session_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_3(token, enable_install_tracking, enable_session_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -363,7 +363,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, bool enable_install_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_4(token, enable_install_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_4(token, enable_install_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -373,7 +373,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_5(token), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_5(token), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -383,7 +383,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking, bool enable_local_time_tracking, bool enable_log_queue)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_6(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking, enable_log_queue), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_6(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking, enable_log_queue), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -393,7 +393,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking, bool enable_local_time_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_7(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_7(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking, enable_local_time_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -403,7 +403,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory, bool enable_install_tracking, bool enable_session_tracking, bool enable_reachability_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_8(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_8(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking, enable_reachability_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -413,7 +413,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory, bool enable_install_tracking, bool enable_session_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_9(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_9(token, distinct_id, storage_directory, enable_install_tracking, enable_session_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -423,7 +423,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory, bool enable_install_tracking)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_10(token, distinct_id, storage_directory, enable_install_tracking), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_10(token, distinct_id, storage_directory, enable_install_tracking), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -433,7 +433,7 @@ namespace mixpanel.detail
 		}
 
 		public Mixpanel(string token, string distinct_id, string storage_directory)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_11(token, distinct_id, storage_directory), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Mixpanel__SWIG_11(token, distinct_id, storage_directory), true)
 		{
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
@@ -480,20 +480,20 @@ namespace mixpanel.detail
 
 		public void alias(string alias)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_alias(swigCPtr, alias);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_alias(swigCPtr, alias);
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public void register_(string key, Value value)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_register_(swigCPtr, key, Value.getCPtr(value));
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_register_(swigCPtr, key, Value.getCPtr(value));
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public bool register_once(string key, Value value)
@@ -523,79 +523,79 @@ namespace mixpanel.detail
 
 		public void clear_super_properties()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_super_properties(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_super_properties(swigCPtr);
 		}
 
 		public void clear_send_queues()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_send_queues(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_send_queues(swigCPtr);
 		}
 
 		public bool start_timed_event(string event_name)
 		{
 			bool result = MixpanelSDKPINVOKE.CSharp_Mixpanel_start_timed_event(swigCPtr, event_name);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 			return result;
 		}
 
 		public bool start_timed_event_once(string event_name)
 		{
 			bool result = MixpanelSDKPINVOKE.CSharp_Mixpanel_start_timed_event_once(swigCPtr, event_name);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 			return result;
 		}
 
 		public bool clear_timed_event(string event_name)
 		{
 			bool result = MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_timed_event(swigCPtr, event_name);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 			return result;
 		}
 
 		public void clear_timed_events()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_timed_events(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_clear_timed_events(swigCPtr);
 		}
 
 		public void reset()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_reset(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_reset(swigCPtr);
 		}
 
 		public void track(string arg0, Value properties)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_track__SWIG_0(swigCPtr, arg0, Value.getCPtr(properties));
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_track__SWIG_0(swigCPtr, arg0, Value.getCPtr(properties));
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public void track(string arg0)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_track__SWIG_1(swigCPtr, arg0);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_track__SWIG_1(swigCPtr, arg0);
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public void update_exchange_rates(ExchangeRates currency_to_usd)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_update_exchange_rates(swigCPtr, ExchangeRates.getCPtr(currency_to_usd));
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_update_exchange_rates(swigCPtr, ExchangeRates.getCPtr(currency_to_usd));
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public static string get_currency_code()
@@ -606,81 +606,81 @@ namespace mixpanel.detail
 		public double get_exchange_rate(string currency_code)
 		{
 			double result = MixpanelSDKPINVOKE.CSharp_Mixpanel_get_exchange_rate(swigCPtr, currency_code);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 			return result;
 		}
 
 		public void set_minimum_log_level(LogEntry.Level level)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_set_minimum_log_level(swigCPtr, (int)level);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_set_minimum_log_level(swigCPtr, (int)level);
 		}
 
 		public bool get_next_log_entry(LogEntry entry)
 		{
-			bool result = MixpanelSDKPINVOKE.CSharp_Mixpanel_get_next_log_entry(swigCPtr, LogEntry.getCPtr(entry));
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
-			return result;
+			//bool result = MixpanelSDKPINVOKE.CSharp_Mixpanel_get_next_log_entry(swigCPtr, LogEntry.getCPtr(entry));
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	//throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
+			return false;
 		}
 
 		public void on_entered_foreground()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_on_entered_foreground(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_on_entered_foreground(swigCPtr);
 		}
 
 		public void on_entered_background()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_on_entered_background(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_on_entered_background(swigCPtr);
 		}
 
 		public void set_session_expiry_seconds(uint seconds)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_set_session_expiry_seconds(swigCPtr, seconds);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_set_session_expiry_seconds(swigCPtr, seconds);
 		}
 
 		public static string utc_now()
 		{
-			return MixpanelSDKPINVOKE.CSharp_Mixpanel_utc_now();
-		}
+			return string.Empty;// MixpanelSDKPINVOKE.CSharp_Mixpanel_utc_now();
+        }
 
 		public static string local_now()
 		{
-			return MixpanelSDKPINVOKE.CSharp_Mixpanel_local_now();
-		}
+			return string.Empty;// MixpanelSDKPINVOKE.CSharp_Mixpanel_local_now();
+        }
 
 		public uint get_seconds_since_app_start()
 		{
-			return MixpanelSDKPINVOKE.CSharp_Mixpanel_get_seconds_since_app_start(swigCPtr);
+			return 0;// MixpanelSDKPINVOKE.CSharp_Mixpanel_get_seconds_since_app_start(swigCPtr);
 		}
 
 		public uint get_session_duration_in_seconds()
 		{
-			return MixpanelSDKPINVOKE.CSharp_Mixpanel_get_session_duration_in_seconds(swigCPtr);
-		}
+			return 0;//MixpanelSDKPINVOKE.CSharp_Mixpanel_get_session_duration_in_seconds(swigCPtr);
+        }
 
 		public uint get_days_since_install()
 		{
-			return MixpanelSDKPINVOKE.CSharp_Mixpanel_get_days_since_install(swigCPtr);
-		}
+			return 0;// MixpanelSDKPINVOKE.CSharp_Mixpanel_get_days_since_install(swigCPtr);
+        }
 
 		public void on_reachability_changed(NetworkReachability network_reachability)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_on_reachability_changed(swigCPtr, (int)network_reachability);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_on_reachability_changed(swigCPtr, (int)network_reachability);
 		}
 
 		public void set_send_only_on_lan(bool send_only_on_lan)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_set_send_only_on_lan(swigCPtr, send_only_on_lan);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_set_send_only_on_lan(swigCPtr, send_only_on_lan);
 		}
 
 		public void set_maximum_queue_size(uint maximum_size)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_set_maximum_queue_size(swigCPtr, maximum_size);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_set_maximum_queue_size(swigCPtr, maximum_size);
 		}
 
 		public static bool is_rooted()
@@ -690,17 +690,17 @@ namespace mixpanel.detail
 
 		public void set_batch_send_interval(uint seconds)
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_set_batch_send_interval(swigCPtr, seconds);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_set_batch_send_interval(swigCPtr, seconds);
 		}
 
 		public void flush_queue()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_flush_queue(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_flush_queue(swigCPtr);
 		}
 
 		private void SwigDirectorConnect()
 		{
-			MixpanelSDKPINVOKE.CSharp_Mixpanel_director_connect(swigCPtr);
+			//MixpanelSDKPINVOKE.CSharp_Mixpanel_director_connect(swigCPtr);
 		}
 	}
 }

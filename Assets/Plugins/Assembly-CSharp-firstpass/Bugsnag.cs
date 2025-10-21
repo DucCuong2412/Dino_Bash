@@ -14,11 +14,11 @@ public class Bugsnag : MonoBehaviour
 
 		public static void Register(string apiKey)
 		{
-			AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getApplicationContext", new object[0]);
-			Bugsnag.CallStatic<AndroidJavaObject>("init", new object[2] { androidJavaObject, apiKey });
-			Notify("errorClass", "error message", "error", new StackTrace(1, true).ToString(), true);
+			//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+			//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
+			//AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getApplicationContext", new object[0]);
+			//Bugsnag.CallStatic<AndroidJavaObject>("init", new object[2] { androidJavaObject, apiKey });
+			//Notify("errorClass", "error message", "error", new StackTrace(1, true).ToString(), true);
 		}
 
 		public static void Notify(string errorClass, string errorMessage, string severity, string stackTrace)
@@ -66,15 +66,15 @@ public class Bugsnag : MonoBehaviour
 				{
 					AndroidJNI.SetObjectArrayElement(intPtr, i, ((AndroidJavaObject)arrayList[i]).GetRawObject());
 				}
-				AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.bugsnag.android.Severity");
-				AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("ERROR");
+				//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.bugsnag.android.Severity");
+				//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("ERROR");
 				if (severity == "info")
 				{
-					@static = androidJavaClass.GetStatic<AndroidJavaObject>("INFO");
+					//@static = androidJavaClass.GetStatic<AndroidJavaObject>("INFO");
 				}
 				else if (severity == "warning")
 				{
-					@static = androidJavaClass.GetStatic<AndroidJavaObject>("WARNING");
+					//@static = androidJavaClass.GetStatic<AndroidJavaObject>("WARNING");
 				}
 				AndroidJavaObject androidJavaObject = new AndroidJavaObject("com.bugsnag.android.MetaData");
 				jvalue[] args = new jvalue[5]
@@ -93,7 +93,7 @@ public class Bugsnag : MonoBehaviour
 					},
 					new jvalue
 					{
-						l = @static.GetRawObject()
+						//l = @static.GetRawObject()
 					},
 					new jvalue
 					{

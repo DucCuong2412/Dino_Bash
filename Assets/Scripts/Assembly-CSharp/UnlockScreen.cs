@@ -168,7 +168,7 @@ public class UnlockScreen : BaseScreen
 			string text = unlocked.upgrade.ToString() + ".description";
 			if (unlocked.upgrade == UnitType.AppleStartBonus)
 			{
-				description.textMesh.text = string.Format(text.Localize(), Konfiguration.GameConfig.AppleBoostAmount);
+				//description.textMesh.text = string.Format(text.Localize(), Konfiguration.GameConfig.AppleBoostAmount);
 			}
 			else
 			{

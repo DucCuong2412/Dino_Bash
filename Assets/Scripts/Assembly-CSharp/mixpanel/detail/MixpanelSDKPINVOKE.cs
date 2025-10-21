@@ -57,8 +57,8 @@ namespace mixpanel.detail
 				argumentDelegate = SetPendingArgumentException;
 				argumentNullDelegate = SetPendingArgumentNullException;
 				argumentOutOfRangeDelegate = SetPendingArgumentOutOfRangeException;
-				SWIGRegisterExceptionCallbacks_MixpanelSDK(applicationDelegate, arithmeticDelegate, divideByZeroDelegate, indexOutOfRangeDelegate, invalidCastDelegate, invalidOperationDelegate, ioDelegate, nullReferenceDelegate, outOfMemoryDelegate, overflowDelegate, systemDelegate);
-				SWIGRegisterExceptionArgumentCallbacks_MixpanelSDK(argumentDelegate, argumentNullDelegate, argumentOutOfRangeDelegate);
+				//SWIGRegisterExceptionCallbacks_MixpanelSDK(applicationDelegate, arithmeticDelegate, divideByZeroDelegate, indexOutOfRangeDelegate, invalidCastDelegate, invalidOperationDelegate, ioDelegate, nullReferenceDelegate, outOfMemoryDelegate, overflowDelegate, systemDelegate);
+				//SWIGRegisterExceptionArgumentCallbacks_MixpanelSDK(argumentDelegate, argumentNullDelegate, argumentOutOfRangeDelegate);
 			}
 
 			[DllImport("MixpanelSDK")]
@@ -220,7 +220,7 @@ namespace mixpanel.detail
 			static SWIGStringHelper()
 			{
 				stringDelegate = CreateString;
-				SWIGRegisterStringCallback_MixpanelSDK(stringDelegate);
+				//SWIGRegisterStringCallback_MixpanelSDK(stringDelegate);
 			}
 
 			[DllImport("MixpanelSDK")]

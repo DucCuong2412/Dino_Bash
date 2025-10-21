@@ -50,20 +50,20 @@ public class QuestManager
 	public void updateQuests()
 	{
 		CollectRewards();
-		if (Player.MaxLevelID > Konfiguration.GameConfig.First_quest_level + 1 && isInitialized)
-		{
-			newQuests.Clear();
-			TimeSpan timeSpan = DateTime.UtcNow - Player.Instance.lastQuestCreated;
-			TimeSpan timeSpan2 = new TimeSpan(Konfiguration.GameConfig.Hours_to_next_quest, 0, 0);
-			while (timeSpan > timeSpan2 && activeQuests.Count < 3)
-			{
-				timeSpan -= timeSpan2;
-				createQuest(QuestDuration.none);
-			}
-			Player.SavePlayer();
-			Debug.Log("Quest - new quests:" + instance.newQuests.Count);
-			printQuests();
-		}
+		//if (Player.MaxLevelID > Konfiguration.GameConfig.First_quest_level + 1 && isInitialized)
+		//{
+		//	newQuests.Clear();
+		//	TimeSpan timeSpan = DateTime.UtcNow - Player.Instance.lastQuestCreated;
+		//	//TimeSpan timeSpan2 = new TimeSpan(Konfiguration.GameConfig.Hours_to_next_quest, 0, 0);
+		//	while (timeSpan > timeSpan2 && activeQuests.Count < 3)
+		//	{
+		//		timeSpan -= timeSpan2;
+		//		createQuest(QuestDuration.none);
+		//	}
+		//	Player.SavePlayer();
+		//	Debug.Log("Quest - new quests:" + instance.newQuests.Count);
+		//	printQuests();
+		//}
 	}
 
 	public void createQuest(QuestDuration durations)

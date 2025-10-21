@@ -9,12 +9,12 @@ namespace mixpanel.platform
 			//Discarded unreachable code: IL_005f, IL_006e
 			try
 			{
-				string empty = string.Empty;
-				AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-				AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-				AndroidJavaClass androidJavaClass2 = new AndroidJavaClass("com.google.android.gms.ads.identifier.AdvertisingIdClient");
-				AndroidJavaObject androidJavaObject = androidJavaClass2.CallStatic<AndroidJavaObject>("getAdvertisingIdInfo", new object[1] { @static });
-				return androidJavaObject.Call<string>("getId", new object[0]).ToString();
+				//string empty = string.Empty;
+				//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+				//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
+				//AndroidJavaClass androidJavaClass2 = new AndroidJavaClass("com.google.android.gms.ads.identifier.AdvertisingIdClient");
+				//AndroidJavaObject androidJavaObject = androidJavaClass2.CallStatic<AndroidJavaObject>("getAdvertisingIdInfo", new object[1] { @static });
+				return string.Empty;// androidJavaObject.Call<string>("getId", new object[0]).ToString();
 			}
 			catch (AndroidJavaException)
 			{
@@ -24,32 +24,32 @@ namespace mixpanel.platform
 
 		public static string get_android_id()
 		{
-			AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getContentResolver", new object[0]);
-			AndroidJavaClass androidJavaClass2 = new AndroidJavaClass("android.provider.Settings$Secure");
-			return androidJavaClass2.CallStatic<string>("getString", new object[2] { androidJavaObject, "android_id" });
-		}
+			//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+			//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
+			//AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getContentResolver", new object[0]);
+			//AndroidJavaClass androidJavaClass2 = new AndroidJavaClass("android.provider.Settings$Secure");
+			return string.Empty;// androidJavaClass2.CallStatic<string>("getString", new object[2] { androidJavaObject, "android_id" });
+        }
 
 		public static string get_android_version_name()
 		{
-			AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", new object[0]);
-			string text = @static.Call<string>("getPackageName", new object[0]);
-			AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] { text, 0 });
-			return androidJavaObject2.Get<string>("versionName");
-		}
+			//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+			//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
+			//AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", new object[0]);
+			//string text = @static.Call<string>("getPackageName", new object[0]);
+			//AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] { text, 0 });
+			return string.Empty;// androidJavaObject2.Get<string>("versionName");
+        }
 
 		public static int get_android_version_code()
 		{
-			AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", new object[0]);
-			string text = @static.Call<string>("getPackageName", new object[0]);
-			AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] { text, 0 });
-			return androidJavaObject2.Get<int>("versionCode");
-		}
+			//AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+			//AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
+			//AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", new object[0]);
+			//string text = @static.Call<string>("getPackageName", new object[0]);
+			//AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] { text, 0 });
+			return 0;//androidJavaObject2.Get<int>("versionCode");
+        }
 
 		public static string get_distinct_id()
 		{

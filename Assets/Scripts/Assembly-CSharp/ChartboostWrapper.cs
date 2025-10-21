@@ -7,8 +7,8 @@ public static class ChartboostWrapper
 
 	public static void Init()
 	{
-		App.Instance.gameObject.AddComponent<Chartboost>();
-		Chartboost.setShouldRequestInterstitialsInFirstSession(false);
+		//App.Instance.gameObject.AddComponent<Chartboost>();
+		//Chartboost.setShouldRequestInterstitialsInFirstSession(false);
 		isShowingInterstital = false;
 	}
 

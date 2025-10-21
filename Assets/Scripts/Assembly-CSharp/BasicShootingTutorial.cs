@@ -36,7 +36,7 @@ public class BasicShootingTutorial : AbstractTutorialScreen
 	protected override void Start()
 	{
 		base.Start();
-		useDragShots = Konfiguration.GameConfig.Use_dragshot_feature;
+		//useDragShots = Konfiguration.GameConfig.Use_dragshot_feature;
 		base.DinoEggInvincible = true;
 		HudScreen screen = ScreenManager.GetScreen<HudScreen>();
 		shot_button = screen.ShotButtons[0].GetComponent<ShootButton>();

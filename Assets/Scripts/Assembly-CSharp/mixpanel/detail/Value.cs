@@ -40,46 +40,46 @@ namespace mixpanel.detail
 		}
 
 		public Value()
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_0(), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_0(), true)
 		{
 		}
 
 		public Value(int value)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_1(value), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_1(value), true)
 		{
 		}
 
 		public Value(double value)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_2(value), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_2(value), true)
 		{
 		}
 
 		public Value(float value)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_3(value), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_3(value), true)
 		{
 		}
 
 		public Value(string value)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_4(value), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_4(value), true)
 		{
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		public Value(bool value)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_5(value), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_5(value), true)
 		{
 		}
 
 		public Value(Value other)
-			: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_6(getCPtr(other)), true)
+			//: this(MixpanelSDKPINVOKE.CSharp_new_Value__SWIG_6(getCPtr(other)), true)
 		{
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
 		}
 
 		internal static HandleRef getCPtr(Value obj)
@@ -261,17 +261,17 @@ namespace mixpanel.detail
 
 		public Value at(string key)
 		{
-			Value result = new Value(MixpanelSDKPINVOKE.CSharp_Value_at__SWIG_0(swigCPtr, key), false);
-			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
-			{
-				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
-			}
-			return result;
+			//Value result = new Value(MixpanelSDKPINVOKE.CSharp_Value_at__SWIG_0(swigCPtr, key), false);
+			//if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
+			//{
+			//	throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();
+			//}
+			return 0;
 		}
 
 		public Value at(int index)
 		{
-			return new Value(MixpanelSDKPINVOKE.CSharp_Value_at__SWIG_1(swigCPtr, index), false);
+			return 0;// new Value(MixpanelSDKPINVOKE.CSharp_Value_at__SWIG_1(swigCPtr, index), false);
 		}
 
 		public void set(int x)
@@ -290,17 +290,17 @@ namespace mixpanel.detail
 
 		public void set(double x)
 		{
-			MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_2(swigCPtr, x);
+			//MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_2(swigCPtr, x);
 		}
 
 		public void set(float x)
 		{
-			MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_3(swigCPtr, x);
+			//MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_3(swigCPtr, x);
 		}
 
 		public void set(Value x)
 		{
-			MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_4(swigCPtr, getCPtr(x));
+			//MixpanelSDKPINVOKE.CSharp_Value_set__SWIG_4(swigCPtr, getCPtr(x));
 			if (MixpanelSDKPINVOKE.SWIGPendingException.Pending)
 			{
 				throw MixpanelSDKPINVOKE.SWIGPendingException.Retrieve();

@@ -56,7 +56,7 @@ public class UpgradeInfoUpgradesScreen : UpgradeInfoScreen<UnitType>
 		string text = item.ToString() + ".description";
 		if (item == UnitType.AppleStartBonus)
 		{
-			description.textMesh.text = string.Format(text.Localize(), Konfiguration.GameConfig.AppleBoostAmount);
+			//description.textMesh.text = string.Format(text.Localize(), Konfiguration.GameConfig.AppleBoostAmount);
 		}
 		else
 		{

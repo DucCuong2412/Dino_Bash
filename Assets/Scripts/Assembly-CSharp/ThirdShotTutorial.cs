@@ -18,7 +18,7 @@ public class ThirdShotTutorial : AbstractTutorialScreen
 	protected override void Start()
 	{
 		base.Start();
-		useDragShots = Konfiguration.GameConfig.Use_dragshot_feature;
+		//useDragShots = Konfiguration.GameConfig.Use_dragshot_feature;
 		hud = ScreenManager.GetScreen<HudScreen>();
 		hud.ConsumableButtons.ForEach(delegate(BuyUnitButton x)
 		{

@@ -47,10 +47,10 @@ public static class NotificationManager
 
 	private static void SetTimerNotifications()
 	{
-		if (!Konfiguration.GameConfig.use_upgrade_timers)
-		{
-			return;
-		}
+		//if (!Konfiguration.GameConfig.use_upgrade_timers)
+		//{
+		//	return;
+		//}
 		foreach (TimerItem item in Player.Instance.PlayerData.upgrade_queue)
 		{
 			string message = string.Format("NOTIFICATION_TRAINING_COMPLETE".Localize(), item.entity.ToString().Localize());
