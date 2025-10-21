@@ -148,9 +148,24 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 173.13586, y: -384.5}
+        - {x: 60.709167, y: -341.85028}
+        - {x: 1.7852783, y: -330.38904}
+        - {x: -59.177246, y: -371.12158}
+        - {x: -141.14471, y: -363.82184}
+        - {x: -227.87155, y: -363.82153}
+        - {x: -294.65967, y: -342.35822}
+        - {x: -512, y: -321.2838}
+        - {x: -512, y: -162.09644}
+        - {x: -512, y: 384.5}
+        - {x: 426.0019, y: 384.5}
+        - {x: 409.5119, y: 147.43872}
+        - {x: 422.65973, y: 130.12024}
+        - {x: 512, y: 119.83252}
+        - {x: 512, y: -384.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 02305410000000000800000000000000
       internalID: 21300000
@@ -171,7 +186,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 22305410000000000800000000000000
       internalID: 21300002
@@ -190,9 +205,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -242.56091, y: -343.9308}
+        - {x: -406.40796, y: -287.56885}
+        - {x: -485.33533, y: -272.4707}
+        - {x: -512, y: -246.90881}
+        - {x: -512, y: -203.78369}
+        - {x: -512, y: 53.40918}
+        - {x: -311.5464, y: 380.5}
+        - {x: 512, y: 380.5}
+        - {x: 512, y: -380.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0.28
       bones: []
       spriteID: 42305410000000000800000000000000
       internalID: 21300004
@@ -203,7 +227,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 340555c305c057a49aa1c7b1aec69d24
     internalID: 0
     vertices: []
     indices: 
